@@ -24,6 +24,10 @@ public class User implements Serializable {
 	
 	@Id
 	private int UserID;
+	public int getUserID() {
+		return UserID;
+	}
+
 	private String UserName;
 	private String UserEmail;
 	private String UserKey;

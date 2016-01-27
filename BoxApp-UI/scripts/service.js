@@ -15,6 +15,7 @@
     self.Auth = Auth;
     self.logged =logged; 
      self.getLogged=getLogged;
+      self.getClaims=getClaims;
    
     function logged(loggedUser){
 
@@ -86,7 +87,7 @@
       function createClaim(claim){
 
           var defer = $q.defer();
-          var url = "http://localhost:8080/BoxApp-Api/api/claim/claim/create?" + self.logd.userEmail ;
+          var url = "http://localhost:8080/BoxApp-Api/api/claim/claim/create?email=" + self.logd.userEmail ;
 
           $http
               .post(url, claim)
@@ -109,7 +110,7 @@
       function createVehicle(vehicle){
 
           var defer = $q.defer();
-          var url = "http://localhost:8080/BoxApp-Api/api/claim/vehicle/create?" + self.logd.userEmail;
+          var url = "http://localhost:8080/BoxApp-Api/api/claim/vehicle/create?email=" + self.logd.userEmail;
 
           $http
               .post(url,vehicle)
@@ -129,14 +130,27 @@
       }
 
 
+      function getClaims(email){
+
+          var defer = $q.defer();
+          var url = "http://localhost:8080/BoxApp-Api/api/claim/claims?email=" + email;
+
+          $http
+              .get(url)
+              .then(successFn, errorFn);
+
+          function successFn(response) {
+              defer.resolve(response.data);
+          }
+
+          function errorFn(error) {
+              defer.reject(error.statusText);
+          }
+
+          return defer.promise;
 
 
+      }
 
-
-
-
-
-
-   
   }
 })();

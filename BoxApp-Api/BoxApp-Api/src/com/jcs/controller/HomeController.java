@@ -28,7 +28,7 @@ public class HomeController {
 
 		List<User> usr = new ArrayList<User>();
 		BoxService service = new BoxService();
-		// service.dummypush();
+		service.dummypush();
 		try {
 			usr = service.fetchAll();
 		} catch (Exception e) {
@@ -68,9 +68,9 @@ public class HomeController {
 	}
 
 	@GET
-	@Path("/claim")
+	@Path("/claims")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String getClaim() {
+	public String getClaim(@QueryParam(value = "email") String email) {
 
 		BoxService service = new BoxService();
 
@@ -79,7 +79,7 @@ public class HomeController {
 		List<Claim> claim = new ArrayList<Claim>();
 
 		try {
-			claim = service.fetchAllClaim();
+			claim = service.fetchAllClaim(email);    // get all claims for the particular user
 		} catch (Exception e) {
 
 			e.printStackTrace();
@@ -113,18 +113,18 @@ public class HomeController {
 	}
 	
 	
-/*	@POST
-	@Path("/claim/create")
+	@POST
+	@Path("/claim/Vehicle")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Vehicle createVehicle(@QueryParam(value = "email")String email,Vehicle vehicle) {
 		
 		
-		
+		System.out.println(email + vehicle.getClaimNumber()); 
 		
 		return vehicle;
 	}
-	*/
+	
 	
 	
 	

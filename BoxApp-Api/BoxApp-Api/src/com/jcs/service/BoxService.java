@@ -141,8 +141,12 @@ public class BoxService {
 	}
 	
 	
-	public List<Claim> fetchAllClaim() throws Exception {
+	public List<Claim> fetchAllClaim(String email) throws Exception {
 
+		User usr = fetchone(email);
+		
+		List<Claim> claimlist = new ArrayList<Claim>();
+		
 		List<Claim> claim = new ArrayList<Claim>();
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -157,10 +161,18 @@ public class BoxService {
 			e.printStackTrace();
 		}
 
-		 System.out.println(claim.get(0).getClaimID());
+		// filtering claims with respect to the user claim can be done on db side  
+		
+		 for(Claim c : claim ){
+			 int x = Character.getNumericValue(c.getClaimID().charAt(0));
+			 if(x== usr.getUserID() )
+			{
+				claimlist.add(c);
+			}
+		 }
 
 
-		return claim;
+		return claimlist;
 
 	}	
 	
@@ -203,6 +215,7 @@ public class BoxService {
 		
 		return vehicle;
 	}
+	
 	
 	
 

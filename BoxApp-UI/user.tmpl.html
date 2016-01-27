@@ -201,17 +201,17 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr ng-repeat="claim in uservm.claims | filter: uservm.searchStr ">
-                            <td>{{uservm.claim.claimID}}  </td>
-                            <td>{{uservm.claim.firstName}}</td>
-                            <td>{{uservm.claim.lastName}}</td>
-                            <td>{{uservm.claim.status}}</td>
-                            <td>{{uservm.claim.lossDate}}</td>
-                            <td>{{uservm.claim.causeOfLoss}}</td>
-                            <td>{{uservm.claim.reportedDate}}</td>
-                            <td>{{uservm.claim.lossDescription}}</td>
-                            <td>{{uservm.claim.assignedAdjustor}}</td>
-                            <td>{{uservm.claim.Vehicle}}</td>
+                        <tr ng-repeat="claim in uservm.claims  ">
+                            <td>{{claim.claimID}}  </td>
+                            <td>{{claim.firstName}}</td>
+                            <td>{{claim.lastName}}</td>
+                            <td>{{claim.status}}</td>
+                            <td>{{claim.lossDate}}</td>
+                            <td>{{claim.causeOfLoss}}</td>
+                            <td>{{claim.reportedDate}}</td>
+                            <td>{{claim.lossDescription}}</td>
+                            <td>{{claim.assignedAdjustor}}</td>
+                            <td>{{claim.Vehicle}}</td>
                         </tr>
                         </tbody>
                     </table>

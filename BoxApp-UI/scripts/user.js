@@ -42,6 +42,7 @@
             console.dir(uservm.newVehicle);
 
             Service.createClaim(uservm.newClaim);
+            Service.createVehicle(uservm.newVehicle);
 
 
 
@@ -54,24 +55,31 @@
 
 
       console.log('I am here at the User controller ');
+
+        // on load
           logged();
+          getClaims();
+
+       function  getClaims(){
+
+           console.log("i am in get claims");
+
+           Service.getClaims(uservm.user.userEmail).then(function(claim){
+
+               uservm.claims=claim;
+               console.log("got all clamins for "+ uservm.user.userEmail );
+               console.dir(uservm.claims);
+
+           },function(error){
+               console.log(error);
+           });
+       }
+
 
       function logged(){
         uservm.user = Service.getLogged()
 
       }
-
-        function getClaim(){
-            uservm.claims = Service.getclaim(uservm.user)
-
-        }
-
-
-
-
-
-
-
 
 
     }
