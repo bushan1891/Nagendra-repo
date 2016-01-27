@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 2:01:16 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping default-lazy="false">
+ <class name="com.jcs.model.Claim" table="CLAIM">
+  <id name="ClaimID" type="int">
+   <column name="CLAIMID"/>
+   <generator class="assigned"/>
+  </id>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="all" default-lazy="false" package="com.jcs.model">
+ <class name="Vehicle" table="Vehicle">
+  <id column="vin" name="vin"/>
+  <property column="modelYear" generated="never" lazy="false" name="modelYear"/>
+  <property column="makedes" generated="never" lazy="false" name="makeDes"/>
+  <property column="modelDes" generated="never" lazy="false" name="modelDes"/>
+  <property column="engineDes" generated="never" lazy="false" name="engineDes"/>
+  <property column="color" generated="never" lazy="false" name="color"/>
+  <property column="licplate" generated="never" lazy="false" name="licPlate"/>
+  <property column="licPlateState" generated="never" lazy="false" name="licPlateState"/>
+  <property column="licPlateExp" generated="never" lazy="false"
+   name="licPlateExp" type="java.util.Date"/>
+  <property column="damagedes" generated="never" lazy="false" name="damageDes"/>
+  <property column="mileage" generated="never" lazy="false" name="mileage"/>
+  
+ </class>
+</hibernate-mapping>

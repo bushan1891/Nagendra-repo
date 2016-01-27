@@ -1,0 +1,63 @@
+(function() {
+  'use strict';
+
+  angular
+    .module('BoxApp')
+    .controller('LoginController', LoginController);
+    
+    // EmployeesController.$inject = ['employeeService'];
+    // inject it later employeeService down parameter
+  LoginController.$inject = ['$location','Service'];
+  
+    function LoginController( $location,Service) {
+      
+    	var loginvm = this;
+      console.log('I am here at the login controller ');
+      
+      
+    	  loginvm.login = login;
+          loginvm.collection ={}; 
+    	  
+    	  function init() {
+    	        Service
+    	          .getUsers()
+    	          .then(function (users) {
+    	            loginvm.users = users;
+    	            loginvm.collection =users;
+    	            console.dir(loginvm.users);
+    	          }, function (error) {
+    	            console.log(error);
+    	          });}
+    	  
+    	  
+      function login(){
+    	  init();
+    	  var email= loginvm.email;
+          var pass = loginvm.password;
+          
+          var collection =  loginvm.users;
+             // gets the users and stores in it list.
+           
+          
+          console.log(email);
+  	 	  console.log(pass);
+  	 	console.log(collection);
+  	 	console.log(loginvm.users);
+     
+  	 	for(var i = 0 ; i< 10;i++){
+    
+        	   if(usr.hasOwnProperty(email) && usr.hasOwnProperty(pass)){
+    		   $location.path( "/user" );
+    	 	 
+        	   }
+                
+        	   
+    	  }
+    	  
+    	  console.log("login function was called");
+      }
+      
+      
+      
+    	   }
+})();

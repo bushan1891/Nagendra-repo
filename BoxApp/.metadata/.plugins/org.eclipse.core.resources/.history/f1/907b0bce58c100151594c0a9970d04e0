@@ -1,0 +1,42 @@
+package com.jcs.model;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private int UserID;
+	public UserInfo getUserinfo() {
+		return userinfo;
+	}
+	public void setUserinfo(UserInfo userinfo) {
+		this.userinfo = userinfo;
+	}
+	public Set<Claim> getClaim() {
+		return claim;
+	}
+	public void setClaim(Set<Claim> claim) {
+		this.claim = claim;
+	}
+	UserInfo userinfo;
+	@OneToMany(fetch = FetchType.EAGER)
+    Set<Claim> claim;
+	public int getUserID() {
+		return UserID;
+	}
+	public void setUserID(int userID) {
+		UserID = userID;
+	}
+    
+    
+    
+    
+    
+
+}

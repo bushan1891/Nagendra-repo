@@ -1,0 +1,17 @@
+package jcs.contorller;
+
+import jcs.service.UserService;
+
+public class UserController {
+
+	public UserController(final UserService userService) {
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

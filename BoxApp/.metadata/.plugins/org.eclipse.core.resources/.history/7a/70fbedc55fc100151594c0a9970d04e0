@@ -1,0 +1,58 @@
+package com.jcs.model;
+
+import java.io.Serializable;
+import java.util.Set;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.MapsId;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+@Entity
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private int UserID;
+	private Set<Claim> claim;
+	
+	@OneToOne @MapsId
+	private UserInfo userinfo;
+	
+	
+	@Id
+	public UserInfo getUserinfo() {
+		return userinfo;
+	}
+	public void setUserinfo(UserInfo userinfo) {
+		this.userinfo = userinfo;
+	}
+	@OneToMany(fetch=FetchType.EAGER, cascade={CascadeType.ALL})
+	@JoinColumn(name="ClaimID")
+	public Set<Claim> getClaim() {
+		return claim;
+	}
+	public void setClaim(Set<Claim> claim) {
+		this.claim = claim;
+	}
+	
+	
+    
+	public int getUserID() {
+		return UserID;
+	}
+	public void setUserID(int userID) {
+		UserID = userID;
+	}
+    
+    
+    
+    
+    
+
+}

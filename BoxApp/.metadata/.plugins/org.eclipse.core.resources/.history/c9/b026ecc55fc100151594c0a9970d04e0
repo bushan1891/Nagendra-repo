@@ -1,0 +1,36 @@
+package com.jcs.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+@Entity
+public class UserInfo implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	private int UserID;
+    private User user;
+	
+	
+    public int getUserID() {
+		return UserID;
+	}
+	public void setUserID(int userID) {
+		UserID = userID;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	
+	
+	
+	
+}

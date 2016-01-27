@@ -1,0 +1,29 @@
+ (function(){
+	 'use strict'
+	 
+	 angular
+	    .module('BoxApp', ['ngRoute'])
+	    .config(moduleConfig);
+	 
+	 moduleConfig.$inject = ['$routeProvider'];
+	 
+	 
+	 function moduleConfig ($routeProvider) {
+	      
+	       $routeProvider
+	        .when('/login', {
+	          templateUrl: 'user.login.tmpl.html',
+	          controller: 'LoginController',
+	          controllerAs: 'employeesVm'
+	        })
+	        .when('/user', {
+	          templateUrl: 'user.tmpl.html',
+	          controller: 'UserController',
+	          controllerAs: 'uservm'
+	        })
+	        .otherwise({
+	          redirectTo: '/login'
+	        });
+	    }
+	 
+ })();

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 7:38:06 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping default-cascade="all" default-lazy="false">
+ <class name="com.jcs.model.User" table="USER">
+  <id access="field" name="UserInfoID" type="int">
+   <column name="USERINFOID"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="UserName" type="java.lang.String">
+   <column name="USERNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="UserEmail" type="java.lang.String">
+   <column name="USEREMAIL"/>
+  </property>
+  <property generated="never" lazy="false" name="UserKey" type="java.lang.String">
+   <column name="USERKEY"/>
+  </property>
+  <property generated="never" lazy="false" name="UserType" type="java.lang.String">
+   <column name="USERTYPE"/>
+  </property>
+  <many-to-one class="com.jcs.model.UserInfo" fetch="join" name="userinfo">
+   <column name="USERINFO"/>
+  </many-to-one>
+ </class>
+</hibernate-mapping>

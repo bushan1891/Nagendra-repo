@@ -1,0 +1,5 @@
+package com.jcs.controller;
+
+public class HomeController {
+
+}

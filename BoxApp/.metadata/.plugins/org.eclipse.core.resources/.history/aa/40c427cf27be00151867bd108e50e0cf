@@ -1,0 +1,52 @@
+ (function(){
+	 'use strict'
+	 
+	 angular
+	    .module('BoxApp', ['ngRoute'])
+	    .config(moduleConfig);
+	 
+	 moduleConfig.$inject = ['$routeProvider'];
+	 
+	 
+	 function moduleConfig ($routeProvider) {
+	      
+	       $routeProvider
+	        .when('/login', {
+	          templateUrl: 'user.login.tmpl.html',
+	          controller: 'LoginController',
+	          controllerAs: 'employeesVm'
+	        })
+	        .when('/employees/:employeeId', {
+	          templateUrl: 'employee-detail.tmpl.html',
+	          controller: 'EmployeeDetailController',
+	          controllerAs: 'empDetailVm'
+	        })
+	        .when('/user', {
+	          templateUrl: 'user.tmpl.html',
+	          controller: 'PicturesController',
+	          controllerAs: 'picturesVm'
+	        })
+	        .otherwise({
+	          redirectTo: '/employees'
+	        });
+	    }
+	 
+	 
+	 
+	 
+	/*  function controllerfn(){
+		   var indexvm= this;
+		   // todo : later bing this data from backend 
+		   // use ajax request 
+		   indexvm.email= "bushan1891@gmail.com";
+		   console.log( indexvm.email);
+		   console.log(indexvm.password);
+		   
+		   
+		   
+		   indexvm.display = function(){
+		   console.log("hi"); 
+		 } 
+	  }*/
+	 
+ })();

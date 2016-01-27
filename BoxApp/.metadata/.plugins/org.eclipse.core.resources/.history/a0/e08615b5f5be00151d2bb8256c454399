@@ -1,0 +1,49 @@
+package com.jcs.model;
+
+public class User implements java.io.Serializable {
+	
+	private String UserName;
+	private int UserID;
+	private String UserEmail;
+	private String UserKey;
+    private String UserType;
+	
+    
+    
+    
+    public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+	public int getUserID() {
+		return UserID;
+	}
+	public void setUserID(int userID) {
+		UserID = userID;
+	}
+	public String getUserEmail() {
+		return UserEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		UserEmail = userEmail;
+	}
+	public String getUserKey() {
+		return UserKey;
+	}
+	public void setUserKey(String userKey) {
+		UserKey = userKey;
+	}
+	public String getUserType() {
+		return UserType;
+	}
+	public void setUserType(String userType) {
+		UserType = userType;
+	}
+    
+    
+    
+    
+
+}

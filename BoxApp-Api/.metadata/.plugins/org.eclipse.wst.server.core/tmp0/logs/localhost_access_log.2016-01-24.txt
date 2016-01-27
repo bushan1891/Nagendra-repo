@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:21:43:09 -0800] "GET /BoxApp/Auth HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:21:43:14 -0800] "GET /BoxApp/Auth HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:21:43:16 -0800] "GET /BoxApp/Auth HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:21:43:19 -0800] "GET /BoxApp/Auth HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:21:43:47 -0800] "GET /BoxApp/Auth HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:21:44:32 -0800] "GET /BoxApp/Auth HTTP/1.1" 404 1016
+127.0.0.1 - - [24/Jan/2016:22:11:50 -0800] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:12:18 -0800] "GET /BoxApp-Api/api/claim/Auth HTTP/1.1" 200 1097
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:13:59 -0800] "GET /BoxApp-Api/api/claim/Auth HTTP/1.1" 200 1097
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:19:21 -0800] "GET /BoxApp-Api/api/claim/Auth HTTP/1.1" 200 1097
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:19:26 -0800] "GET /BoxApp-Api/api/claim/Auth HTTP/1.1" 200 1097
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:21:26 -0800] "GET /BoxApp-Api/api/claim/Auth HTTP/1.1" 200 1097
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:28:48 -0800] "GET /BoxApp-Api/api/claim/Auth HTTP/1.1" 200 1097
+0:0:0:0:0:0:0:1 - - [24/Jan/2016:22:35:33 -0800] "GET /BoxApp-Api/api/claim/Auth1/1?email=bushan1891@gmail.com HTTP/1.1" 404 1010

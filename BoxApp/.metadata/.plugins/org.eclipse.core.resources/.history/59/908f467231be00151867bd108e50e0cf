@@ -1,0 +1,17 @@
+(function() {
+  'use strict';
+
+  angular
+    .module('BoxApp')
+    .controller('UserController', UserControllerfn);
+    
+    //EmployeesController.$inject = ['employeeService'];
+    // inject it later employeeService down parameter 
+  
+    function UserControllerfn() {
+      
+    	var uservm = this;
+      console.log('I am here at the login controller ');
+    }
+    
+})();

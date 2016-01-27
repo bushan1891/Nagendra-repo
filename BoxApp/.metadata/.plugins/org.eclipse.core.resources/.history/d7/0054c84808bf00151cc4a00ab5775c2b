@@ -1,0 +1,69 @@
+package com.jcs.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.jcs.model.*;
+import com.jcs.util.HibernateUtil;
+public class Boxservice implements BoxserviceInterface {
+
+	public void dummypush(){
+		
+		User usr = new User();
+		UserInfo usrinfo = new UserInfo();
+		
+		usr.setUserEmail("bushan1891@gmail.com");
+		usr.setUserID(007);
+		usr.setUserinfo(usrinfo);
+		usr.setUserKey("password");
+		usr.setUserName("nagendra");
+		usr.setUserType("Agent");
+		
+		
+		usrinfo.setAddress("9135 judicial drive apt 3132");
+		usrinfo.setEmail("bushan1891@gmail.com");
+		usrinfo.setPhone(858760000);
+		usrinfo.setTitle("developer");
+		usrinfo.setUser(usr);
+		usrinfo.setUserID(usr.getUserID());
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();  
+        Session session = sessionFactory.openSession();
+        session.beginTransaction(); 
+		
+        try{
+        	session.save(usr);
+        	session.getTransaction().commit();
+        	System.out.println("dummy data pushed");
+        }
+		catch(Exception e){
+			System.out.println("Pushed failed");
+		}
+		
+	}
+	
+	
+	
+	
+	public List<User> fetchAll() throws Exception {
+	    
+		List<User> user = new ArrayList<User>();
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();  
+        Session session = sessionFactory.openSession();
+        session.beginTransaction(); 
+		try{
+        user = session.createQuery("From User").list();
+		session.close();
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+		return user;
+		
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 23, 2016 2:18:28 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping default-cascade="all" default-lazy="false">
+ <class name="com.jcs.model.Claim" table="CLAIM">
+  <id access="field" name="Id" type="int">
+   <column name="ID"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="Claiminfo" type="java.lang.String">
+   <column name="CLAIMINFO"/>
+  </property>
+ </class>
+</hibernate-mapping>

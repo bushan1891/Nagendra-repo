@@ -1,0 +1,19 @@
+package com.jcs.controller;
+
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+
+@Path("/claim")
+public class HomeController {
+
+	@GET
+	@Path("/hi")
+	public String getCliam() {
+		
+		
+		
+		return "hi";
+	}
+	
+}

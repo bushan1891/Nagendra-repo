@@ -1,0 +1,130 @@
+package jcs.contorller;
+
+import org.eclipse.jetty.server.Request;
+import org.eclipse.jetty.server.Response;
+import static spark.Spark.*;
+
+import java.awt.Desktop;
+import java.io.FileOutputStream;
+import java.net.URL;
+
+import spark.Route;
+import com.box.sdk.BoxAPIConnection;
+import com.box.sdk.BoxAPIRequest;
+import com.box.sdk.BoxCollaboration;
+import com.box.sdk.BoxFile;
+import com.box.sdk.BoxFolder;
+import com.box.sdk.BoxItem;
+import com.box.sdk.BoxUser;
+import com.box.sdk.CreateUserParams;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import jcs.service.UserService;
+
+public class UserController {
+
+	public UserController(final UserService userService) {
+		
+
+		get("/users", new Route() {
+			public Object handle(spark.Request request, spark.Response response) throws Exception {
+				
+				/*BoxAPIConnection api = new BoxAPIConnection("9eNpn5b3zN5k272jXLrQVesU5UU7ZVer");
+				
+				BoxAPIConnection api = new BoxAPIConnection("d0apdicfw300vm271hsbczm4oiw0iu2l",
+					    "0OIXTPmxUXXAQvt3gAnvlixsIDm9GUhq", "8ojLqdEh0mu23L4wyAatKPNOqnh6k32C");
+				
+				BoxFolder rootFolder = BoxFolder.getRootFolder(api);
+				System.out.println(api.toString() + "hi");
+				
+				CreateUserParams  boxuser = new CreateUserParams ();
+				boxuser.setJobTitle("programmer");
+				
+				BoxUser user = BoxUser.getCurrentUser(api);
+				BoxUser.Info info = user.getInfo();
+				System.out.println(user.getEmailAliases());
+				
+				BoxCollaboration newcollab = new BoxCollaboration(api,"sample");
+				
+				URL url = new URL("https://api.box.com/2.0/users");
+				BoxAPIRequest get = new BoxAPIRequest(api,url,"HTTP");
+				
+				get.addHeader("-H", "Authorization: Bearer tgfyPpVbZ8RvdSRwkCINrXmx5PoeDbHl");
+			    get.send();
+			    
+				System.out.println(get.getBody());
+				
+				// 
+				*/
+				
+				String requestBody = "response_type=code&client_id=	d0apdicfw300vm271hsbczm4oiw0iu2l & client_secret=NHpsitTk46fiKPZwCt61xW83KFvphyRy ";
+				URL url = new URL("https://app.box.com/api/oauth2/authorize?");			
+				
+				BoxAPIRequest http = new BoxAPIRequest(url,"POST");
+				
+						//new BoxAPIRequest(, "POST");
+				 http.setBody(requestBody);
+				 http.send();
+				
+				
+				//BoxAPIConnection api = new BoxAPIConnection("d0apdicfw300vm271hsbczm4oiw0iu2l", "NHpsitTk46fiKPZwCt61xW83KFvphyRy");
+				
+				/* String access = api.getAccessToken();
+		         String refresh = api.getRefreshToken();
+		         
+		         api.setAutoRefresh(true);*/
+		         System.out.println("called");
+		         	 //   setupLogging();
+		         	// print(access);
+		           // print(refresh);
+				
+				//BoxUser role = new BoxUser(api,"defender");
+				
+				
+				
+
+				/*for (BoxItem.Info itemInfo : rootFolder) {
+					System.out.format("[%s] %s\n", itemInfo.getID(), itemInfo.getName());
+
+					BoxFile file = new BoxFile(api, itemInfo.getID());
+					BoxFile.Info info = file.getInfo();
+					FileOutputStream stream = new FileOutputStream(info.getName());
+					
+					file.download(stream);
+					stream.close();
+					
+				}*/
+				
+				return null;
+			}
+		});
+
+		delete("/delete", new Route() {
+
+			public Object handle(spark.Request request, spark.Response response) throws Exception {
+				// TODO Auto-generated method stub
+				
+				System.out.println("i was called");
+				return null;
+			}
+
+		});
+
+		put("/put/:id", new Route() {
+			
+			public Object handle(spark.Request request, spark.Response response) throws Exception {
+				
+				return null;
+			}
+
+		});
+		
+		
+		
+		
+		
+		
+	}
+
+}

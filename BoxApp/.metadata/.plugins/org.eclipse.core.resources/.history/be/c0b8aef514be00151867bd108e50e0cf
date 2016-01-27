@@ -1,0 +1,22 @@
+ (function(){
+	 'use strict'
+	  angular.module('BoxApp',[]);
+	 
+	  angular.module('BoxApp').controller('ControllerFn',controllerfn);
+	  
+	  function controllerfn(){
+		   var indexvm= this;
+		   // todo : later bing this data from backend 
+		   // use ajax request 
+		   indexvm.email= "bushan1891@gmail.com";
+		   console.log( indexvm.email);
+		   console.log(indexvm.password);
+		   
+		   
+		   
+		   indexvm.display = function(){
+		   console.log("hi"); 
+		 } 
+	  }
+	 
+ })();

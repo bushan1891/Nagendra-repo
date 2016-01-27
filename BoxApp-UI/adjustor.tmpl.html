@@ -1,0 +1,71 @@
+
+
+<div class="content">
+
+    <div class=" jumbotron card">
+        <!--this is the header  -->
+        <div class="row">
+            <div class="col-xs-4">
+                <div class=".profile-img-card">
+                    <a href="#" class="thumbnail">
+                        <img src="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg" alt="...">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <h3><b>Hello, {{adjustorvm.user.userName}}</b></h3>
+
+                <table class="table table-user-information">
+                    <tbody>
+                    <tr>
+                        <td><b>Department:</b></td>
+                        <td>{{adjustorvm.user.userinfo.title}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Join date:</b></td>
+                        <td>{{adjustorvm.user.userinfo.joinDate}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Date of Birth</b></td>
+                        <td>{{adjustorvm.user.userinfo.dob}}</td>
+                    </tr>
+
+                    <tr>
+                    <tr>
+                        <td><b>Gender</b></td>
+                        <td>{{adjustorvm.user.userinfo.gender}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Home Address</b></td>
+                        <td>{{adjustorvm.user.userinfo.address}}</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><a href="mailto:info@support.com">{{adjustorvm.user.userEmail}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Phone Number</b></td>
+                        <td>{{adjustorvm.user.userinfo.phone}}
+                            <br>
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+        <!--this is the Content  -->
+
+
+
+    </div>
+
+
+
+</div>
+

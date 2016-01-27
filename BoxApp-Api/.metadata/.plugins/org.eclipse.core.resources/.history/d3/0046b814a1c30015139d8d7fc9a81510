@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jcs.model">
+    <class name="Claim" table="Claim">
+        <id name="claimNumber" column="claimNumber" type="string">
+            
+        </id>
+        
+        <property name="firstName" column="ClaimantFirstName" />
+        <property name="lastName" column="ClaimantLastName" />
+        <property name="status" column="Status" />
+        <property name="lossDate" column="LossDate" type="java.util.Date" />
+        <property name="causeOfLoss" column="CauseOfLoss" />
+        <property name="reportedDate" column="ReportedDate" type="java.util.Date" />
+        <property name="lossDescription" column="LossDescription" />
+        <property name="assignedAdjusterId" column="AssignedAdjusterID" />
+        
+        
+         
+        
+        <set name="vehicle"  lazy="true" table="Vehicle" fetch="select">
+            <key>
+                <column name="ClaimNumber" not-null="false"></column>
+            </key>
+            <one-to-many class="Vehicle"/>
+        </set>
+        
+        
+    </class> 
+</hibernate-mapping>

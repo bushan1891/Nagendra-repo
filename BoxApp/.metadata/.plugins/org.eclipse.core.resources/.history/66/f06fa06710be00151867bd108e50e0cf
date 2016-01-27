@@ -1,0 +1,21 @@
+ (function(){
+	 'use strict'
+	  angular.module('BoxApp',[]);
+	 
+	  angular.module('BoxApp').controller('ControllerFn',controllerfn);
+	  
+	  function controllerfn(){
+		   var indexvm= this;
+		   // todo : later bing this data from backend 
+		   // use ajax request 
+		 
+		   console.log( indexvm.user);
+		   console.log(indexvm.password)
+		   
+		   
+		   personvm.display = function(){
+		   console.log("hi"); 
+		 } 
+	  }
+	 
+ })();

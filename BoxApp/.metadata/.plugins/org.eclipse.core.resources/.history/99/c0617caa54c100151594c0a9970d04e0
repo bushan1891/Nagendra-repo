@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 22, 2016 2:01:16 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping default-cascade="all" default-lazy="false">
+ <class name="com.jcs.model.User" table="USER">
+  <id name="UserID" type="int">
+   <column name="USERID"/>
+   <generator class="assigned"/>
+  </id>
+  <one-to-one class="com.jcs.model.UserInfo" name="userinfo"/>
+  <set lazy="true" name="claim" sort="unsorted" table="CLAIM">
+   <key>
+    <column name="USERID"/>
+   </key>
+   <one-to-many class="com.jcs.model.Claim"/>
+  </set>
+ </class>
+</hibernate-mapping>

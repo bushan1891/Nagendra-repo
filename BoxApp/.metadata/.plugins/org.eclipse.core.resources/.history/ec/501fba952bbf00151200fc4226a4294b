@@ -1,0 +1,57 @@
+package com.jcs.model;
+
+import java.io.Serializable;
+
+public class User implements Serializable {
+	
+	private int UserID;
+	private String UserName;
+	private String UserEmail;
+	private String UserKey;
+    private String UserType;
+	UserInfo userinfo;
+    
+    
+    
+    public UserInfo getUserinfo() {
+		return userinfo;
+	}
+	public void setUserinfo(UserInfo userinfo) {
+		this.userinfo = userinfo;
+	}
+	public String getUserName() {
+		return UserName;
+	}
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+	public int getUserID() {
+		return UserID;
+	}
+	public void setUserID(int userID) {
+		UserID = userID;
+	}
+	public String getUserEmail() {
+		return UserEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		UserEmail = userEmail;
+	}
+	public String getUserKey() {
+		return UserKey;
+	}
+	public void setUserKey(String userKey) {
+		UserKey = userKey;
+	}
+	public String getUserType() {
+		return UserType;
+	}
+	public void setUserType(String userType) {
+		UserType = userType;
+	}
+    
+    
+    
+    
+
+}

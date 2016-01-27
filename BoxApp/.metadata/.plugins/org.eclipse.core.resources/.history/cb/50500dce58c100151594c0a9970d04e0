@@ -1,0 +1,15 @@
+package com.jcs.model;
+
+public class Claim {
+
+	private int ClaimID;
+
+	public int getClaimID() {
+		return ClaimID;
+	}
+
+	public void setClaimID(int claimID) {
+		ClaimID = claimID;
+	}
+	
+}

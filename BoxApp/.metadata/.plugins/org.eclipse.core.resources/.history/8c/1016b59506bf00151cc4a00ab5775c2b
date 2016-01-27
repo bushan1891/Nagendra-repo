@@ -1,0 +1,32 @@
+package com.jcs.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.jcs.model.*;
+import com.jcs.util.HibernateUtil;
+public class Boxservice implements BoxserviceInterface {
+
+	
+	public List<User> fetchAll() throws Exception {
+	    
+		List<User> user = new ArrayList<User>();
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();  
+        Session session = sessionFactory.openSession();
+        session.beginTransaction(); 
+		try{
+        user = session.createQuery("From User").list();
+		session.close();
+		}
+		catch(Exception e){
+			System.out.println(e);
+		}
+		return user;
+		
+	}
+	
+	
+}

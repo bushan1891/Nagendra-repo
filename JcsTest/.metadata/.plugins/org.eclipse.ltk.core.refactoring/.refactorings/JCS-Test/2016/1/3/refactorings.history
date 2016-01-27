@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;UserController.java&apos; to &apos;JCS-Test/src/main/java/jcs.contorller&apos;&#x0D;&#x0A;- Original project: &apos;JCS-Test&apos;&#x0D;&#x0A;- Destination element: &apos;JCS-Test/src/main/java/jcs.contorller&apos;&#x0D;&#x0A;- Original element: &apos;JCS_test.JCS_Test.UserController.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;jcs.contorller" element1="/src\/main\/java&lt;JCS_test.JCS_Test{UserController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1452711321743" units="1" version="1.0"/>
+</session>

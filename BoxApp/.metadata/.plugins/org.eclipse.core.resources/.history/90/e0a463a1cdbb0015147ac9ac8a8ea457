@@ -1,0 +1,6 @@
+@CHARSET "ISO-8859-1";
+
+#logo {
+	max-width:50px;
+	
+}

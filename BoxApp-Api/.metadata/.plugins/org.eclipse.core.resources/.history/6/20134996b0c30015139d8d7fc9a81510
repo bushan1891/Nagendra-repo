@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2016 2:07:07 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.jcs.model.Claim" table="CLAIM" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="claimNumber" type="java.lang.String">
+            <column name="CLAIMNUMBER" />
+        </property>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="lossDate" type="java.util.Date">
+            <column name="LOSSDATE" />
+        </property>
+        <property name="causeOfLoss" type="java.lang.String">
+            <column name="CAUSEOFLOSS" />
+        </property>
+        <property name="reportedDate" type="java.util.Date">
+            <column name="REPORTEDDATE" />
+        </property>
+        <property name="lossDescription" type="java.lang.String">
+            <column name="LOSSDESCRIPTION" />
+        </property>
+        <property name="assignedAdjuster" type="int">
+            <column name="ASSIGNEDADJUSTER" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

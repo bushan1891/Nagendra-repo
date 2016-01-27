@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="all" default-lazy="false" package="com.jcs.model">
+ <class name="Claim" table="Claim">
+  <id column="claimNumber" name="claimNumber" type="string"/>
+  <property column="ClaimantFirstName" generated="never" lazy="false" name="firstName"/>
+  <property column="ClaimantLastName" generated="never" lazy="false" name="lastName"/>
+  <property column="Status" generated="never" lazy="false" name="status"/>
+  <property column="LossDate" generated="never" lazy="false"
+   name="lossDate" type="java.util.Date"/>
+  <property column="CauseOfLoss" generated="never" lazy="false" name="causeOfLoss"/>
+  <property column="ReportedDate" generated="never" lazy="false"
+   name="reportedDate" type="java.util.Date"/>
+  <property column="LossDescription" generated="never" lazy="false" name="lossDescription"/>
+  <property column="AssignedAdjusterID" generated="never" lazy="false" name="assignedAdjusterId"/>
+  <set fetch="select" lazy="true" name="vehicle" sort="unsorted" table="Vehicle">
+   <key>
+    <column name="ClaimNumber" not-null="false"/>
+   </key>
+   <one-to-many class="Vehicle"/>
+  </set>
+ </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 25, 2016 12:55:32 PM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping default-cascade="all" default-lazy="false">
+ <class name="com.jcs.model.Claim" table="CLAIM">
+  <id name="assignedAdjusterId" type="int">
+   <column name="ASSIGNEDADJUSTERID"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="claimNumber" type="java.lang.String">
+   <column name="CLAIMNUMBER"/>
+  </property>
+  <property generated="never" lazy="false" name="firstName" type="java.lang.String">
+   <column name="FIRSTNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="lastName" type="java.lang.String">
+   <column name="LASTNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="status" type="java.lang.String">
+   <column name="STATUS"/>
+  </property>
+  <property generated="never" lazy="false" name="lossDate" type="java.util.Date">
+   <column name="LOSSDATE"/>
+  </property>
+  <property generated="never" lazy="false" name="causeOfLoss" type="java.lang.String">
+   <column name="CAUSEOFLOSS"/>
+  </property>
+  <property generated="never" lazy="false" name="reportedDate" type="java.util.Date">
+   <column name="REPORTEDDATE"/>
+  </property>
+  <property generated="never" lazy="false" name="lossDescription" type="java.lang.String">
+   <column name="LOSSDESCRIPTION"/>
+  </property>
+  <many-to-one class="com.jcs.model.Vehicle" fetch="join" name="vehicle">
+   <column name="VEHICLE"/>
+  </many-to-one>
+ </class>
+</hibernate-mapping>

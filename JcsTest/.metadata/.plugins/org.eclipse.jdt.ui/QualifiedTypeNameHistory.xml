@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="jcs.service.UserService"/>
+<fullyQualifiedTypeName name="org.eclipse.jetty.server.Response"/>
+<fullyQualifiedTypeName name="com.box.sdk.CreateUserParams"/>
+<fullyQualifiedTypeName name="com.box.sdk.BoxCollaboration"/>
+<fullyQualifiedTypeName name="com.box.sdk.BoxAPIRequest"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="java.awt.Desktop"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.squareup.okhttp.OkHttpClient"/>
+<fullyQualifiedTypeName name="com.squareup.okhttp.MediaType"/>
+<fullyQualifiedTypeName name="com.squareup.okhttp.RequestBody"/>
+<fullyQualifiedTypeName name="org.eclipse.jetty.server.Request"/>
+<fullyQualifiedTypeName name="org.eclipse.jetty.server.Request.MultiPartCleanerListener"/>
+<fullyQualifiedTypeName name="com.squareup.okhttp.Request"/>
+</qualifiedTypeNameHistroy>
