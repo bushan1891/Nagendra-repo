@@ -125,30 +125,14 @@ public class BoxService {
 
 	public User fetchone(String email) throws Exception {
 
-//		List<User> users = fetchAll();
-//
-//		for (User usr : users) {
-//			System.out.println(usr.getUserEmail() + email);
-//			if (usr.getUserEmail().equals(email))
-//
-//				return usr;
-//		}
-		
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		session.beginTransaction();
-		try{
-		String hql = "from User u where u.UserEmail = :email";
-		List<User> result = session.createQuery(hql)
-		.setParameter("email", email)
-		.list();
-		
-		return result.get(0);
+		List<User> users = fetchAll();
+
+		for (User usr : users) {
+			System.out.println(usr.getUserEmail() + email);
+			if (usr.getUserEmail().equals(email))
+
+				return usr;
 		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-		
 
 		return null;
 
@@ -196,14 +180,14 @@ public class BoxService {
 		// assign claim id as the user id 
 		
 		User usr = fetchone(email);
-		DateFormat df = new SimpleDateFormat("dd/MM/yy hh/mm/ss");
+		DateFormat df = new SimpleDateFormat("dd/MM/yy");
 		Date date = new Date(0);
-	    String str = usr.getUserID()+ "claim" + claim.getClaimID();
+	    String str = usr.getUserID()+ "claim" + df.format(date)  ;
 		
 	    claim.setClaimID(str);
 	    claim.setAssignedAdjuster(2);
 	    claim.setStatus("pending");
-	    claim.setReportedDate(date);
+	    
 	    
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -223,28 +207,13 @@ public class BoxService {
 	}
 	
 	
-	public Vehicle createVehicle(Vehicle vehicle, String email ) throws Exception{
+	public Vehicle createVehicle(Vehicle vehicle) throws Exception{
 		
-		User usr = fetchone(email);
-		
-		//vehicle.setId(usr.getUserID());
-		
-		 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
-		try {
 		
-			
-			String hql = "from Claim c where c.Vehicle = :vin";
-			List<Claim> result = session.createQuery(hql)
-			.setParameter("vin", vehicle.getVin())
-			.list();
-			
-			
-			
-			vehicle.setClaimNumber(result.get(0).getClaimID());
-			
+		try {
 			
 			session.save(vehicle);
 			session.getTransaction().commit();

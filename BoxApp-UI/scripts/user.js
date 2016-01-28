@@ -24,31 +24,34 @@
 
             console.log("claim form called ");
 
-            var currentDate = new Date().getDate();
+            var currentDate = new Date().getMilliseconds();
 
 
-            uservm.newClaim.claimID = uservm.user.userinfo.UserID;    // assigning the current user id as the claim id // can be modified later
+            uservm.newClaim.claimID = currentDate;    // can be modified later
             uservm.newClaim.status="pending";
             uservm.newClaim.reportedDate = currentDate; // get the current date
-            uservm.newClaim.assignedAdjustor = 2;    // will handle this in the back end
-            uservm.Vehicle = uservm.newVehicle.vin;    // assign the current vehicle vin
+            uservm.newClaim.assignedAdjuster = 2;    // will handle this in the back end
+            uservm.newClaim.vehicle = uservm.newVehicle.vin;    // assign the current vehicle vin
 
 
-            uservm.newVehicle.id = uservm.user.userinfo.UserID;
+            uservm.newVehicle.id = currentDate;
             uservm.newVehicle.claimNumber = uservm.newClaim.claimID;
 
 
             console.dir(uservm.newClaim);
             console.dir(uservm.newVehicle);
 
-            Service.createClaim(uservm.newClaim);
-            Service.createVehicle(uservm.newVehicle);
+
+            Service.createClaim(uservm.newClaim, uservm.newVehicle);
 
 
 
-            // once pushed to the backend clean the claim and vehicle
-           // uservm.newClaim= null;
-           // uservm.newVehicle= null;
+           // Service.createVehicle(uservm.newVehicle);
+
+
+             //once pushed to the backend clean the claim and vehicle
+            uservm.newClaim= null;
+            uservm.newVehicle= null;
 
 
         }

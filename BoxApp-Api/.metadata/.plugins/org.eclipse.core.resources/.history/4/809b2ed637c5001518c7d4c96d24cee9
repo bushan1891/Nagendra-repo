@@ -125,30 +125,14 @@ public class BoxService {
 
 	public User fetchone(String email) throws Exception {
 
-//		List<User> users = fetchAll();
-//
-//		for (User usr : users) {
-//			System.out.println(usr.getUserEmail() + email);
-//			if (usr.getUserEmail().equals(email))
-//
-//				return usr;
-//		}
-		
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		session.beginTransaction();
-		try{
-		String hql = "from User u where u.UserEmail = :email";
-		List<User> result = session.createQuery(hql)
-		.setParameter("email", email)
-		.list();
-		
-		return result.get(0);
+		List<User> users = fetchAll();
+
+		for (User usr : users) {
+			System.out.println(usr.getUserEmail() + email);
+			if (usr.getUserEmail().equals(email))
+
+				return usr;
 		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-		
 
 		return null;
 
@@ -223,28 +207,13 @@ public class BoxService {
 	}
 	
 	
-	public Vehicle createVehicle(Vehicle vehicle, String email ) throws Exception{
+	public Vehicle createVehicle(Vehicle vehicle) throws Exception{
 		
-		User usr = fetchone(email);
-		
-		//vehicle.setId(usr.getUserID());
-		
-		 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
-		try {
 		
-			
-			String hql = "from Claim c where c.Vehicle = :vin";
-			List<Claim> result = session.createQuery(hql)
-			.setParameter("vin", vehicle.getVin())
-			.list();
-			
-			
-			
-			vehicle.setClaimNumber(result.get(0).getClaimID());
-			
+		try {
 			
 			session.save(vehicle);
 			session.getTransaction().commit();

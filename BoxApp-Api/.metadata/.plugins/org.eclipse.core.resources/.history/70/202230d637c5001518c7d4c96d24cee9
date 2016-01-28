@@ -120,29 +120,19 @@ public class HomeController {
 		 System.out.println(email);
 		
 		
-		return responseClaim;
+		return claim;
 		
 	}
 	
 	
 	@POST
-	@Path("/claim/vehicle")
+	@Path("/claim/Vehicle")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Vehicle createVehicle(@QueryParam(value = "email")String email,Vehicle vehicle) {
 		
 		
 		System.out.println(email + vehicle.getClaimNumber()); 
-		BoxService service = new BoxService();
-		
-		try {
-			Vehicle responseVehicle = service.createVehicle(vehicle, email);
-		} catch (Exception e) {
-		
-			e.printStackTrace();
-		}
-		
-		
 		
 		return vehicle;
 	}

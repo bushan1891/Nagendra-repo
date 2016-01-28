@@ -126,7 +126,7 @@ public class HomeController {
 	
 	
 	@POST
-	@Path("/claim/vehicle")
+	@Path("/claim/Vehicle")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Vehicle createVehicle(@QueryParam(value = "email")String email,Vehicle vehicle) {

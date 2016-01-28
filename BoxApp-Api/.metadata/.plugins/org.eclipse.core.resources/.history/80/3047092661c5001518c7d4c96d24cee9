@@ -227,7 +227,7 @@ public class BoxService {
 		
 		User usr = fetchone(email);
 		
-		//vehicle.setId(usr.getUserID());
+		vehicle.setId(usr.getUserID());
 		
 		 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();

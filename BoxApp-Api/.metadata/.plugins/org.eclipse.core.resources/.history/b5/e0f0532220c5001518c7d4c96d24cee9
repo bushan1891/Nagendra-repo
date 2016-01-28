@@ -1,8 +1,5 @@
 package com.jcs.service;
 
-import java.sql.Date;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -119,36 +116,25 @@ public class BoxService {
 			e.printStackTrace();
 		}
 
+		//System.out.println(user.get(0).getUserName());
+		// System.out.println(user.get(1).getUserName());
+
+		// System.out.println(user.get(0).getUserName());
+
 		return user;
 
 	}
 
 	public User fetchone(String email) throws Exception {
 
-//		List<User> users = fetchAll();
-//
-//		for (User usr : users) {
-//			System.out.println(usr.getUserEmail() + email);
-//			if (usr.getUserEmail().equals(email))
-//
-//				return usr;
-//		}
-		
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		session.beginTransaction();
-		try{
-		String hql = "from User u where u.UserEmail = :email";
-		List<User> result = session.createQuery(hql)
-		.setParameter("email", email)
-		.list();
-		
-		return result.get(0);
+		List<User> users = fetchAll();
+
+		for (User usr : users) {
+			System.out.println(usr.getUserEmail() + email);
+			if (usr.getUserEmail().equals(email))
+
+				return usr;
 		}
-		catch(Exception e){
-			e.printStackTrace();
-		}
-		
 
 		return null;
 
@@ -191,20 +177,8 @@ public class BoxService {
 	}	
 	
 	
-	public Claim createClaim(Claim claim , String email) throws Exception{
+	public Claim createClaim(Claim claim) throws Exception{
 		
-		// assign claim id as the user id 
-		
-		User usr = fetchone(email);
-		DateFormat df = new SimpleDateFormat("dd/MM/yy hh/mm/ss");
-		Date date = new Date(0);
-	    String str = usr.getUserID()+ "claim" + claim.getClaimID();
-		
-	    claim.setClaimID(str);
-	    claim.setAssignedAdjuster(2);
-	    claim.setStatus("pending");
-	    claim.setReportedDate(date);
-	    
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
@@ -223,28 +197,13 @@ public class BoxService {
 	}
 	
 	
-	public Vehicle createVehicle(Vehicle vehicle, String email ) throws Exception{
+	public Vehicle createVehicle(Vehicle vehicle) throws Exception{
 		
-		User usr = fetchone(email);
-		
-		//vehicle.setId(usr.getUserID());
-		
-		 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
-		try {
 		
-			
-			String hql = "from Claim c where c.Vehicle = :vin";
-			List<Claim> result = session.createQuery(hql)
-			.setParameter("vin", vehicle.getVin())
-			.list();
-			
-			
-			
-			vehicle.setClaimNumber(result.get(0).getClaimID());
-			
+		try {
 			
 			session.save(vehicle);
 			session.getTransaction().commit();

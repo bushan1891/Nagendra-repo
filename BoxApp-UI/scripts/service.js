@@ -16,6 +16,8 @@
     self.logged =logged; 
      self.getLogged=getLogged;
       self.getClaims=getClaims;
+      self.createClaim=createClaim;
+      self.createVehicle=createVehicle;
    
     function logged(loggedUser){
 
@@ -84,7 +86,7 @@
     }
 
 
-      function createClaim(claim){
+      function createClaim(claim , vehicle){
 
           var defer = $q.defer();
           var url = "http://localhost:8080/BoxApp-Api/api/claim/claim/create?email=" + self.logd.userEmail ;
@@ -94,6 +96,9 @@
               .then(successFn, errorFn);
 
           function successFn(response) {
+                // nested calls
+              createVehicle(vehicle);
+
               defer.resolve(response.data);
           }
 
@@ -108,9 +113,9 @@
 
 
       function createVehicle(vehicle){
-
+          console.log("inside create vehicle now")
           var defer = $q.defer();
-          var url = "http://localhost:8080/BoxApp-Api/api/claim/vehicle/create?email=" + self.logd.userEmail;
+          var url = "http://localhost:8080/BoxApp-Api/api/claim/claim/vehicle?email=" + self.logd.userEmail;
 
           $http
               .post(url,vehicle)
