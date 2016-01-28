@@ -1,6 +1,4 @@
-
-
-<div class="content">
+<div class="content myoverflow">
 
     <div class=" jumbotron card">
         <!--this is the header  -->
@@ -8,7 +6,8 @@
             <div class="col-xs-4">
                 <div class=".profile-img-card">
                     <a href="#" class="thumbnail">
-                        <img src="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg" alt="...">
+                        <img src="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg"
+                             alt="...">
                     </a>
                 </div>
             </div>
@@ -60,12 +59,66 @@
             </div>
         </div>
         <!--this is the Content  -->
+        <div>
+
+            <div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h4>Claims</h4>
+                    </div>
+                    <div class="panel-body mytable">
 
 
+                        <table data-toggle="table " class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>ClaimID</th>
+                                <th>Status</th>
+                                <th>loss Date</th>
+                                <th>Reported Date</th>
+                                <th>Loss Description</th>
+                                <th>Assigned Adjustor</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="claim in uservm.claims  ">
+                                <td>{{claim.claimID}}</td>
+                                <td>{{claim.status}}</td>
+                                <td>{{claim.lossDate}}</td>
+                                <td>{{claim.reportedDate}}</td>
+                                <td>{{claim.lossDescription}}</td>
+                                <td>{{claim.assignedAdjustor}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h4>Claims</h4>
+                    </div>
+                    <div class="panel-body mytable">
+
+
+                        <table data-toggle="table " class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>ClaimID</th>
+                                <th>Status</th>
+                                <th>Assigned Adjustor</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="claim in uservm.claims  ">
+                                <td>{{claim.claimID}}</td>
+                                <td>{{claim.status}}</td>
+                                <td>{{claim.assignedAdjustor}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
 </div>
-

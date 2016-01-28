@@ -30,8 +30,9 @@ public class BoxService {
 		Vehicle v = new Vehicle();
 
 		c.setClaimID("cllaim new");
-
+		
 		v.setVin("vinno");
+		
 
 		vehicle.add(v);
 		claim.add(c);
@@ -39,7 +40,8 @@ public class BoxService {
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
-
+		
+		
 		try {
 			session.save(v);
 			session.save(c);
@@ -49,6 +51,7 @@ public class BoxService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 
 		return claim;
 	}
@@ -122,37 +125,42 @@ public class BoxService {
 
 	public User fetchone(String email) throws Exception {
 
-		// List<User> users = fetchAll();
-		//
-		// for (User usr : users) {
-		// System.out.println(usr.getUserEmail() + email);
-		// if (usr.getUserEmail().equals(email))
-		//
-		// return usr;
-		// }
-
+//		List<User> users = fetchAll();
+//
+//		for (User usr : users) {
+//			System.out.println(usr.getUserEmail() + email);
+//			if (usr.getUserEmail().equals(email))
+//
+//				return usr;
+//		}
+		
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
-		try {
-			String hql = "from User u where u.UserEmail = :email";
-			List<User> result = session.createQuery(hql).setParameter("email", email).list();
-
-			return result.get(0);
-		} catch (Exception e) {
+		try{
+		String hql = "from User u where u.UserEmail = :email";
+		List<User> result = session.createQuery(hql)
+		.setParameter("email", email)
+		.list();
+		
+		return result.get(0);
+		}
+		catch(Exception e){
 			e.printStackTrace();
 		}
+		
 
 		return null;
 
 	}
-
+	
+	
 	public List<Claim> fetchAllClaim(String email) throws Exception {
 
 		User usr = fetchone(email);
-
+		
 		List<Claim> claimlist = new ArrayList<Claim>();
-
+		
 		List<Claim> claim = new ArrayList<Claim>();
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -167,40 +175,42 @@ public class BoxService {
 			e.printStackTrace();
 		}
 
-		// filtering claims with respect to the user claim can be done on db
-		// side
-
-		for (Claim c : claim) {
-			int x = Character.getNumericValue(c.getClaimID().charAt(0));
-			if (x == usr.getUserID()) {
+		// filtering claims with respect to the user claim can be done on db side  
+		
+		 for(Claim c : claim ){
+			 int x = Character.getNumericValue(c.getClaimID().charAt(0));
+			 if(x== usr.getUserID() )
+			{
 				claimlist.add(c);
 			}
-		}
+		 }
+
 
 		return claimlist;
 
-	}
-
-	public Claim createClaim(Claim claim, String email) throws Exception {
-
-		// assign claim id as the user id
-
+	}	
+	
+	
+	public Claim createClaim(Claim claim , String email) throws Exception{
+		
+		// assign claim id as the user id 
+		
 		User usr = fetchone(email);
 		DateFormat df = new SimpleDateFormat("dd/MM/yy hh/mm/ss");
 		Date date = new Date(0);
-		String str = usr.getUserID() + "claim" + claim.getClaimID();
-
-		claim.setClaimID(str);
-		claim.setAssignedAdjuster(2);
-		claim.setStatus("pending");
-		claim.setReportedDate(date);
-
+	    String str = usr.getUserID()+ "claim" + claim.getClaimID();
+		
+	    claim.setClaimID(str);
+	    claim.setAssignedAdjuster(2);
+	    claim.setStatus("pending");
+	    claim.setReportedDate(date);
+	    
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
-
+		
 		try {
-
+			
 			session.save(claim);
 			session.getTransaction().commit();
 			System.out.println(" request to push claim has been pushed ");
@@ -208,26 +218,34 @@ public class BoxService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 		return claim;
 	}
-
-	public Vehicle createVehicle(Vehicle vehicle, String email) throws Exception {
-
+	
+	
+	public Vehicle createVehicle(Vehicle vehicle, String email ) throws Exception{
+		
 		User usr = fetchone(email);
-
-		// vehicle.setId(usr.getUserID());
-
+		
+		//vehicle.setId(usr.getUserID());
+		
+		 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		try {
-
+		
+			
 			String hql = "from Claim c where c.Vehicle = :vin";
-			List<Claim> result = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
-
+			List<Claim> result = session.createQuery(hql)
+			.setParameter("vin", vehicle.getVin())
+			.list();
+			
+			
+			
 			vehicle.setClaimNumber(result.get(0).getClaimID());
-
+			
+			
 			session.save(vehicle);
 			session.getTransaction().commit();
 			System.out.println(" request to push Vehicle has been pushed ");
@@ -235,8 +253,11 @@ public class BoxService {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+		
 		return vehicle;
 	}
+	
+	
+	
 
 }

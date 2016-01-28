@@ -29,7 +29,6 @@ public class UserInfo implements Serializable {
 	private String gender;
 	private String title;
 	private String email;
-	private String imgurl;
 	
 	
 	public Date getDob() {
@@ -82,12 +81,6 @@ public class UserInfo implements Serializable {
 	}
 	public void setUserID(int userID) {
 		this.UserID = userID;
-	}
-	public String getImgurl() {
-		return imgurl;
-	}
-	public void setImgurl(String imgurl) {
-		this.imgurl = imgurl;
 	}
 
 	

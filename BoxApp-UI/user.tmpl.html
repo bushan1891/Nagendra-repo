@@ -1,14 +1,14 @@
 
 
-    <div class="content">
+    <div class="content myoverflow">
 
         <div class=" jumbotron card">
             <!--this is the header  -->
             <div class="row">
                 <div class="col-xs-4">
-                    <div class=".profile-img-card">
+                    <div class=".profile-img-card1">
                         <a href="#" class="thumbnail">
-                            <img src="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg" alt="...">
+                            <img src="{{uservm.user.userinfo.imgurl}}" alt="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg">
                         </a>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading"><h4>Claims
                       <!-- Modal button create a new Claim -->
-                    <button type="button" class="btn btn-info btn-lg pull-right pad" data-toggle="modal" data-target="#myModal">Open Modal</button>
+                    <button type="button" class="btn btn-info btn-lg pull-right pad" data-toggle="modal" data-target="#myModal">Create Claim</button>
 
 
                     <!-- Modal -->
@@ -182,15 +182,13 @@
 
 
                 </h4></div>
-                <div class="panel-body">
+                <div class="panel-body mytable" >
 
 
                     <table data-toggle="table " class ="table table-striped">
                         <thead>
                         <tr>
                             <th>ClaimID</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
                             <th>Status</th>
                             <th>loss Date</th>
                             <th>Cause Of Loss</th>
@@ -201,10 +199,8 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr ng-repeat="claim in uservm.claims  ">
+                        <tr ng-repeat="claim in uservm.claims  "  ng-class ="{ danger : claim.status!=pending , success : claim.status!=approved, warning : claim!=null  }"  >
                             <td>{{claim.claimID}}  </td>
-                            <td>{{claim.firstName}}</td>
-                            <td>{{claim.lastName}}</td>
                             <td>{{claim.status}}</td>
                             <td>{{claim.lossDate}}</td>
                             <td>{{claim.causeOfLoss}}</td>

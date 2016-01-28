@@ -29,8 +29,5 @@
   <property generated="never" lazy="false" name="email" type="java.lang.String">
    <column name="EMAIL"/>
   </property>
-  <property generated="never" lazy="false" name="imgurl" type="java.lang.String">
-   <column name="IMGURL"/>
-  </property>
  </class>
 </hibernate-mapping>
