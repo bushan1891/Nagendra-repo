@@ -1,36 +1,88 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('BoxApp')
-    .controller('AgentController', AgentController);
-    
+    angular
+        .module('BoxApp')
+        .controller('AgentController', AgentController);
+
     //EmployeesController.$inject = ['employeeService'];
     // inject it later employeeService down parameter 
-  
-  AgentController.$inject = [ '$location', 'Service' ];
-  
-    function AgentController($location,Service ) {
-      
-    	var agentvm = this;
-      agentvm.user;
 
-    	
+    AgentController.$inject = ['$location', 'Service'];
 
-      console.log('I am here at the Agentcontroller controller ');
+    function AgentController($location, Service) {
+
+        var agentvm = this;
+        agentvm.user;
+        agentvm.claimsPending;
+        agentvm.claimsApproved;
+        agentvm.status = "Set Status";
+        agentvm.updateClaim = updateClaim;
+        agentvm.claimupdate;
+
+        function updateClaim() {
+
+            window.alert('Updated');
+            console.dir(agentvm.claimupdate);
+            Service.updateClaim(agentvm.claimupdate).then(function (claim) {
+
+               console.log("i was updated");
+                claimload();
+
+
+            }, function (error) {
+                console.log(error);
+            });
 
 
 
-      logged();
 
-      function logged(){
+        }
 
-        agentvm.user = Service.getLogged()
+        function setstatus(status) {
 
-      }
+            agentvm.status = status;
+            console.log("status function was called ");
 
+        }
+
+
+        console.log('I am here at the Agentcontroller controller ');
+
+
+        logged();
+
+        function logged() {
+
+            agentvm.user = Service.getLogged();
+            claimload();
+
+        }
+
+        function claimload(){
+
+            Service.getClaimsAgent("pending").then(function (claim) {
+
+                agentvm.claimsPending = claim;
+                console.log("got all clamins for pending");
+                console.dir(agentvm.claimsPending);
+
+            }, function (error) {
+                console.log(error);
+            });
+
+            Service.getClaimsAgent("approved").then(function (claim) {
+
+                agentvm.claimsApproved = claim;
+                console.log("got all clamins for approved");
+                console.dir(agentvm.claimsApproved);
+
+            }, function (error) {
+                console.log(error);
+            });
+        }
 
 
     }
-    
+
 })();

@@ -1,6 +1,6 @@
 
 
-    <div class="content myoverflow">
+    <div class="container content myoverflow">
 
         <div class=" jumbotron card">
             <!--this is the header  -->
@@ -184,7 +184,7 @@
                 </h4></div>
                 <div class="panel-body mytable" >
 
-
+                    <label>Search: <input ng-model="searchText"></label>
                     <table data-toggle="table " class ="table table-striped">
                         <thead>
                         <tr>
@@ -199,7 +199,7 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr ng-repeat="claim in uservm.claims  "  ng-class ="{ danger : claim.status!=pending , success : claim.status!=approved, warning : claim!=null  }"  >
+                        <tr ng-repeat="claim in uservm.claims | filter : searchText  "  ng-class ="{ danger : claim.status!=pending , success : claim.status!=approved, warning : claim!=null  }"  >
                             <td>{{claim.claimID}}  </td>
                             <td>{{claim.status}}</td>
                             <td>{{claim.lossDate}}</td>

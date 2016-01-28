@@ -13,6 +13,7 @@ import javax.persistence.EntityManager;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 
 import com.jcs.model.*;
 import com.jcs.util.HibernateUtil;
@@ -181,6 +182,34 @@ public class BoxService {
 
 	}
 
+    // fetching all the claims for the agent  based on the status 	 
+	public List<Claim> fetchAllClaimPending(String status) throws Exception {
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		try {
+			
+			String hql = "from Claim c where c.status = :status";
+			List<Claim> result = session.createQuery(hql).setParameter("status", status).list(); // loads the value based on the status
+			session.getTransaction().commit();
+			session.close();
+			return result;
+		}
+
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		
+		return null;
+
+	}
+		
+	
+	
+	
+	
 	public Claim createClaim(Claim claim, String email) throws Exception {
 
 		// assign claim id as the user id
@@ -190,10 +219,10 @@ public class BoxService {
 		Date date = new Date(0);
 		String str = usr.getUserID() + "claim" + claim.getClaimID();
 
-		claim.setClaimID(str);
-		claim.setAssignedAdjuster(2);
-		claim.setStatus("pending");
-		claim.setReportedDate(date);
+		claim.setClaimID(str);            // custom claim no generator
+		claim.setAssignedAdjuster(2);    // have to change this  
+		claim.setStatus("pending");     //setting the claim to pending initially 
+		claim.setReportedDate(date);    // check this once you are over writing this in the front end to this should not be here 
 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -239,4 +268,34 @@ public class BoxService {
 		return vehicle;
 	}
 
+	
+	public Claim updateClaim(Claim claim){
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction tx= null;
+		try{
+			tx = session.beginTransaction();
+			Claim c = (Claim) session.get(Claim.class, claim.getClaimID());
+			c.setStatus(claim.getStatus());
+			session.update(c);
+			System.out.println(c.getStatus());
+			tx.commit();
+			session.close();
+			return c;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
 }

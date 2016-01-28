@@ -6,6 +6,7 @@ import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -74,83 +75,102 @@ public class HomeController {
 
 		BoxService service = new BoxService();
 
-		//service.dummypushClaim();
+		// service.dummypushClaim();
 
 		List<Claim> claim = new ArrayList<Claim>();
 
 		try {
-			claim = service.fetchAllClaim(email);    // get all claims for the particular user
+			claim = service.fetchAllClaim(email); // get all claims for the
+													// particular user
 		} catch (Exception e) {
 
 			e.printStackTrace();
 		}
-		
+
 		Gson gson = new Gson();
 		String Json = null;
 		try {
-			 Json = gson.toJson(claim);
+			Json = gson.toJson(claim);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 		return Json;
 	}
+
+	@GET
+	@Path("/claims/agent")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Claim> getAgentClaim(@QueryParam(value = "status") String status) {
+
+		BoxService service = new BoxService();
+		List<Claim> claim;
+		try {
+			claim = service.fetchAllClaimPending(status);
+			return claim;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
 	
-	
+
 	@POST
 	@Path("/claim/create")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Claim createClaim(@QueryParam(value = "email")String email,Claim claim) {
-		
+	public Claim createClaim(@QueryParam(value = "email") String email, Claim claim) {
+
 		BoxService service = new BoxService();
-		
+
 		Claim responseClaim = null;
-		
-		
-		try
-		{
-			 responseClaim = service.createClaim(claim,email);
-		} 
-		catch (Exception e) {
-			
+
+		try {
+			responseClaim = service.createClaim(claim, email);
+		} catch (Exception e) {
+
 			e.printStackTrace();
 		}
-		 System.out.println(claim.getCauseOfLoss());
-		 System.out.println(email);
-		
-		
+		System.out.println(claim.getCauseOfLoss());
+		System.out.println(email);
+
 		return responseClaim;
-		
+
 	}
-	
-	
+
 	@POST
 	@Path("/claim/vehicle")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Vehicle createVehicle(@QueryParam(value = "email")String email,Vehicle vehicle) {
-		
-		
-		System.out.println(email + vehicle.getClaimNumber()); 
+	public Vehicle createVehicle(@QueryParam(value = "email") String email, Vehicle vehicle) {
+
+		System.out.println(email + vehicle.getClaimNumber());
 		BoxService service = new BoxService();
-		
+
 		try {
 			Vehicle responseVehicle = service.createVehicle(vehicle, email);
 		} catch (Exception e) {
-		
+
 			e.printStackTrace();
 		}
-		
-		
-		
+
 		return vehicle;
 	}
 	
-	
-	
-	
-	
+	@PUT
+	@Path("/claims/update")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Claim updateClaim(Claim claim){
+		
+		BoxService service = new BoxService();
+		
+		Claim c = service.updateClaim(claim);
+		
+		
+		return c;
+	}
 	
 	
 	
