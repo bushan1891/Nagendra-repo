@@ -221,10 +221,10 @@ public class BoxService {
 		claim.setClaimID(str); // custom claim no generator
 		claim.setAssignedAdjuster(""); // have to change this
 		claim.setStatus("pending"); // setting the claim to pending initially
-		                                 // check this once you are over writing
+		 // check this once you are over writing
 										// this in the front end to this should
 										// not be here
-		
+
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
@@ -278,7 +278,6 @@ public class BoxService {
 			tx = session.beginTransaction();
 			Claim c = (Claim) session.get(Claim.class, claim.getClaimID());
 			c.setStatus(claim.getStatus());
-			c.setAssignedAdjuster(claim.getAssignedAdjuster());
 			session.update(c);
 			System.out.println(c.getStatus());
 			tx.commit();

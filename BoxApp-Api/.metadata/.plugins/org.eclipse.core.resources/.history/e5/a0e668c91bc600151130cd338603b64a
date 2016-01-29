@@ -168,20 +168,10 @@ public class HomeController {
 		
 		Claim c = service.updateClaim(claim);
 		
+		
 		return c;
 	}
 	
-	@GET
-	@Path("/Adjustor")
-	@Produces(MediaType.APPLICATION_JSON)
-	public List<User> getAdjustor(){
-		
-		BoxService service = new BoxService();
-		
-		List<User> adjustors = service.getAdjustors();
-		
-		return adjustors;
-	}
 	
 	
 

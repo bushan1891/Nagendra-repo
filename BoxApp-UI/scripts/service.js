@@ -20,6 +20,7 @@
         self.createVehicle = createVehicle;
         self.getClaimsAgent = getClaimsAgent;
         self.updateClaim=updateClaim;
+        self.getAjustor=getAjustor;
 
         function logged(loggedUser) {
 
@@ -206,6 +207,30 @@
             return defer.promise;
 
         }
+
+
+
+        function getAjustor(){
+
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/Adjustor";
+
+            $http
+                .get(url)
+                .then(successFn, errorFn);
+
+            function successFn(response) {
+                defer.resolve(response.data);
+            }
+
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+
+        }
+
 
 
 

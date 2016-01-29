@@ -22,7 +22,7 @@ public class Claim implements java.io.Serializable{
 	private String causeOfLoss;
 	private Date reportedDate;
 	private String lossDescription;
-	private String assignedAdjuster;	
+	private int assignedAdjuster;	
 	private String Vehicle;
 	public Claim() {};
 	
@@ -83,11 +83,11 @@ public class Claim implements java.io.Serializable{
 		this.lossDescription = lossDescription;
 	}
 
-	public String getAssignedAdjuster() {
+	public int getAssignedAdjuster() {
 		return assignedAdjuster;
 	}
 
-	public void setAssignedAdjuster(String assignedAdjuster) {
+	public void setAssignedAdjuster(int assignedAdjuster) {
 		this.assignedAdjuster = assignedAdjuster;
 	}
 

@@ -25,11 +25,12 @@
             console.log("claim form called ");
 
             var currentDate = new Date().getMilliseconds();
+            var datereported = new Date().getDate();
+
 
 
             uservm.newClaim.claimID = currentDate;    // can be modified later
-            uservm.newClaim.status="pending";
-            uservm.newClaim.reportedDate = currentDate; // get the current date
+            uservm.newClaim.status="pending";// get the current date
             uservm.newClaim.assignedAdjuster = 2;    // will handle this in the back end
             uservm.newClaim.vehicle = uservm.newVehicle.vin;    // assign the current vehicle vin
 

@@ -19,6 +19,26 @@
         agentvm.status = "Set Status";
         agentvm.updateClaim = updateClaim;
         agentvm.claimupdate;
+        agentvm.adjustor;
+
+
+        function loadAdjustor(){
+
+            Service.getAjustor().then(function (adjustors) {
+
+                console.log("i got adjustors");
+
+                agentvm.adjustor= adjustors;
+
+                console.dir(agentvm.adjustor);
+
+            },  function (error) {
+                console.log(error);
+            });
+
+
+        }
+
 
         function updateClaim() {
 
@@ -26,7 +46,7 @@
             console.dir(agentvm.claimupdate);
             Service.updateClaim(agentvm.claimupdate).then(function (claim) {
 
-               console.log("i was updated");
+                console.log("i was updated");
                 claimload();
 
 
@@ -49,7 +69,7 @@
 
         console.log('I am here at the Agentcontroller controller ');
 
-
+        loadAdjustor();
         logged();
 
         function logged() {

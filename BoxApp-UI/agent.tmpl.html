@@ -88,20 +88,35 @@
                                 <td>{{claim.status}}</td>
                                 <td>
                                     <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">{{claim.status}}
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                                data-toggle="dropdown">{{claim.status}}
                                             <span class="caret"></span></button>
                                         <ul class="dropdown-menu">
-                                            <li><a ng-click ="claim.status='Pending'">Pending</a></li>
-                                            <li><a ng-click ="claim.status='Approved'">Approved</a></li>
+                                            <li><a ng-click="claim.status='Pending'">Pending</a></li>
+                                            <li><a ng-click="claim.status='Approved'">Approved</a></li>
                                         </ul>
                                     </div>
                                 </td>
-                                <td>{{claim.lossDate}}</td>
-                                <td>{{claim.reportedDate}}</td>
+                                <td>{{claim.lossDate.date }}</td>
+                                <td>{{claim.reportedDate.date }}</td>
                                 <td>{{claim.lossDescription}}</td>
-                                <td>{{claim.assignedAdjustor}}</td>
                                 <td>
-                                    <button class="btn"  ng-click =" agentvm.claimupdate=claim; agentvm.updateClaim();  " >Update</button>
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"
+                                                data-toggle="dropdown">{{  claim.assignedAdjuster }}
+                                            <span class="caret"></span></button>
+                                        <div class="dropdown-menu">
+                                            <ul ng-repeat="usr in agentvm.adjustor" class="list">
+                                                <li><a ng-click="claim.assignedAdjuster = usr.userName  ">{{usr.userName}}</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="btn" ng-click=" agentvm.claimupdate=claim; agentvm.updateClaim();  ">
+                                        Update
+                                    </button>
                                 </td>
                             </tr>
                             </tbody>
@@ -127,7 +142,7 @@
                             <tr ng-repeat="claim in agentvm.claimsApproved  ">
                                 <td>{{claim.claimID}}</td>
                                 <td>{{claim.status}}</td>
-                                <td>{{claim.assignedAdjustor}}</td>
+                                <td>{{claim.assignedAdjuster}}</td>
                             </tr>
                             </tbody>
                         </table>

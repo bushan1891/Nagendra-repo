@@ -29,7 +29,7 @@
         <property name="lossDescription" type="java.lang.String">
             <column name="LOSSDESCRIPTION" />
         </property>
-        <property name="assignedAdjuster" type="int">
+        <property name="assignedAdjuster" type="java.lang.String">
             <column name="ASSIGNEDADJUSTER" />
         </property>
         <property name="Vehicle" type="java.lang.String">

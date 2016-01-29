@@ -278,7 +278,6 @@ public class BoxService {
 			tx = session.beginTransaction();
 			Claim c = (Claim) session.get(Claim.class, claim.getClaimID());
 			c.setStatus(claim.getStatus());
-			c.setAssignedAdjuster(claim.getAssignedAdjuster());
 			session.update(c);
 			System.out.println(c.getStatus());
 			tx.commit();
