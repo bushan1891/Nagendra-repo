@@ -113,16 +113,6 @@ public class Claim implements java.io.Serializable{
 	}
 
 
-	public String getAdjustorStatus() {
-		return AdjustorStatus;
-	}
-
-
-	public void setAdjustorStatus(String adjustorStatus) {
-		AdjustorStatus = adjustorStatus;
-	}
-
-
 	
 
 	

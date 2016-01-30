@@ -21,6 +21,7 @@
         self.getClaimsAgent = getClaimsAgent;
         self.updateClaim=updateClaim;
         self.getAjustor=getAjustor;
+        self.getClaimsAdjustor=getClaimsAdjustor;
 
         function logged(loggedUser) {
 
@@ -167,7 +168,7 @@
         function getClaimsAgent(status) {
 
             var defer = $q.defer();
-            var url = "http://localhost:8080/BoxApp-Api/api/claim/claims/agent?status=" + status;
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/claims/agent?status=" + status ;
 
             $http
                 .get(url)
@@ -231,8 +232,30 @@
 
         }
 
+      // get claims for the adjustor
+
+       function  getClaimsAdjustor(user){
+
+           var defer = $q.defer();
+           var url = "http://localhost:8080/BoxApp-Api/api/claim/AdjustorClaim?user="+user;
+
+           $http
+               .get(url)
+               .then(successFn, errorFn);
+
+           function successFn(response) {
+               defer.resolve(response.data);
+           }
+
+           function errorFn(error) {
+               defer.reject(error.statusText);
+           }
+
+           return defer.promise;
 
 
+
+       }
 
 
     }

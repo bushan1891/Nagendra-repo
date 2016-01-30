@@ -49,10 +49,12 @@
 
            // Service.createVehicle(uservm.newVehicle);
 
-
+            uservm.claims.push(uservm.newClaim);
              //once pushed to the backend clean the claim and vehicle
             uservm.newClaim= null;
             uservm.newVehicle= null;
+
+
 
 
         }

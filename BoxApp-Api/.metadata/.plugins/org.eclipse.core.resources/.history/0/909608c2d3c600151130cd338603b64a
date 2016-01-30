@@ -12,6 +12,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+
 import com.google.gson.Gson;
 import com.jcs.model.Claim;
 import com.jcs.model.User;
@@ -192,7 +193,7 @@ public class HomeController {
 		List<Claim> claims = service.fetchAdjustorClaims(user);
 		
 		
-		return claims;
+		return null;
 	
 	}
 	

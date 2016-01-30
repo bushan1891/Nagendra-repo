@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <h3><b>Hello, {{uservm.user.userName}}</b></h3>
+                    <h3><b>Hello, {{uservm.user.userName | uppercase}}</b></h3>
 
                     <table class="table table-user-information">
                         <tbody>
@@ -203,14 +203,14 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr ng-repeat="claim in uservm.claims | filter : searchText  "  ng-class ="{ danger : claim.status!=pending , success : claim.status!=approved, warning : claim!=null  }"  >
+                        <tr ng-repeat="claim in uservm.claims | filter : searchText  "  ng-class ="{ danger : claim.status=='pending' , success : claim.status== 'Approved' }"  >
                             <td>{{claim.claimID}}  </td>
                             <td>{{claim.status}}</td>
                             <td>{{claim.lossDate}}</td>
                             <td>{{claim.causeOfLoss}}</td>
                             <td>{{claim.reportedDate}}</td>
                             <td>{{claim.lossDescription}}</td>
-                            <td>{{claim.assignedAdjustor}}</td>
+                            <td>{{claim.assignedAdjuster}}</td>
                             <td>{{claim.Vehicle}}</td>
                         </tr>
                         </tbody>

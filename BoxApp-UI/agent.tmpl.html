@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="col-xs-6">
-                <h3><b>Hello, {{agentvm.user.userName}}</b></h3>
+                <h3><b>Hello, {{agentvm.user.userName | uppercase}}</b></h3>
 
                 <table class="table table-user-information">
                     <tbody>
@@ -97,8 +97,8 @@
                                         </ul>
                                     </div>
                                 </td>
-                                <td>{{claim.lossDate.date }}</td>
-                                <td>{{claim.reportedDate.date }}</td>
+                                <td>{{claim.lossDate | date :'medium' }}</td>
+                                <td>{{claim.reportedDate| date : 'medium' }}</td>
                                 <td>{{claim.lossDescription}}</td>
                                 <td>
                                     <div class="dropdown">

@@ -12,6 +12,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+
 import com.google.gson.Gson;
 import com.jcs.model.Claim;
 import com.jcs.model.User;
@@ -180,20 +181,6 @@ public class HomeController {
 		List<User> adjustors = service.getAdjustors();
 		
 		return adjustors;
-	}
-	
-	@GET
-	@Path("/AdjustorClaim")
-	@Produces(MediaType.APPLICATION_JSON)
-	public List<Claim> getAdjustorClaim(@QueryParam(value ="user")String user ){
-	
-		BoxService service = new BoxService();
-		
-		List<Claim> claims = service.fetchAdjustorClaims(user);
-		
-		
-		return claims;
-	
 	}
 	
 	
