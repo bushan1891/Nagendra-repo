@@ -19,9 +19,10 @@
         self.createClaim = createClaim;
         self.createVehicle = createVehicle;
         self.getClaimsAgent = getClaimsAgent;
-        self.updateClaim=updateClaim;
-        self.getAjustor=getAjustor;
-        self.getClaimsAdjustor=getClaimsAdjustor;
+        self.updateClaim = updateClaim;
+        self.getAjustor = getAjustor;
+        self.getClaimsAdjustor = getClaimsAdjustor;
+        self.getAdjustorClaimApproved=getAdjustorClaimApproved;
 
         function logged(loggedUser) {
 
@@ -168,7 +169,7 @@
         function getClaimsAgent(status) {
 
             var defer = $q.defer();
-            var url = "http://localhost:8080/BoxApp-Api/api/claim/claims/agent?status=" + status ;
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/claims/agent?status=" + status;
 
             $http
                 .get(url)
@@ -187,14 +188,14 @@
         }
 
 
-        function updateClaim(calim){
+        function updateClaim(calim) {
 
 
             var defer = $q.defer();
             var url = "http://localhost:8080/BoxApp-Api/api/claim/claims/update";
 
             $http
-                .put(url,calim)
+                .put(url, calim)
                 .then(successFn, errorFn);
 
             function successFn(response) {
@@ -210,8 +211,7 @@
         }
 
 
-
-        function getAjustor(){
+        function getAjustor() {
 
             var defer = $q.defer();
             var url = "http://localhost:8080/BoxApp-Api/api/claim/Adjustor";
@@ -232,30 +232,55 @@
 
         }
 
-      // get claims for the adjustor
+        // get claims for the adjustor
 
-       function  getClaimsAdjustor(user){
+        function getClaimsAdjustor(user) {
 
-           var defer = $q.defer();
-           var url = "http://localhost:8080/BoxApp-Api/api/claim/AdjustorClaim?user="+user;
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/AdjustorClaim?user=" + user;
 
-           $http
-               .get(url)
-               .then(successFn, errorFn);
+            $http
+                .get(url)
+                .then(successFn, errorFn);
 
-           function successFn(response) {
-               defer.resolve(response.data);
-           }
+            function successFn(response) {
+                defer.resolve(response.data);
+            }
 
-           function errorFn(error) {
-               defer.reject(error.statusText);
-           }
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
 
-           return defer.promise;
+            return defer.promise;
+
+
+        }
+
+        function getAdjustorClaimApproved(status) {
+
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/AdjustorClaimApproved?status=" + status;
+
+            $http
+                .get(url)
+                .then(successFn, errorFn);
+
+            function successFn(response) {
+                defer.resolve(response.data);
+            }
+
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+
+
+        }
 
 
 
-       }
+
 
 
     }

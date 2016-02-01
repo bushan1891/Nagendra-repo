@@ -340,28 +340,4 @@ public class BoxService {
 		return null;
 	}
 
-	public List<Claim> fetchAdjustorClaimApproved(String status) {
-		
-		
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		Transaction tx = null;
-
-		
-
-		try {
-			tx = session.beginTransaction();
-			String hql = "from Claim c where c.AdjustorStatus='Approved'" ;
-			List<Claim> result = session.createQuery(hql).list();
-
-			System.out.println(result.get(0).getFirstName());
-			return result;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-			
-		return null;
-	}
-
 }

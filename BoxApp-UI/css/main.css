@@ -1,8 +1,8 @@
 @CHARSET "ISO-8859-1";
 
 #logo {
-	max-width:45px;
-	margin-bottom : 2px;
+    max-width: 45px;
+    margin-bottom: 2px;
 }
 
 /*
@@ -19,13 +19,15 @@ body, html {
     background-repeat: no-repeat;
     background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));;
 }
-.myoverflow{
+
+.myoverflow {
 
     height: 200em;
     overflow: auto;
 
 }
-.mytable{
+
+.mytable {
     height: 20em;
     overflow: auto;
 }
@@ -44,11 +46,9 @@ body, html {
     cursor: default;
 }
 
-
-.pad{
+.pad {
 
     padding: 1em;
-
 
 }
 
@@ -79,7 +79,6 @@ body, html {
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
-
 
 .profile-img-card1 {
     width: 50px;
@@ -141,8 +140,8 @@ body, html {
 .form-signin .form-control:focus {
     border-color: rgb(104, 145, 162);
     outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgb(104, 145, 162);
 }
 
 .btn.btn-signin {
@@ -175,49 +174,40 @@ body, html {
 
 .forgot-password:hover,
 .forgot-password:active,
-.forgot-password:focus{
+.forgot-password:focus {
     color: rgb(12, 97, 33);
 }
-
-
-
-
-
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body
-{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.fb-profile img.fb-image-lg{
+.fb-profile img.fb-image-lg {
     z-index: 0;
-    width: 100%;  
+    width: 100%;
     margin-bottom: 10px;
 }
 
-.fb-image-profile
-{
+.fb-image-profile {
     margin: -90px 10px 0px 50px;
     z-index: 9;
-    width: 20%; 
+    width: 20%;
 }
 
-@media (max-width:768px)
-{
-    
-.fb-profile-text>h1{
-    font-weight: 700;
-    font-size:16px;
-}
+@media (max-width: 768px) {
 
-.fb-image-profile
-{
-    margin: -45px 10px 0px 25px;
-    z-index: 9;
-    width: 20%; 
-}
+    .fb-profile-text > h1 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .fb-image-profile {
+        margin: -45px 10px 0px 25px;
+        z-index: 9;
+        width: 20%;
+    }
 }

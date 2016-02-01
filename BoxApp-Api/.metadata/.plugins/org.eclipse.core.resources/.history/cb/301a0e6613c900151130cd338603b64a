@@ -121,5 +121,9 @@ public class Claim implements java.io.Serializable{
 	public void setAdjustorStatus(String adjustorStatus) {
 		AdjustorStatus = adjustorStatus;
 	}
+
+
+	
+
 	
 }

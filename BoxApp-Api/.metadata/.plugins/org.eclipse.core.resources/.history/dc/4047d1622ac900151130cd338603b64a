@@ -351,7 +351,7 @@ public class BoxService {
 
 		try {
 			tx = session.beginTransaction();
-			String hql = "from Claim c where c.AdjustorStatus='Approved'" ;
+			String hql = "from Claim c where c.adjustorStatus='Approved'" ;
 			List<Claim> result = session.createQuery(hql).list();
 
 			System.out.println(result.get(0).getFirstName());

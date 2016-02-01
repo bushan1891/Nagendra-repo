@@ -22,17 +22,17 @@
         agentvm.adjustor;
 
 
-        function loadAdjustor(){
+        function loadAdjustor() {
 
             Service.getAjustor().then(function (adjustors) {
 
                 console.log("i got adjustors");
 
-                agentvm.adjustor= adjustors;
+                agentvm.adjustor = adjustors;
 
                 console.dir(agentvm.adjustor);
 
-            },  function (error) {
+            }, function (error) {
                 console.log(error);
             });
 
@@ -53,8 +53,6 @@
             }, function (error) {
                 console.log(error);
             });
-
-
 
 
         }
@@ -79,7 +77,7 @@
 
         }
 
-        function claimload(){
+        function claimload() {
 
             Service.getClaimsAgent("pending").then(function (claim) {
 

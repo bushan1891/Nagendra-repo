@@ -103,11 +103,12 @@
                                 <td>
                                     <div class="dropdown">
                                         <button class="btn btn-primary dropdown-toggle" type="button"
-                                                data-toggle="dropdown">{{  claim.assignedAdjuster }}
+                                                data-toggle="dropdown">{{ claim.assignedAdjuster }}
                                             <span class="caret"></span></button>
                                         <div class="dropdown-menu">
                                             <ul ng-repeat="usr in agentvm.adjustor" class="list">
-                                                <li><a ng-click="claim.assignedAdjuster = usr.userName  ">{{usr.userName}}</a></li>
+                                                <li><a ng-click="claim.assignedAdjuster = usr.userName  ">{{usr.userName}}</a>
+                                                </li>
                                             </ul>
                                         </div>
 
@@ -136,13 +137,15 @@
                                 <th>ClaimID</th>
                                 <th>Status</th>
                                 <th>Assigned Adjustor</th>
+                                <th>Adjustor Status</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="claim in agentvm.claimsApproved  ">
+                            <tr ng-repeat="claim in agentvm.claimsApproved  "  ng-class ="{ success : claim.adjustorStatus== 'Approved' , danger : claim.adjustorStatus == 'pending' }" >
                                 <td>{{claim.claimID}}</td>
                                 <td>{{claim.status}}</td>
                                 <td>{{claim.assignedAdjuster}}</td>
+                                <td>{{claim.adjustorStatus}}</td>
                             </tr>
                             </tbody>
                         </table>

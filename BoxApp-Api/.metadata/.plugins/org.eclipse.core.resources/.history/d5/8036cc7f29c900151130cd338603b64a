@@ -197,21 +197,5 @@ public class HomeController {
 	}
 	
 	
-	
-	@GET
-	@Path("/AdjustorClaimApproved")
-	@Produces(MediaType.APPLICATION_JSON)
-	public List<Claim> getAdjustorClaimApproved(@QueryParam(value ="status")String status ){
-	
-		BoxService service = new BoxService();
-		
-		List<Claim> claims = service.fetchAdjustorClaimApproved(status);
-		
-		
-		return claims;
-	
-	}
-	
-	
 
 }

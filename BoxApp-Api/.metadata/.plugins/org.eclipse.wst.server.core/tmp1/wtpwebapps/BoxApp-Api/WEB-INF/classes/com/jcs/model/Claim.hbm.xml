@@ -35,5 +35,8 @@
         <property name="Vehicle" type="java.lang.String">
             <column name="VEHICLE" />
         </property>
+         <property name="AdjustorStatus" type="java.lang.String">
+            <column name="ADJUSTORSTATUS" />
+        </property>
     </class>
 </hibernate-mapping>

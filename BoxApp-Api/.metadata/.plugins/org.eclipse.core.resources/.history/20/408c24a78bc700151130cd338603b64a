@@ -221,11 +221,10 @@ public class BoxService {
 		claim.setClaimID(str); // custom claim no generator
 		claim.setAssignedAdjuster(""); // have to change this
 		claim.setStatus("pending"); // setting the claim to pending initially
-		claim.setAdjustorStatus("Pending"); // check this once you are over
-											// writing
-		// this in the front end to this should
-		// not be here
-
+		claim.setAdjustorStatus("Pending");                                 // check this once you are over writing
+										// this in the front end to this should
+										// not be here
+		
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
@@ -280,7 +279,6 @@ public class BoxService {
 			Claim c = (Claim) session.get(Claim.class, claim.getClaimID());
 			c.setStatus(claim.getStatus());
 			c.setAssignedAdjuster(claim.getAssignedAdjuster());
-			c.setAdjustorStatus(claim.getAdjustorStatus());
 			session.update(c);
 			System.out.println(c.getStatus());
 			tx.commit();
@@ -315,52 +313,33 @@ public class BoxService {
 
 		return null;
 	}
-
+	
+	
 	// fetch all claims with assigned adjustor for the adjustorvm
 
 	public List<Claim> fetchAdjustorClaims(String user) {
 
-		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-		Session session = sessionFactory.openSession();
-		Transaction tx = null;
-
-		System.out.println(user + "in service");
-
-		try {
-			tx = session.beginTransaction();
-			String hql = "from Claim c where c.assignedAdjuster='" + user + "'";
-			List<Claim> result = session.createQuery(hql).list();
-
-			System.out.println(result.get(0).getFirstName());
-			return result;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		return null;
-	}
-
-	public List<Claim> fetchAdjustorClaimApproved(String status) {
-		
 		
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		Transaction tx = null;
-
 		
+		System.out.println(user + "in service" );
 
-		try {
+		try{
 			tx = session.beginTransaction();
-			String hql = "from Claim c where c.AdjustorStatus='Approved'" ;
+			String hql = "from Claim c where c.assignedAdjuster='"+user+"'";
 			List<Claim> result = session.createQuery(hql).list();
-
-			System.out.println(result.get(0).getFirstName());
-			return result;
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
 			
+			System.out.println(result.get(0).getFirstName());  
+			return result;
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		
+		
 		return null;
 	}
 

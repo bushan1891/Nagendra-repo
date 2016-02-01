@@ -74,6 +74,8 @@
                         <th>ClaimID</th>
                         <th>Status</th>
                         <th>Assigned Adjustor</th>
+                        <th>Adjustor Status</th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -83,13 +85,47 @@
                         <td>{{claim.assignedAdjuster}}</td>
                         <td> <div class="dropdown">
                             <button class="btn btn-primary dropdown-toggle" type="button"
-                                    data-toggle="dropdown">{{claim.status}}
+                                    data-toggle="dropdown">{{claim.adjustorStatus}}
                                 <span class="caret"></span></button>
                             <ul class="dropdown-menu">
-                                <li><a ng-click="claim.status='Pending'">Pending</a></li>
-                                <li><a ng-click="claim.status='Approved'">Approved</a></li>
+                                <li><a ng-click="claim.adjustorStatus='Pending'">Pending</a></li>
+                                <li><a ng-click="claim.adjustorStatus='Approved'">Approved</a></li>
+                                <li><a ng-click="claim.adjustorStatus='Rejected'">Rejected</a></li>
                             </ul>
                         </div></td>
+                        <td> <button class="btn" ng-click=" adjustorvm.claimupdate=claim; adjustorvm.updateClaim();  ">
+                            Update
+                        </button> </td>
+
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading"><h4>Claims Approved by adjustor </h4>
+            </div>
+            <div class="panel-body mytable">
+
+
+                <table data-toggle="table " class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ClaimID</th>
+                        <th>Status</th>
+                        <th>Assigned Adjustor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="claim in adjustorvm.adjustorclaimApproved  ">
+                        <td>{{claim.claimID}}</td>
+                        <td>{{claim.status}}</td>
+                        <td>{{claim.assignedAdjuster}}</td>
+
                     </tr>
                     </tbody>
                 </table>

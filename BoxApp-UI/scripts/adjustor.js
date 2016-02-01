@@ -16,8 +16,14 @@
         var adjustorvm = this;
         adjustorvm.user;
         adjustorvm.claimsApproved; // claims assigned to adjustor and approved by the agent
+        adjustorvm.claimupdate;
+        adjustorvm.updateClaim = updateClaim;
 
-        console.log(adjustorvm.curUserEmail);
+        adjustorvm.adjustorclaimApproved;
+
+
+
+
 
         logged();
         loadClaim();
@@ -39,10 +45,39 @@
                 console.log("adjustors claims loaded here");
                 console.dir(adjustorvm.claimsApproved);
 
+
             }, function (error) {
                 console.log(error);
             });
 
+
+            Service.getAdjustorClaimApproved('Approved').then(function(claim){
+                adjustorvm.adjustorclaimApproved= claim;
+
+            }, function (error) {
+                console.log(error);
+
+            });
+
+
+
+
+        }
+
+
+        function updateClaim() {
+
+            window.alert('Updated');
+            console.dir(adjustorvm.claimupdate);
+            Service.updateClaim(adjustorvm.claimupdate).then(function (claim) {
+
+                console.log("i was updated");
+                loadClaim();
+
+
+            }, function (error) {
+                console.log(error);
+            });
 
         }
 
