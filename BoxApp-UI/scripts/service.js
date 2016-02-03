@@ -23,6 +23,8 @@
         self.getAjustor = getAjustor;
         self.getClaimsAdjustor = getClaimsAdjustor;
         self.getAdjustorClaimApproved=getAdjustorClaimApproved;
+        self.renameClaimFile=renameClaimFile;
+        self.sendfile=sendfile;
 
         function logged(loggedUser) {
 
@@ -92,10 +94,12 @@
         }
 
 
-        function createClaim(claim, vehicle) {
+        function createClaim(claim, vehicle ) {
 
             var defer = $q.defer();
             var url = "http://localhost:8080/BoxApp-Api/api/claim/claim/create?email=" + self.logd.userEmail;
+
+
 
             $http
                 .post(url, claim)
@@ -278,6 +282,36 @@
 
         }
 
+        // renaming the claimfile
+        function renameClaimFile(name){
+
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/renamecalim?claim="+name;
+
+            $http
+                .get(url)
+                .then(successFn, errorFn);
+
+            function successFn(response) {
+                defer.resolve(response.data);
+            }
+
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+
+        }
+
+        var sendfile = function(file){
+
+
+            console.dir(file);
+            console.log(" at my service ")
+
+
+        }
 
 
 

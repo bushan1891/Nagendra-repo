@@ -1,5 +1,12 @@
 package com.jcs.controller;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,12 +19,27 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
+import org.glassfish.jersey.media.multipart.FormDataParam;
+
+import com.box.sdk.BoxAPIConnection;
+import com.box.sdk.BoxFolder;
+
+/*import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
+import org.glassfish.jersey.media.multipart.FormDataParam;*/
+
 import com.google.gson.Gson;
+import com.jcs.box.BoxTest;
 import com.jcs.model.Claim;
 import com.jcs.model.User;
 import com.jcs.model.Vehicle;
 import com.jcs.service.BoxService;
 
+/*import com.sun.jersey.core.header.FormDataContentDisposition;
+import com.sun.jersey.multipart.FormDataParam;
+*/
 @Path("/claim")
 public class HomeController {
 
@@ -113,7 +135,6 @@ public class HomeController {
 
 		return null;
 	}
-	
 
 	@POST
 	@Path("/claim/create")
@@ -156,62 +177,147 @@ public class HomeController {
 
 		return vehicle;
 	}
-	
+
 	@PUT
 	@Path("/claims/update")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Claim updateClaim(Claim claim){
-		
+	public Claim updateClaim(Claim claim) {
+
 		BoxService service = new BoxService();
-		
+
 		Claim c = service.updateClaim(claim);
-		
+
 		return c;
 	}
-	
+
 	@GET
 	@Path("/Adjustor")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<User> getAdjustor(){
-		
+	public List<User> getAdjustor() {
+
 		BoxService service = new BoxService();
-		
+
 		List<User> adjustors = service.getAdjustors();
-		
+
 		return adjustors;
 	}
-	
+
 	@GET
 	@Path("/AdjustorClaim")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Claim> getAdjustorClaim(@QueryParam(value ="user")String user ){
-	
+	public List<Claim> getAdjustorClaim(@QueryParam(value = "user") String user) {
+
 		BoxService service = new BoxService();
-		
+
 		List<Claim> claims = service.fetchAdjustorClaims(user);
-		
-		
+
 		return claims;
-	
+
 	}
-	
-	
-	
+
 	@GET
 	@Path("/AdjustorClaimApproved")
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Claim> getAdjustorClaimApproved(@QueryParam(value ="status")String status ){
+	public List<Claim> getAdjustorClaimApproved(@QueryParam(value = "status") String status) {
+
+		BoxService service = new BoxService();
+
+		List<Claim> claims = service.fetchAdjustorClaimApproved(status);
+
+		return claims;
+
+	}
 	
+	// upload a file to the claim 
+	@POST
+	@Path("/uploadcalim")
+	@Consumes(MediaType.MULTIPART_FORM_DATA)
+	public Response uploadClaimFile(
+		@FormDataParam("file") InputStream uploadedInputStream,
+		@FormDataParam("file") FormDataContentDisposition fileDetail,
+		@QueryParam(value = "claimid") String claim) {
+			
 		BoxService service = new BoxService();
 		
-		List<Claim> claims = service.fetchAdjustorClaimApproved(status);
+		service.uploadClaimFile(uploadedInputStream,claim );
 		
 		
-		return claims;
-	
+		return null;
 	}
 	
 	
+	@GET
+	@Path("/renamecalim")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String renameClaimFile(
+		@QueryParam(value = "claim") String claim) {
+			
+		BoxService service = new BoxService();
+		System.out.println(claim); 
+	    String result =	service.rename(claim);
+		
+		return null;
+	}
+	
+	
+	
 
+	@GET
+	@Path("/box")
+	@Produces(MediaType.APPLICATION_JSON)
+	public String box() {
+
+		BoxTest t = new BoxTest();
+
+		try {
+			t.test();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return "This is a box test";
+
+	}
+
+	// file handle function
+	
+	@POST
+	@Path("/upload")
+	@Consumes(MediaType.MULTIPART_FORM_DATA)
+	public Response uploadFile(
+		@FormDataParam("file") InputStream uploadedInputStream,
+		@FormDataParam("file") FormDataContentDisposition fileDetail) {
+
+		String uploadedFileLocation = "/Users/bushan/eclipse/" + fileDetail.getFileName();
+		
+		// save it
+		writeToFile(uploadedInputStream, uploadedFileLocation);
+
+		String output = "File uploaded to : " + uploadedFileLocation;
+
+		return null;
+
+	}
+	
+	
+	private void writeToFile(InputStream uploadedInputStream,
+			String uploadedFileLocation) {
+		
+		BoxAPIConnection api = new BoxAPIConnection("vlGnJZyAxPmIoYMkutqLNLzhsMAOogLa");
+		BoxFolder rootFolder = BoxFolder.getRootFolder(api);
+		
+		
+		rootFolder.uploadFile(uploadedInputStream, "My File.pdf");
+	
+			//uploadedInputStream.close();
+	}
+	
+	
+	
+	
+
+	
+	
 }

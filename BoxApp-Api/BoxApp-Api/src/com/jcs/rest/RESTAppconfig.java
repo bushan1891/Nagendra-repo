@@ -2,6 +2,7 @@ package com.jcs.rest;
 
 import javax.ws.rs.ApplicationPath;
 
+import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 
 import com.jcs.provider.CORSFilter;
@@ -14,8 +15,7 @@ public class RESTAppconfig extends ResourceConfig {
 		packages("com.jcs.controller");
 		register(CORSFilter.class);
 	
-		
-	
+		register(MultiPartFeature.class);
 	
 	}
 	

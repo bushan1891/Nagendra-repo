@@ -5,7 +5,7 @@
 
 	// EmployeesController.$inject = ['employeeService'];
 	// inject it later employeeService down parameter
-	LoginController.$inject = [ '$location', 'Service' ];
+	LoginController.$inject = [ '$location', 'Service',];
 
 	function LoginController($location, Service) {
 

@@ -1,0 +1,15 @@
+package com.jcs.util;
+
+import com.box.sdk.BoxAPIConnection;
+
+public class BoxUtil {
+
+	
+	public static BoxAPIConnection getApi(){
+		// enter the developer token here 
+		BoxAPIConnection api = new BoxAPIConnection("rZLpQwH3MsxhndgwYZSJbzqA4NqfaJOW");
+		return api;
+		
+	}
+	
+}

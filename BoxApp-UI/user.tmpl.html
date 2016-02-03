@@ -60,9 +60,11 @@
                 </div>
             </div>
             <!--this is the Content  -->
-
+            <label>Search: <input ng-model="searchText"></label>
             <div class="panel panel-default">
                 <div class="panel-heading"><h4>Claims
+
+
                       <!-- Modal button create a new Claim -->
                     <button type="button" class="btn btn-info btn-lg pull-right pad" data-toggle="modal" data-target="#myModal">Create Claim</button>
 
@@ -79,8 +81,7 @@
                                 </div>
 
                                 <!--  Modal form goes here   -->
-                                <div class="modal-body">
-
+                                <div class="modal-body" >
                                     <form  name="addClaim" ng-submit="uservm.addClaim(addClaim)"   >
                                         <fieldset class="form-group">
                                             <label for="formGroupInput"> First Name </label>
@@ -167,7 +168,8 @@
 
 
 
-                                        <button type="submit" class="btn btn-primary">Add Claim</button>
+                                        <button type="submit" class="btn btn-primary" ng-click="uservm.show(uservm.newClaim)">Add Claim</button>
+
                                     </form>
 
 
@@ -188,7 +190,7 @@
                 </h4></div>
                 <div class="panel-body mytable" >
 
-                    <label>Search: <input ng-model="searchText"></label>
+
                     <table data-toggle="table " class ="table table-striped">
                         <thead>
                         <tr>
@@ -196,10 +198,10 @@
                             <th>Status</th>
                             <th>loss Date</th>
                             <th>Cause Of Loss</th>
-                            <th>Reported Date</th>
                             <th>Loss Description </th>
                             <th>Assigned Adjustor</th>
-                            <th> Vehicle Vin</th>
+                            <th>Vehicle Vin</th>
+                            <th> </th>
                         </tr>
                         </thead>
                         <tbody>
@@ -208,10 +210,20 @@
                             <td>{{claim.status}}</td>
                             <td>{{claim.lossDate}}</td>
                             <td>{{claim.causeOfLoss}}</td>
-                            <td>{{claim.reportedDate}}</td>
                             <td>{{claim.lossDescription}}</td>
                             <td>{{claim.assignedAdjuster}}</td>
                             <td>{{claim.Vehicle}}</td>
+                            <td>
+                                <div ng-controller = "myCtrl">
+                                    <input type="file" file-model="myFile"/>
+                                    <button ng-click="uploadFile(claim.claimID)">upload me</button>
+                                </div>
+
+                            </td>
+
+
+
+
                         </tr>
                         </tbody>
                     </table>

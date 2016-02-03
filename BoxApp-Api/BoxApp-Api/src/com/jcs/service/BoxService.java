@@ -1,6 +1,9 @@
 package com.jcs.service;
 
-import java.sql.Date;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Timestamp;
+import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -15,7 +18,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+import com.box.sdk.BoxAPIConnection;
+import com.box.sdk.BoxFile;
+import com.box.sdk.BoxFolder;
+import com.box.sdk.BoxItem;
 import com.jcs.model.*;
+import com.jcs.util.BoxUtil;
 import com.jcs.util.HibernateUtil;
 
 public class BoxService {
@@ -341,17 +349,14 @@ public class BoxService {
 	}
 
 	public List<Claim> fetchAdjustorClaimApproved(String status) {
-		
-		
+
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		Transaction tx = null;
 
-		
-
 		try {
 			tx = session.beginTransaction();
-			String hql = "from Claim c where c.AdjustorStatus='Approved'" ;
+			String hql = "from Claim c where c.AdjustorStatus='Approved'";
 			List<Claim> result = session.createQuery(hql).list();
 
 			System.out.println(result.get(0).getFirstName());
@@ -360,8 +365,44 @@ public class BoxService {
 			e.printStackTrace();
 		}
 
-			
 		return null;
 	}
 
+	public void uploadClaimFile(InputStream uploadedInputStream, String name ) {
+
+		
+		 Date date= new Date();
+		 long time = date.getTime();
+		 Timestamp ts = new Timestamp(time); 
+		 
+		 System.out.println("Current Time Stamp: "+ts);
+		
+		name = name+ts+".pdf";
+		
+		BoxAPIConnection api = BoxUtil.getApi();
+		BoxFolder rootFolder = BoxUtil.getClaimFolder();
+		rootFolder.uploadFile(uploadedInputStream, name);
+		
+
+	}
+
+	public String rename(String claim) {
+
+		BoxAPIConnection api = BoxUtil.getApi();
+		BoxFolder rootFolder = BoxUtil.getClaimFolder();
+		String str = "claim.pdf";
+		for (BoxItem.Info itemInfo : rootFolder) {
+			System.out.println(itemInfo.getName());
+			if(itemInfo.getName().equals(str)){
+				BoxFile file = new BoxFile(api, itemInfo.getID());
+				BoxFile.Info info = file.new Info();
+				info.setName(claim);
+				file.updateInfo(info); 
+				return "updated";
+			}
+		}
+		System.out.println("did not update anything");
+       
+		return "failed";
+	}
 }

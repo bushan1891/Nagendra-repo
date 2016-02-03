@@ -7,26 +7,40 @@
 
     //EmployeesController.$inject = ['employeeService'];
     // inject it later employeeService down parameter 
-    UserController.$inject = ['$location', 'Service'];
+    UserController.$inject = ['$location', 'Service','$timeout'];
 
-    function UserController($location, Service) {
+    function UserController($location, Service,$timeout) {
 
         var uservm = this;
         uservm.user;           // current user claim
         uservm.newClaim;      // for the post new calim
         uservm.claims;       // to display all the claims of the user
         uservm.newVehicle;   // for the new vehicle claim
-
+        uservm.file;
         uservm.addClaim = addClaim;
+        uservm.show = show;
+        uservm.customer ={};
+        uservm.customer.file;
+
+        function show(claim){
+           $timeout(alert(claim.claimID),2000);
+
+          $timeout(function(){Service.renameClaimFile(claim.claimID); } , 3000);
+           // Service.renameClaimFile(claim.claimID,claim);
+        }
+
+
+
+
 
         function addClaim(form) {
             form.$setPristine();
 
             console.log("claim form called ");
 
-            var currentDate = new Date().getMilliseconds();
-            var datereported = new Date().getDate();
 
+            var datereported = new Date().getDate();
+            var currentDate = new Date().getMilliseconds();
 
             uservm.newClaim.claimID = currentDate;    // can be modified later
             uservm.newClaim.status = "pending";// get the current date
@@ -42,7 +56,7 @@
             console.dir(uservm.newVehicle);
 
 
-            Service.createClaim(uservm.newClaim, uservm.newVehicle);
+            Service.createClaim(uservm.newClaim, uservm.newVehicle , uservm.file);
 
 
             // Service.createVehicle(uservm.newVehicle);
@@ -57,7 +71,7 @@
 
 
         console.log('I am here at the User controller ');
-
+        console.dir(uservm.customer.file);
         // on load
         logged();
         getClaims();
@@ -85,5 +99,17 @@
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 })();

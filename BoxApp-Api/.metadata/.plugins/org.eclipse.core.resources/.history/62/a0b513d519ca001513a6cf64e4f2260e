@@ -1,0 +1,73 @@
+package com.jcs.box;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import com.box.sdk.BoxAPIConnection;
+import com.box.sdk.BoxFolder;
+import com.box.sdk.BoxItem;
+import com.box.sdk.BoxUser;
+
+
+public final class BoxTest {
+
+
+
+	public BoxTest() {
+	}
+
+	public void test() throws IOException {
+
+		// Turn off logging to prevent polluting the output.
+		Logger.getLogger("com.box.sdk").setLevel(Level.OFF);
+
+		BoxAPIConnection api = new BoxAPIConnection("l00E9mU8cltQpQJZt1STZRzIHyWQUKka");
+
+		// BoxUser.Info user = BoxUser.createAppUser(api, APP_USER_NAME);
+		// System.out.format("User created with name %s and id %s\n\n",
+		// APP_USER_NAME, user.getID());
+
+		// id info
+
+		/*
+		 * BoxApp6372394033 Claim6372398869 User6372397685 JCS2575254887
+		 * Partners2575254911 Content2575254953 test6354353509 Child Folder
+		 * Name6357141113 User-Images6357056057 test16357069477 test26357071077
+		 * mypic.jpg51748238445 User-policy6357060049
+		 * 2012_chevrolet_camaro-wide.jpg49709288470 a.jpg49476803342 My
+		 * File.pdf51853185245 My File.txt51852999289 myuplaod.txt49711140526
+		 */
+
+		BoxUser.Info userInfo = BoxUser.getCurrentUser(api).getInfo();
+		System.out.format("Welcome, %s <%s>!\n\n", userInfo.getName(), userInfo.getLogin());
+
+		BoxFolder rootFolder = BoxFolder.getRootFolder(api);
+		listFolder(rootFolder, 0);
+
+		BoxFolder parentFolder = new BoxFolder(api, "6372398869");
+		BoxFolder.Info childFolderInfo = parentFolder.createFolder("Child Folder Name");
+
+	}
+
+	private static void listFolder(BoxFolder folder, int depth) {
+		for (BoxItem.Info itemInfo : folder) {
+			String indent = "";
+			for (int i = 0; i < depth; i++) {
+				indent += "    ";
+			}
+
+			System.out.println(indent + itemInfo.getName() + itemInfo.getID());
+			if (itemInfo instanceof BoxFolder.Info) {
+				BoxFolder childFolder = (BoxFolder) itemInfo.getResource();
+				if (depth < 2) {
+					listFolder(childFolder, depth + 1);
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.jcs.util;
+
+import com.box.sdk.BoxFolder;
+
+public class GetClaimFolder {
+
+	public  static BoxFolder getFolder(){
+		
+		BoxUtil
+		
+		
+		return null;
+		
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+package com.jcs.util;
+
+import com.box.sdk.BoxAPIConnection;
+import com.box.sdk.BoxFolder;
+
+public class getClaimFolder {
+
+	public  static BoxFolder getFolder(){
+		
+		BoxAPIConnection api =	BoxUtil.getApi();
+		
+		
+		
+		
+		return null;
+		
+	}
+	
+	
+}
