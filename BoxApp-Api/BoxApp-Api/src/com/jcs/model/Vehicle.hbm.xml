@@ -11,6 +11,9 @@
         <property name="vin" type="java.lang.String">
             <column name="VIN" />
         </property>
+        <property name="userid" type="int">
+            <column name="USERID" />
+        </property>
         <property name="claimNumber" type="java.lang.String">
             <column name="CLAIMNUMBER" />
         </property>

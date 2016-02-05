@@ -131,14 +131,7 @@ public class BoxService {
 
 	public User fetchone(String email) throws Exception {
 
-		// List<User> users = fetchAll();
-		//
-		// for (User usr : users) {
-		// System.out.println(usr.getUserEmail() + email);
-		// if (usr.getUserEmail().equals(email))
-		//
-		// return usr;
-		// }
+		
 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -266,7 +259,7 @@ public class BoxService {
 			List<Claim> result = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
 
 			vehicle.setClaimNumber(result.get(0).getClaimID());
-
+            vehicle.setUserid(usr.getUserID());
 			session.save(vehicle);
 			session.getTransaction().commit();
 			System.out.println(" request to push Vehicle has been pushed ");
@@ -276,6 +269,49 @@ public class BoxService {
 		}
 
 		return vehicle;
+	}
+	
+	
+	public List<Vehicle> fetchVehicle(int userid){
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		try {
+
+			String hql = "from Vehicle v where v.userid = :id";
+			List<Vehicle> result = session.createQuery(hql).setParameter("id",userid ).list();
+			session.getTransaction().commit();
+			System.out.println(" request to pull the vehicle succecssful ");
+			session.close();
+			return result;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+		
+	}
+	
+	
+	public User fetchUser(int id){
+		
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		try {
+			String hql = "from User u where u.UserID = :id";
+			List<User> result = session.createQuery(hql).setParameter("id", id).list();
+
+			return result.get(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+		
+		
+		
 	}
 
 	public Claim updateClaim(Claim claim) {
@@ -368,21 +404,44 @@ public class BoxService {
 		return null;
 	}
 
-	public void uploadClaimFile(InputStream uploadedInputStream, String name ) {
+	public void uploadClaimFile(InputStream uploadedInputStream, String name) {
 
-		
-		 Date date= new Date();
-		 long time = date.getTime();
-		 Timestamp ts = new Timestamp(time); 
-		 
-		 System.out.println("Current Time Stamp: "+ts);
-		
-		name = name+ts+".pdf";
-		
+		Date date = new Date();
+		long time = date.getTime();
+		Timestamp ts = new Timestamp(time);
+
+		System.out.println("Current Time Stamp: " + ts);
+		 int id = Character.getNumericValue(name.charAt(0));
+		name = name + ts + ".pdf";
+
 		BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder rootFolder = BoxUtil.getClaimFolder();
-		rootFolder.uploadFile(uploadedInputStream, name);
+		//rootFolder.uploadFile(uploadedInputStream, name);
 		
+		// to re-structure our code 
+		try {
+			createBoxUserFolder();
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+	   // pushing to user folder 
+		
+	   	
+	      System.out.println(id);
+	      User user = fetchUser(id);
+		
+	      // setting our box root folder 
+	      
+	      BoxFolder userfolder = BoxUtil.getUserFolder();
+	    
+	      BoxItem.Info info = BoxUtil.getSearchResult(userfolder, user.getUserID()+"-"+user.getUserName()+"-"+user.getUserType() );
+	      System.out.println();
+	      
+	      BoxFolder upfolder =  new BoxFolder(api, info.getID());
+	      upfolder.uploadFile(uploadedInputStream, name);
+	      
 
 	}
 
@@ -393,16 +452,44 @@ public class BoxService {
 		String str = "claim.pdf";
 		for (BoxItem.Info itemInfo : rootFolder) {
 			System.out.println(itemInfo.getName());
-			if(itemInfo.getName().equals(str)){
+			if (itemInfo.getName().equals(str)) {
 				BoxFile file = new BoxFile(api, itemInfo.getID());
 				BoxFile.Info info = file.new Info();
 				info.setName(claim);
-				file.updateInfo(info); 
+				file.updateInfo(info);
 				return "updated";
 			}
 		}
 		System.out.println("did not update anything");
-       
+
 		return "failed";
 	}
+
+	// creates the user folder and stores the id in userIfo
+
+	public String createBoxUserFolder() throws Exception {
+
+		BoxAPIConnection api = BoxUtil.getApi();
+		BoxFolder rootFolder = BoxUtil.getUserFolder();
+
+		List<User> users = fetchAll();
+		
+	     for(User usr : users ){
+	    	 BoxItem.Info info = BoxUtil.getSearchResult(rootFolder, usr.getUserID()+"-"+usr.getUserName()+"-"+usr.getUserType() );
+	    	 
+	    	 if( info==null ){
+	    		
+	    		 BoxFolder.Info childFolderInfo = rootFolder.createFolder(usr.getUserID()+"-"+usr.getUserName()+"-"+usr.getUserType() ); 
+	    	 }
+	    	 
+	    	 else{
+	    		 System.out.println("user folder valid");
+	    	 }
+	    	 
+	     }
+		
+		
+		return null;
+	}
+
 }

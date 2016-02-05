@@ -22,6 +22,9 @@
         uservm.customer ={};
         uservm.customer.file;
 
+        uservm.vehicles;  // for vehicle history
+
+
         function show(claim){
            $timeout(alert(claim.claimID),2000);
 
@@ -42,7 +45,7 @@
             var datereported = new Date().getDate();
             var currentDate = new Date().getMilliseconds();
 
-            uservm.newClaim.claimID = currentDate;    // can be modified later
+            uservm.newClaim.claimID = uservm.user.userID+"claim"+currentDate;    // can be modified later
             uservm.newClaim.status = "pending";// get the current date
             uservm.newClaim.assignedAdjuster = 2;    // will handle this in the back end
             uservm.newClaim.vehicle = uservm.newVehicle.vin;    // assign the current vehicle vin
@@ -89,11 +92,28 @@
             }, function (error) {
                 console.log(error);
             });
+
+            // loading vehicles after claims
+          Service.getVehicle(uservm.user.userID).then(function (vehicle) {
+
+              uservm.vehicles =vehicle;
+
+              console.log("vehicles");
+              console.dir(uservm.vehicles);
+
+
+            }, function (error) {
+                console.log(error);
+            });;
+
+
         }
 
 
         function logged() {
-            uservm.user = Service.getLogged()
+            uservm.user = Service.getLogged();
+
+
 
         }
 

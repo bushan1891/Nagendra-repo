@@ -229,6 +229,20 @@ public class HomeController {
 
 	}
 	
+	@GET 
+	@Path("/getVehicle")
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Vehicle> getVehicle(@QueryParam(value="userid") int userid){
+		
+		BoxService service = new BoxService();
+		List<Vehicle> vehicles = service.fetchVehicle(userid);
+		
+		return vehicles;
+	}
+	
+	
+	
+	
 	// upload a file to the claim 
 	@POST
 	@Path("/uploadcalim")
@@ -269,10 +283,15 @@ public class HomeController {
 	public String box() {
 
 		BoxTest t = new BoxTest();
-
+        BoxService service = new BoxService();
 		try {
-			t.test();
+			//t.test();
+			service.createBoxUserFolder();
+			
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -25,6 +25,7 @@
         self.getAdjustorClaimApproved=getAdjustorClaimApproved;
         self.renameClaimFile=renameClaimFile;
         self.sendfile=sendfile;
+        self.getVehicle=getVehicle;
 
         function logged(loggedUser) {
 
@@ -313,6 +314,29 @@
 
         }
 
+
+
+        function getVehicle(userid) {
+
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/getVehicle?userid="+userid;
+
+            $http
+                .get(url)
+                .then(successFn, errorFn);
+
+            function successFn(response) {
+                defer.resolve(response.data);
+            }
+
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+
+
+        }
 
 
 

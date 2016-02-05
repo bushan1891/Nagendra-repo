@@ -11,6 +11,7 @@ public class Vehicle implements java.io.Serializable{
 	private static final long serialVersionUID = 1L;
 	private int id;
 	private String vin;
+	private int userid;
 	private String claimNumber;
 	private int modelYear;
 	private String makeDes;
@@ -132,6 +133,16 @@ public class Vehicle implements java.io.Serializable{
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+
+	public int getUserid() {
+		return userid;
+	}
+
+
+	public void setUserid(int userid) {
+		this.userid = userid;
 	}
 	
 	

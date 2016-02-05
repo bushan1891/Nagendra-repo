@@ -108,6 +108,23 @@
                                          <input type="text" class="form-control" id="formGroupInput5" placeholder="LossDescription" ng-model="uservm.newClaim.lossDescription" >
                                         </fieldset>
                                         <br/>
+
+                                        <!-- Vehicle info -->
+
+                                        <div class="dropdown">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                    data-toggle="dropdown">{{uservm.newVehicle.makeDes}}
+                                                <span class="caret"></span></button>
+                                            <div class="dropdown-menu">
+                                                <ul ng-repeat="vehicle in uservm.vehicles" class="list">
+                                                    <li><a ng-click=" vehicle.  uservm.newVehicle = vehicle   ">{{vehicle.vin}}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                       </div>
+
+
                                         <h3> Vehicle Info</h3>
 
                                         <fieldset class="form-group">
