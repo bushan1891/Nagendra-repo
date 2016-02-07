@@ -114,6 +114,12 @@
 
                                     </div>
                                 </td>
+
+                                 <!-- View is here calls the modal #test  -->
+                                <td><a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#test"
+                                       ng-click="agentvm.modalclaim=claim "> View </a>
+                                </td>
+
                                 <td>
                                     <button class="btn" ng-click=" agentvm.claimupdate=claim; agentvm.updateClaim();  ">
                                         Update
@@ -130,7 +136,7 @@
                     </div>
                     <div class="panel-body mytable">
 
-
+                        <label>Search: <input ng-model="searchText1"></label>
                         <table data-toggle="table " class="table table-striped">
                             <thead>
                             <tr>
@@ -141,7 +147,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr ng-repeat="claim in agentvm.claimsApproved  "  ng-class ="{ success : claim.adjustorStatus== 'Approved' , danger : claim.adjustorStatus == 'pending' }" >
+                            <tr ng-repeat="claim in agentvm.claimsApproved | filter : searchText1 "  ng-class ="{ success : claim.adjustorStatus== 'Approved' , danger : claim.adjustorStatus == 'pending' }" >
                                 <td>{{claim.claimID}}</td>
                                 <td>{{claim.status}}</td>
                                 <td>{{claim.assignedAdjuster}}</td>
@@ -155,3 +161,129 @@
         </div>
     </div>
 </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="test" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Claim Details</h4>
+            </div>
+            <div class="modal-body">
+
+                <table class="table table-user-information">
+                    <thead><h3>Claim</h3></thead>
+                    <tbody>
+
+                    <tr>
+                        <td><b>Claim Number : </b></td>
+                        <td>{{agentvm.modalclaim.claimID}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>First Name:</b></td>
+                        <td>{{agentvm.modalclaim.firstName}}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Last Name:</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.lastName }}
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="table table-user-information">
+                    <thead>
+
+                    <td><label><b><h3>Status</h3></b></label></td>
+
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <b>Inspection Status</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.AdjustorStatus}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Agent Status</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.status}}
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <b>LossDate :</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.lossDate}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Loss Description : </b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.lossDescription}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Reported Date</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.reportedDate}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Vehicle </b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.Vehicle}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Cause Of Loss</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.causeOfLoss}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Assigned Adjuster</b>
+                        </td>
+                        <td>
+                            {{agentvm.modalclaim.assignedAdjuster}}
+                        </td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+

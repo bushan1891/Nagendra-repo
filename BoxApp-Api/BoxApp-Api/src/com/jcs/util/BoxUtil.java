@@ -12,7 +12,7 @@ public class BoxUtil {
 	
 	public static BoxAPIConnection getApi(){
 		// enter the developer token here 
-		BoxAPIConnection api = new BoxAPIConnection("LLsUGD109Y6jWiSCWXmfknW3njFQzrFk");
+		BoxAPIConnection api = new BoxAPIConnection("e9cDw48L3GMRyrYzLgNmPDFFhTamWue2");
 		
 	
 		return api;

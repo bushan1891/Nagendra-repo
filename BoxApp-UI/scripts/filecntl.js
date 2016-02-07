@@ -10,6 +10,10 @@
 
                 var file = $scope.myFile;
                 //$scope.myFile.name="zz";
+                if(file!=null)
+                  alert("File Uploaded");
+                else
+                alert("No File attached !!!  Please attach file");
 
                 console.log('file is ' );
                 console.dir(file);

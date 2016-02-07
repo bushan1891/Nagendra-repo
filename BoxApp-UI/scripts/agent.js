@@ -20,7 +20,7 @@
         agentvm.updateClaim = updateClaim;
         agentvm.claimupdate;
         agentvm.adjustor;
-
+        agentvm.modalclaim;
 
         function loadAdjustor() {
 

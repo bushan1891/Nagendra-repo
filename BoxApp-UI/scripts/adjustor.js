@@ -20,7 +20,7 @@
         adjustorvm.updateClaim = updateClaim;
 
         adjustorvm.adjustorclaimApproved;
-
+        adjustorvm.modalclaim; // for view table
 
 
 
@@ -38,7 +38,7 @@
 
             console.log(adjustorvm.user.userName);
 
-            Service.getClaimsAdjustor(adjustorvm.user.userName).then(function (claim) {
+            Service.getClaimsAdjustor(adjustorvm.user.userName ).then(function (claim) {
 
                 adjustorvm.claimsApproved = claim;
 
@@ -67,6 +67,8 @@
 
         function updateClaim() {
 
+
+
             window.alert('Updated');
             console.dir(adjustorvm.claimupdate);
             Service.updateClaim(adjustorvm.claimupdate).then(function (claim) {
@@ -78,6 +80,7 @@
             }, function (error) {
                 console.log(error);
             });
+
 
         }
 

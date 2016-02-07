@@ -217,7 +217,7 @@ public class BoxService {
 		// assign claim id as the user id
 
 		User usr = fetchone(email);
-		String str = usr.getUserID() + "claim" + claim.getClaimID();
+		String str = claim.getClaimID();
 
 		claim.setClaimID(str); // custom claim no generator
 		claim.setAssignedAdjuster(""); // have to change this
@@ -248,14 +248,23 @@ public class BoxService {
 
 		User usr = fetchone(email);
 
-		// vehicle.setId(usr.getUserID());
+	    // to check if the vehicle exist 
+		
 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		try {
 
-			String hql = "from Claim c where c.Vehicle = :vin";
+			String hql = "from Vehicle v where v.vin = :vin";
+			List<Vehicle> vehicles = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
+			
+			if(vehicles!=null){
+				System.out.println("vehicle is present did not update vehicle " + vehicles.get(0).getVin());
+				return vehicle;
+			}
+			
+			
 			List<Claim> result = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
 
 			vehicle.setClaimNumber(result.get(0).getClaimID());

@@ -5,8 +5,7 @@
         .module('BoxApp')
         .controller('UserController', UserController);
 
-    //EmployeesController.$inject = ['employeeService'];
-    // inject it later employeeService down parameter 
+
     UserController.$inject = ['$location', 'Service','$timeout'];
 
     function UserController($location, Service,$timeout) {
@@ -18,19 +17,13 @@
         uservm.newVehicle;   // for the new vehicle claim
         uservm.file;
         uservm.addClaim = addClaim;
-        uservm.show = show;
         uservm.customer ={};
         uservm.customer.file;
+        uservm.modalclaim;
 
         uservm.vehicles;  // for vehicle history
 
 
-        function show(claim){
-           $timeout(alert(claim.claimID),2000);
-
-          $timeout(function(){Service.renameClaimFile(claim.claimID); } , 3000);
-           // Service.renameClaimFile(claim.claimID,claim);
-        }
 
 
 
@@ -47,7 +40,7 @@
 
             uservm.newClaim.claimID = uservm.user.userID+"claim"+currentDate;    // can be modified later
             uservm.newClaim.status = "pending";// get the current date
-            uservm.newClaim.assignedAdjuster = 2;    // will handle this in the back end
+            uservm.newClaim.assignedAdjuster = "Not-Assigned";    // will handle this in the back end
             uservm.newClaim.vehicle = uservm.newVehicle.vin;    // assign the current vehicle vin
 
 
@@ -59,7 +52,7 @@
             console.dir(uservm.newVehicle);
 
 
-            Service.createClaim(uservm.newClaim, uservm.newVehicle , uservm.file);
+            Service.createClaim(uservm.newClaim, uservm.newVehicle );
 
 
             // Service.createVehicle(uservm.newVehicle);

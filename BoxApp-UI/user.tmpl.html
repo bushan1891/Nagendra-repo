@@ -1,72 +1,74 @@
+<div class="container content myoverflow">
 
-
-    <div class="container content myoverflow">
-
-        <div class=" jumbotron card">
-            <!--this is the header  -->
-            <div class="row">
-                <div class="col-xs-4">
-                    <div class=".profile-img-card1">
-                        <a href="#" class="thumbnail">
-                            <img src="{{uservm.user.userinfo.imgurl}}" alt="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <h3><b>Hello, {{uservm.user.userName | uppercase}}</b></h3>
-
-                    <table class="table table-user-information">
-                        <tbody>
-                            <tr>
-                                <td><b>Department:</b></td>
-                                <td>{{uservm.user.userinfo.title}}</td>
-                            </tr>
-                            <tr>
-                                <td><b>Join date:</b></td>
-                                <td>{{uservm.user.userinfo.joinDate}}</td>
-                            </tr>
-                            <tr>
-                                <td><b>Date of Birth</b></td>
-                                <td>{{uservm.user.userinfo.dob}}</td>
-                            </tr>
-
-                            <tr>
-                                <tr>
-                                    <td><b>Gender</b></td>
-                                    <td>{{uservm.user.userinfo.gender}}</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Home Address</b></td>
-                                    <td>{{uservm.user.userinfo.address}}</td>
-
-                                </tr>
-                                <tr>
-                                    <td><b>Email</b></td>
-                                    <td><a href="mailto:info@support.com">{{uservm.user.userEmail}}</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><b>Phone Number</b></td>
-                                    <td>{{uservm.user.userinfo.phone}}
-                                        <br>
-                                    </td>
-
-                                </tr>
-
-                        </tbody>
-                    </table>
-
-
+    <div class=" jumbotron card">
+        <!--this is the header  -->
+        <div class="row">
+            <div class="col-xs-4">
+                <div class=".profile-img-card1">
+                    <a href="#" class="thumbnail">
+                        <img src="{{uservm.user.userinfo.imgurl}}"
+                             alt="https://lh3.googleusercontent.com/-EF9BoynKc9w/AAAAAAAAAAI/AAAAAAAAAAA/1au5roMkCC4/photo.jpg">
+                    </a>
                 </div>
             </div>
-            <!--this is the Content  -->
-            <label>Search: <input ng-model="searchText"></label>
-            <div class="panel panel-default">
-                <div class="panel-heading"><h4>Claims
+            <div class="col-xs-6">
+                <h3><b>Hello, {{uservm.user.userName | uppercase}}</b></h3>
+
+                <table class="table table-user-information">
+                    <tbody>
+                    <tr>
+                        <td><b>Department:</b></td>
+                        <td>{{uservm.user.userinfo.title}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Join date:</b></td>
+                        <td>{{uservm.user.userinfo.joinDate}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Date of Birth</b></td>
+                        <td>{{uservm.user.userinfo.dob}}</td>
+                    </tr>
+
+                    <tr>
+                    <tr>
+                        <td><b>Gender</b></td>
+                        <td>{{uservm.user.userinfo.gender}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Home Address</b></td>
+                        <td>{{uservm.user.userinfo.address}}</td>
+
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td><a href="mailto:info@support.com">{{uservm.user.userEmail}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Phone Number</b></td>
+                        <td>{{uservm.user.userinfo.phone}}
+                            <br>
+                        </td>
+
+                    </tr>
+
+                    </tbody>
+                </table>
 
 
-                      <!-- Modal button create a new Claim -->
-                    <button type="button" class="btn btn-info btn-lg pull-right pad" data-toggle="modal" data-target="#myModal">Create Claim</button>
+            </div>
+        </div>
+        <!--this is the Content  -->
+        <label>Search: <input ng-model="searchText"></label>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>Claims
+
+
+                    <!-- Modal button create a new Claim -->
+                    <button type="button" class="btn btn-info btn-lg pull-right pad" data-toggle="modal"
+                            data-target="#myModal">Create Claim
+                    </button>
 
 
                     <!-- Modal -->
@@ -81,111 +83,135 @@
                                 </div>
 
                                 <!--  Modal form goes here   -->
-                                <div class="modal-body" >
-                                    <form  name="addClaim" ng-submit="uservm.addClaim(addClaim)"   >
+                                <div class="modal-body">
+                                    <form name="addClaim" ng-submit="uservm.addClaim(addClaim)">
                                         <fieldset class="form-group">
                                             <label for="formGroupInput"> First Name </label>
-                                            <input type="text" class="form-control" id="formGroupInput" placeholder="First Name"  ng-model="uservm.newClaim.firstName">
+                                            <input type="text" class="form-control" id="formGroupInput"
+                                                   placeholder="First Name" ng-model="uservm.newClaim.firstName">
                                         </fieldset>
                                         <fieldset class="form-group">
                                             <label for="formGroupInput2">Last Name</label>
-                                            <input type="text" class="form-control" id="formGroupInput2" placeholder="Last Name"  ng-model="uservm.newClaim.lastName">
+                                            <input type="text" class="form-control" id="formGroupInput2"
+                                                   placeholder="Last Name" ng-model="uservm.newClaim.lastName">
                                         </fieldset>
                                         <fieldset class="form-group">
                                             <label for="formGroupInput3">Loss Date</label>
-                                            <input type="date" class="form-control" id="formGroupInput3" placeholder="Date"  ng-model="uservm.newClaim.lossDate">
+                                            <input type="date" class="form-control" id="formGroupInput3"
+                                                   placeholder="Date" ng-model="uservm.newClaim.lossDate">
                                         </fieldset>
                                         <fieldset class="form-group">
                                             <label for="formGroupInput43">Reported Date</label>
-                                            <input type="date" class="form-control" id="formGroupInput43" placeholder="Date"  ng-model="uservm.newClaim.reportedDate">
+                                            <input type="date" class="form-control" id="formGroupInput43"
+                                                   placeholder="Date" ng-model="uservm.newClaim.reportedDate">
                                         </fieldset>
                                         <fieldset class="form-group">
                                             <label for="formGroupInput4">Cause Of Loss</label>
-                                            <input type="text" class="form-control" id="formGroupInput4" placeholder="Cause Of Loss" ng-model="uservm.newClaim.causeOfLoss">
+                                            <input type="text" class="form-control" id="formGroupInput4"
+                                                   placeholder="Cause Of Loss" ng-model="uservm.newClaim.causeOfLoss">
                                         </fieldset>
                                         <fieldset class="form-group">
-                                         <label for="formGroupInput5">Loss Description</label>
-                                         <input type="text" class="form-control" id="formGroupInput5" placeholder="LossDescription" ng-model="uservm.newClaim.lossDescription" >
+                                            <label for="formGroupInput5">Loss Description</label>
+                                            <input type="text" class="form-control" id="formGroupInput5"
+                                                   placeholder="LossDescription"
+                                                   ng-model="uservm.newClaim.lossDescription">
                                         </fieldset>
                                         <br/>
 
                                         <!-- Vehicle info -->
 
                                         <div class="dropdown">
+                                            <label>Select Vehicle</label>
                                             <button class="btn btn-primary dropdown-toggle" type="button"
                                                     data-toggle="dropdown">{{uservm.newVehicle.makeDes}}
                                                 <span class="caret"></span></button>
                                             <div class="dropdown-menu">
                                                 <ul ng-repeat="vehicle in uservm.vehicles" class="list">
-                                                    <li><a ng-click=" vehicle.  uservm.newVehicle = vehicle   ">{{vehicle.vin}}</a>
+                                                    <li>
+                                                        <a ng-click=" vehicle.licPlateExp=null;  uservm.newVehicle = vehicle   ">{{vehicle.makeDes}}</a>
                                                     </li>
                                                 </ul>
                                             </div>
 
-                                       </div>
+                                        </div>
 
 
                                         <h3> Vehicle Info</h3>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput6">Vehicle VIN</label>
-                                            <input type="text" class="form-control" id="formGroupInput6" placeholder="Vehicle VIN" ng-model="uservm.newVehicle.vin"  >
+                                            <input type="text" class="form-control" id="formGroupInput6"
+                                                   placeholder="Vehicle VIN" ng-model="uservm.newVehicle.vin">
                                         </fieldset>
                                         <fieldset class="form-group">
                                             <label for="formGroupInput7">Model Year</label>
-                                            <input type="text" class="form-control" id="formGroupInput7" placeholder="Model Year" ng-model="uservm.newVehicle.modelYear">
+                                            <input type="text" class="form-control" id="formGroupInput7"
+                                                   placeholder="Model Year" ng-model="uservm.newVehicle.modelYear">
                                         </fieldset>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput88">Make Description</label>
-                                            <input type="text" class="form-control" id="formGroupInput88" placeholder="Model Description" ng-model="uservm.newVehicle.makeDes">
+                                            <input type="text" class="form-control" id="formGroupInput88"
+                                                   placeholder="Model Description" ng-model="uservm.newVehicle.makeDes">
                                         </fieldset>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput8">Model Description</label>
-                                            <input type="text" class="form-control" id="formGroupInput8" placeholder="Model Description" ng-model="uservm.newVehicle.modelDes">
+                                            <input type="text" class="form-control" id="formGroupInput8"
+                                                   placeholder="Model Description"
+                                                   ng-model="uservm.newVehicle.modelDes">
                                         </fieldset>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput9">Engine Description</label>
-                                            <input type="text" class="form-control" id="formGroupInput9" placeholder="Engine Description" ng-model="uservm.newVehicle.engineDes">
+                                            <input type="text" class="form-control" id="formGroupInput9"
+                                                   placeholder="Engine Description"
+                                                   ng-model="uservm.newVehicle.engineDes">
                                         </fieldset>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput10">Color</label>
-                                            <input type="text" class="form-control" id="formGroupInput10" placeholder="Color" ng-model="uservm.newVehicle.color" >
+                                            <input type="text" class="form-control" id="formGroupInput10"
+                                                   placeholder="Color" ng-model="uservm.newVehicle.color">
                                         </fieldset>
 
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput11">License Plate</label>
-                                            <input type="text" class="form-control" id="formGroupInput11" placeholder="License Plate" ng-model="uservm.newVehicle.licPlate">
+                                            <input type="text" class="form-control" id="formGroupInput11"
+                                                   placeholder="License Plate" ng-model="uservm.newVehicle.licPlate">
                                         </fieldset>
                                         <fieldset class="form-group">
                                             <label for="formGroupInput67">License Plate State</label>
-                                            <input type="text" class="form-control" id="formGroupInput67" placeholder="Mileage" ng-model="uservm.newVehicle.licPlateState" >
+                                            <input type="text" class="form-control" id="formGroupInput67"
+                                                   placeholder="Mileage" ng-model="uservm.newVehicle.licPlateState">
                                         </fieldset>
 
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput12">License Plate Expiration</label>
-                                            <input type="date" class="form-control" id="formGroupInput12" placeholder="License Plate Expiration" ng-model="uservm.newVehicle.licPlateExp">
+                                            <input type="date" class="form-control" id="formGroupInput12"
+                                                   placeholder="License Plate Expiration"
+                                                   ng-model="uservm.newVehicle.licPlateExp">
                                         </fieldset>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput13">Damage description</label>
-                                            <input type="text" class="form-control" id="formGroupInput13" placeholder="License Plate Expiration" ng-model="uservm.newVehicle.damageDes" >
+                                            <input type="text" class="form-control" id="formGroupInput13"
+                                                   placeholder="License Plate Expiration"
+                                                   ng-model="uservm.newVehicle.damageDes">
                                         </fieldset>
 
                                         <fieldset class="form-group">
                                             <label for="formGroupInput14">Mileage</label>
-                                            <input type="text" class="form-control" id="formGroupInput14" placeholder="Mileage" ng-model="uservm.newVehicle.mileage" >
+                                            <input type="text" class="form-control" id="formGroupInput14"
+                                                   placeholder="Mileage" ng-model="uservm.newVehicle.mileage">
                                         </fieldset>
 
 
-
-
-                                        <button type="submit" class="btn btn-primary" ng-click="uservm.show(uservm.newClaim)">Add Claim</button>
+                                        <button type="submit" class="btn btn-primary"
+                                                ng-click="uservm.show(uservm.newClaim)">Add Claim
+                                        </button>
 
                                     </form>
 
@@ -202,59 +228,176 @@
                     </div>
 
 
-
-
-                </h4></div>
-                <div class="panel-body mytable" >
-
-
-                    <table data-toggle="table " class ="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>ClaimID</th>
-                            <th>Status</th>
-                            <th>loss Date</th>
-                            <th>Cause Of Loss</th>
-                            <th>Loss Description </th>
-                            <th>Assigned Adjustor</th>
-                            <th>Vehicle Vin</th>
-                            <th> </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="claim in uservm.claims | filter : searchText  "  ng-class ="{ danger : claim.status=='pending' , success : claim.status== 'Approved' }"  >
-                            <td>{{claim.claimID}}  </td>
-                            <td>{{claim.status}}</td>
-                            <td>{{claim.lossDate}}</td>
-                            <td>{{claim.causeOfLoss}}</td>
-                            <td>{{claim.lossDescription}}</td>
-                            <td>{{claim.assignedAdjuster}}</td>
-                            <td>{{claim.Vehicle}}</td>
-                            <td>
-                                <div ng-controller = "myCtrl">
-                                    <input type="file" file-model="myFile"/>
-                                    <button ng-click="uploadFile(claim.claimID)">upload me</button>
-                                </div>
-
-                            </td>
-
-
-
-
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                </h4>
             </div>
+            <div class="panel-body mytable">
 
 
+                <table data-toggle="table " class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>ClaimID</th>
+                        <th>Status</th>
+                        <th>Assigned Adjustor</th>
+                        <th>Vehicle Vin</th>
+                        <th>View Claim</th>
+                        <th>Upload Documents</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="claim in uservm.claims | filter : searchText  "
+                        ng-class="{ danger : claim.status=='pending' , success : claim.status== 'Approved' }">
 
 
+                        <td>{{claim.claimID}}</td>
+                        <td>{{claim.status}}</td>
+                        <td>{{claim.assignedAdjuster}}</td>
+                        <td>{{claim.Vehicle}}</td>
+                        <td><a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#test"
+                               ng-click="uservm.modalclaim=claim "> View </a>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="test" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Claim Details</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <table class="table table-user-information">
+                                                <thead><h3>Claim</h3> </thead>
+                                                <tbody>
+
+                                                <tr>
+                                                    <td><b>Claim Number : </b></td>
+                                                    <td>{{uservm.modalclaim.claimID}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>First Name:</b></td>
+                                                    <td>{{uservm.modalclaim.firstName}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Last Name:</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.lastName }}
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <table class="table table-user-information">
+                                               <thead>
+
+                                                   <td><label><b><h3>Status</h3></b></label></td>
+
+                                               </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <b>Inspection Status</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.AdjustorStatus}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Agent Status</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.status}}
+                                                    </td>
+                                                </tr>
+                                                <br>
+                                                <tr>
+                                                    <td>
+                                                        <b>LossDate :</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.lossDate}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Loss Description : </b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.lossDescription}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Reported Date</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.reportedDate}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Vehicle </b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.Vehicle}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Cause Of Loss</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.causeOfLoss}}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>Assigned Adjuster</b>
+                                                    </td>
+                                                    <td>
+                                                        {{uservm.modalclaim.assignedAdjuster}}
+                                                    </td>
+                                                </tr>
 
 
+                                                </tbody>
+                                            </table>
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </td>
+                        <td>
+                            <div ng-controller="myCtrl">
+                                <input type="file" file-model="myFile"/>
+                                <button ng-click="uploadFile(claim.claimID) ">upload me</button>
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
 
-
     </div>
+
+
+</div>
 
