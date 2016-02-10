@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="fetchAdjustorClaimApproved" key="selection"/>
+		<item value="&#x09;&#x09;&#x09;System.out.println(result.get(0).getFirstName());" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="createCehicle"/>
 			<item value="fetchAdjustorClaimApproved"/>
 		</list>
 		<list key="replacehistory">

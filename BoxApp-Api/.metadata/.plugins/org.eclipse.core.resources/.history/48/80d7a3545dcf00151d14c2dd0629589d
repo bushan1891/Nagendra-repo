@@ -1,0 +1,142 @@
+package com.jcs.util;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import com.box.sdk.BoxAPIConnection;
+import com.box.sdk.BoxCollaboration;
+import com.box.sdk.BoxCollaborator;
+import com.box.sdk.BoxDeveloperEditionAPIConnection;
+import com.box.sdk.BoxEnterprise;
+import com.box.sdk.BoxFile;
+import com.box.sdk.BoxFolder;
+import com.box.sdk.BoxItem;
+import com.box.sdk.BoxUser;
+import com.box.sdk.BoxUser.Info;
+import com.box.sdk.EncryptionAlgorithm;
+import com.box.sdk.IAccessTokenCache;
+import com.box.sdk.InMemoryLRUAccessTokenCache;
+import com.box.sdk.JWTEncryptionPreferences;
+
+public class BoxUtil {
+	private static final String CLIENT_ID = "d0apdicfw300vm271hsbczm4oiw0iu2l";
+    private static final String CLIENT_SECRET = "MdRmQ3HpOgejMrB9DA6qRZG5IaWgsinC";
+    private static final String ENTERPRISE_ID = "837026";
+    private static final String PUBLIC_KEY_ID = "e25go5uv";
+    private static final String PRIVATE_KEY_FILE = "/Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/private_key.pem";
+    private static final String PRIVATE_KEY_PASSWORD = "bushanrock1";
+    private static final String APP_USER_NAME = "Bushan";
+    private static final int MAX_CACHE_ENTRIES = 100;
+	
+	public static BoxAPIConnection getApi() throws IOException{
+		// enter the developer token here 
+		
+		Logger.getLogger("com.box.sdk").setLevel(Level.OFF);
+		
+		String privateKey = new String(Files.readAllBytes(Paths.get(PRIVATE_KEY_FILE)));
+		
+		
+		
+	//	BoxAPIConnection api = new BoxAPIConnection("79tiGi4HxO9qvFzMvexzJBEpE0cpGNj4");
+	
+
+        JWTEncryptionPreferences encryptionPref = new JWTEncryptionPreferences();
+        encryptionPref.setPublicKeyID(PUBLIC_KEY_ID);
+        encryptionPref.setPrivateKey(privateKey);
+        encryptionPref.setPrivateKeyPassword(PRIVATE_KEY_PASSWORD);
+        encryptionPref.setEncryptionAlgorithm(EncryptionAlgorithm.RSA_SHA_256);
+
+        //It is a best practice to use an access token cache to prevent unneeded requests to Box for access tokens.
+        //For production applications it is recommended to use a distributed cache like Memcached or Redis, and to
+        //implement IAccessTokenCache to store and retrieve access tokens appropriately for your environment.
+        IAccessTokenCache accessTokenCache = new InMemoryLRUAccessTokenCache(MAX_CACHE_ENTRIES);
+
+        BoxDeveloperEditionAPIConnection api = BoxDeveloperEditionAPIConnection.getAppEnterpriseConnection(ENTERPRISE_ID, CLIENT_ID, CLIENT_SECRET, encryptionPref);
+        
+        BoxUser.Info user = BoxUser.createAppUser(api, APP_USER_NAME);
+        System.out.format("User created with name %s and id %s\n\n", APP_USER_NAME, user.getID());
+        
+        BoxDeveloperEditionAPIConnection apiAppuser =  BoxDeveloperEditionAPIConnection.getAppUserConnection(user.getID(), CLIENT_ID, CLIENT_SECRET, encryptionPref);
+        
+        BoxFolder rootFolder = BoxFolder.getRootFolder(apiAppuser);
+      
+         System.out.println(  rootFolder.getID());
+   
+       
+       BoxUser.Info userInfo = BoxUser.getCurrentUser(apiAppuser).getInfo();
+       System.out.format("Welcome, %s!\n\n", userInfo.getName() );
+
+       
+//       BoxFolder parentFolder = new BoxFolder(apiAppuser, "6469114905");
+//       BoxFolder.Info childFolderInfo = parentFolder.createFolder("Users");
+       
+       
+        listFolder(rootFolder, 0);
+        
+        
+        
+        
+        
+	
+		return apiAppuser;
+		
+	}
+	
+	
+	private static void listFolder(BoxFolder folder, int depth) {
+        for (BoxItem.Info itemInfo : folder) {
+            String indent = "";
+            for (int i = 0; i < depth; i++) {
+                indent += "    ";
+            }
+
+            System.out.println(indent + itemInfo.getName() + itemInfo.getID());
+            if (itemInfo instanceof BoxFolder.Info) {
+                BoxFolder childFolder = (BoxFolder) itemInfo.getResource();
+                if (depth < 1) {
+                    listFolder(childFolder, depth + 1);
+                }
+            }
+        }
+	}
+	
+	
+	public static BoxFolder getClaimFolder()throws IOException {
+
+		BoxAPIConnection api = BoxUtil.getApi();
+		BoxFolder Folder = new BoxFolder(api, "6372398869");
+
+		return Folder;
+
+	}
+
+	public static BoxFolder getUserFolder()throws IOException {
+
+		BoxAPIConnection api = BoxUtil.getApi();
+		BoxFolder Folder = new BoxFolder(api, "6478522561");  // this is app users user folder id 
+
+		return Folder;
+
+	}
+	
+	
+	public static BoxItem.Info getSearchResult(BoxFolder rootFolder ,String str ){
+		
+		BoxItem.Info result = null ;
+		
+		for(BoxItem.Info info : rootFolder ){
+		if(info.getName().equals(str))
+			return info;
+		}
+			
+		return result;
+	}
+	
+	
+	
+}

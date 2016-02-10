@@ -6,9 +6,9 @@
         .controller('UserController', UserController);
 
 
-    UserController.$inject = ['$location', 'Service','$timeout'];
+    UserController.$inject = ['$location', 'Service', '$timeout'];
 
-    function UserController($location, Service,$timeout) {
+    function UserController($location, Service, $timeout) {
 
         var uservm = this;
         uservm.user;           // current user claim
@@ -17,14 +17,26 @@
         uservm.newVehicle;   // for the new vehicle claim
         uservm.file;
         uservm.addClaim = addClaim;
-        uservm.customer ={};
+        uservm.customer = {};
         uservm.customer.file;
         uservm.modalclaim;
 
         uservm.vehicles;  // for vehicle history
+        uservm.elapdate;
+        uservm.currentdate = new Date();
 
+        uservm.elap = elap;
 
+        function elap(date){
 
+            var date1 = new Date(date);
+
+            var time = Math.abs(uservm.currentdate .getTime() - date1.getTime());;
+            var diffDays = Math.ceil(time / (1000 * 3600 * 24));
+            uservm.elapdate =diffDays;
+
+            console.log(uservm.elapdate);
+        }
 
 
 
@@ -38,7 +50,7 @@
             var datereported = new Date().getDate();
             var currentDate = new Date().getMilliseconds();
 
-            uservm.newClaim.claimID = uservm.user.userID+"claim"+currentDate;    // can be modified later
+            uservm.newClaim.claimID = uservm.user.userID + "claim" + currentDate;    // can be modified later
             uservm.newClaim.status = "pending";// get the current date
             uservm.newClaim.assignedAdjuster = "Not-Assigned";    // will handle this in the back end
             uservm.newClaim.vehicle = uservm.newVehicle.vin;    // assign the current vehicle vin
@@ -52,7 +64,7 @@
             console.dir(uservm.newVehicle);
 
 
-            Service.createClaim(uservm.newClaim, uservm.newVehicle );
+            Service.createClaim(uservm.newClaim, uservm.newVehicle);
 
 
             // Service.createVehicle(uservm.newVehicle);
@@ -87,17 +99,18 @@
             });
 
             // loading vehicles after claims
-          Service.getVehicle(uservm.user.userID).then(function (vehicle) {
+            Service.getVehicle(uservm.user.userID).then(function (vehicle) {
 
-              uservm.vehicles =vehicle;
+                uservm.vehicles = vehicle;
 
-              console.log("vehicles");
-              console.dir(uservm.vehicles);
+                console.log("vehicles");
+                console.dir(uservm.vehicles);
 
 
             }, function (error) {
                 console.log(error);
-            });;
+            });
+            ;
 
 
         }
@@ -107,22 +120,10 @@
             uservm.user = Service.getLogged();
 
 
-
         }
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 })();

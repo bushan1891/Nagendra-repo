@@ -36,6 +36,7 @@ import com.jcs.model.Claim;
 import com.jcs.model.User;
 import com.jcs.model.Vehicle;
 import com.jcs.service.BoxService;
+import com.jcs.util.BoxUtil;
 
 /*import com.sun.jersey.core.header.FormDataContentDisposition;
 import com.sun.jersey.multipart.FormDataParam;
@@ -250,7 +251,7 @@ public class HomeController {
 	public Response uploadClaimFile(
 		@FormDataParam("file") InputStream uploadedInputStream,
 		@FormDataParam("file") FormDataContentDisposition fileDetail,
-		@QueryParam(value = "claimid") String claim) {
+		@QueryParam(value = "claimid") String claim) throws IOException {
 			
 		BoxService service = new BoxService();
 		
@@ -269,7 +270,12 @@ public class HomeController {
 			
 		BoxService service = new BoxService();
 		System.out.println(claim); 
-	    String result =	service.rename(claim);
+	    try {
+			String result =	service.rename(claim);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return null;
 	}
@@ -285,7 +291,8 @@ public class HomeController {
 		BoxTest t = new BoxTest();
         BoxService service = new BoxService();
 		try {
-			//t.test();
+			System.out.println("you are in box test");
+			BoxUtil.getApi();
 			service.createBoxUserFolder();
 			
 		} catch (IOException e) {
@@ -295,13 +302,11 @@ public class HomeController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		
 		return "This is a box test";
-
 	}
 
-	// file handle function
-	
+	// file handle function	
 	@POST
 	@Path("/upload")
 	@Consumes(MediaType.MULTIPART_FORM_DATA)

@@ -21,7 +21,7 @@ public final class BoxTest {
 	public void test() throws IOException {
    BoxService service = new BoxService();
   
-     service.rename("rename"); 
+   //  service.rename("rename"); 
    
   
 

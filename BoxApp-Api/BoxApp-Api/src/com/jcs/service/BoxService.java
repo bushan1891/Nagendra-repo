@@ -413,7 +413,7 @@ public class BoxService {
 		return null;
 	}
 
-	public void uploadClaimFile(InputStream uploadedInputStream, String name) {
+	public void uploadClaimFile(InputStream uploadedInputStream, String name) throws IOException {
 
 		Date date = new Date();
 		long time = date.getTime();
@@ -424,8 +424,7 @@ public class BoxService {
 		name = name + ts + ".pdf";
 
 		BoxAPIConnection api = BoxUtil.getApi();
-		BoxFolder rootFolder = BoxUtil.getClaimFolder();
-		//rootFolder.uploadFile(uploadedInputStream, name);
+		
 		
 		// to re-structure our code 
 		try {
@@ -451,10 +450,12 @@ public class BoxService {
 	      BoxFolder upfolder =  new BoxFolder(api, info.getID());
 	      upfolder.uploadFile(uploadedInputStream, name);
 	      
-
+	      BoxFolder claimFolder = BoxUtil.getClaimFolder();
+		  claimFolder.uploadFile(uploadedInputStream, name);
+	      
 	}
 
-	public String rename(String claim) {
+	public String rename(String claim) throws IOException{
 
 		BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder rootFolder = BoxUtil.getClaimFolder();
@@ -478,7 +479,7 @@ public class BoxService {
 
 	public String createBoxUserFolder() throws Exception {
 
-		BoxAPIConnection api = BoxUtil.getApi();
+		//BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder rootFolder = BoxUtil.getUserFolder();
 
 		List<User> users = fetchAll();
