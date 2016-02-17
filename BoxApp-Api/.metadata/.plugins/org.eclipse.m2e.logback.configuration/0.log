@@ -2455,3 +2455,311 @@
 2016-02-09 14:44:35,927 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
 2016-02-09 14:44:35,927 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-02-09 14:44:35,928 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-09 16:27:27,075 [Worker-218] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-02-09 16:27:27,081 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 16:27:27,081 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-09 16:27:27,082 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 16:27:27,082 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-09 16:27:28,102 [Worker-222] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-02-09 16:27:28,106 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 16:27:28,106 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-09 16:27:28,106 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 16:27:28,106 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-09 16:27:29,124 [Worker-231] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-02-09 16:27:29,125 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 16:27:29,125 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-09 16:27:29,127 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 16:27:29,127 [Worker-231] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-09 20:08:21,480 [Worker-255] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2016-02-09 20:08:21,485 [Worker-255] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 20:08:21,486 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-09 20:08:21,487 [Worker-255] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 20:08:21,487 [Worker-255] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-09 20:08:21,674 [Stop Help Server] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1c53a893{HTTP/1.1}{127.0.0.1:0}
+2016-02-09 20:08:21,695 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@3c392743{/help,null,UNAVAILABLE}
+2016-02-09 21:37:51,207 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 21:37:51,212 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-09 21:37:51,214 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 21:37:51,215 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-09 21:38:38,299 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 21:38:38,300 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-09 21:38:38,301 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-09 21:38:38,301 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-10 14:40:34,234 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-10 14:40:34,246 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-10 14:40:34,249 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-10 14:40:34,249 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-11 20:00:35,834 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-11 20:00:35,839 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-11 20:00:35,841 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-11 20:00:35,841 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:40:13,072 [Worker-543] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: BoxApp-Api:BoxApp-Api:0.0.1-SNAPSHOT @ /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/pom.xml.
+2016-02-16 11:40:15,699 [Worker-543] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BoxApp-Api
+2016-02-16 11:40:15,700 [Worker-543] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BoxApp-Api
+2016-02-16 11:43:17,372 [Worker-543] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-02-16 11:43:17,393 [Worker-543] ERROR o.e.m.e.x.i.MarkerLocationService - null
+org.eclipse.jface.text.BadLocationException: null
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1055) ~[na:na]
+	at org.eclipse.jface.text.TreeLineTracker.offsetByLine(TreeLineTracker.java:334) ~[na:na]
+	at org.eclipse.jface.text.TreeLineTracker.getLineOffset(TreeLineTracker.java:1122) ~[na:na]
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:169) ~[na:na]
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineOffset(BasicStructuredDocument.java:1495) ~[na:na]
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.findLocationForMarker(MarkerLocationService.java:106) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:48) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:308) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:295) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$4.call(ProjectRegistryManager.java:709) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$4.call(ProjectRegistryManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProjectFacade(ProjectRegistryManager.java:699) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:397) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:350) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:297) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:398) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-02-16 11:43:17,576 [Worker-543] ERROR o.e.m.e.x.i.MarkerLocationService - null
+org.eclipse.jface.text.BadLocationException: null
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1055) ~[na:na]
+	at org.eclipse.jface.text.TreeLineTracker.offsetByLine(TreeLineTracker.java:334) ~[na:na]
+	at org.eclipse.jface.text.TreeLineTracker.getLineOffset(TreeLineTracker.java:1122) ~[na:na]
+	at org.eclipse.jface.text.AbstractLineTracker.getLineOffset(AbstractLineTracker.java:169) ~[na:na]
+	at org.eclipse.wst.sse.core.internal.text.BasicStructuredDocument.getLineOffset(BasicStructuredDocument.java:1495) ~[na:na]
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.findLocationForMarker(MarkerLocationService.java:106) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.decorateMarker(MarkerUtils.java:48) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarker(MavenMarkerManager.java:308) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addErrorMarkers(MavenMarkerManager.java:295) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:80) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$4.call(ProjectRegistryManager.java:709) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager$4.call(ProjectRegistryManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.execute(ProjectRegistryManager.java:956) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProjectFacade(ProjectRegistryManager.java:699) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:397) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:350) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:297) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration0(ProjectConfigurationManager.java:398) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:345) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$2.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1351) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:342) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.UpdateMavenProjectJob.runInWorkspace(UpdateMavenProjectJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+2016-02-16 11:43:17,743 [Worker-543] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: BoxApp-Api:BoxApp-Api:0.0.1-SNAPSHOT @ /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/pom.xml.
+2016-02-16 11:43:18,632 [Worker-543] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BoxApp-Api/src
+2016-02-16 11:43:18,633 [Worker-543] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /BoxApp-Api/src/test/java because it overlaps with /BoxApp-Api/src
+2016-02-16 11:43:19,327 [Worker-543] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for BoxApp-Api
+2016-02-16 11:43:19,330 [Worker-543] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2016-02-16 11:43:19,859 [Worker-548] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BoxApp-Api
+2016-02-16 11:43:19,859 [Worker-548] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BoxApp-Api
+2016-02-16 11:43:55,589 [Worker-545] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: BoxApp-Api:BoxApp-Api:0.0.1-SNAPSHOT @ /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/pom.xml.
+2016-02-16 11:43:56,222 [Worker-545] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:43:56,222 [Worker-545] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:43:56,223 [Worker-545] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:43:56,224 [Worker-545] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:43:56,224 [Worker-545] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BoxApp-Api
+2016-02-16 11:43:56,224 [Worker-545] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BoxApp-Api
+2016-02-16 11:43:56,227 [Worker-545] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:43:57,668 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:43:57,669 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:43:57,670 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:43:57,671 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:45:20,531 [Worker-545] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: BoxApp-Api:BoxApp-Api:0.0.1-SNAPSHOT @ /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/pom.xml.
+2016-02-16 11:45:21,542 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/mail/1.4.7/mail-1.4.7.pom
+2016-02-16 11:45:21,756 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/mail/1.4.7/mail-1.4.7.pom
+2016-02-16 11:45:21,986 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/sun/mail/all/1.4.7/all-1.4.7.pom
+2016-02-16 11:45:22,222 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/sun/mail/all/1.4.7/all-1.4.7.pom
+2016-02-16 11:45:22,431 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/javax.mail-api/1.5.2/javax.mail-api-1.5.2.pom
+2016-02-16 11:45:22,657 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/javax.mail-api/1.5.2/javax.mail-api-1.5.2.pom
+2016-02-16 11:45:22,882 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/sun/mail/all/1.5.2/all-1.5.2.pom
+2016-02-16 11:45:23,125 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/sun/mail/all/1.5.2/all-1.5.2.pom
+2016-02-16 11:45:23,346 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/mail/1.4.7/mail-1.4.7.jar
+2016-02-16 11:45:23,925 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/mail/1.4.7/mail-1.4.7.jar
+2016-02-16 11:45:24,143 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/javax.mail-api/1.5.2/javax.mail-api-1.5.2.jar
+2016-02-16 11:45:24,520 [Worker-545] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/mail/javax.mail-api/1.5.2/javax.mail-api-1.5.2.jar
+2016-02-16 11:45:25,156 [Worker-545] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:45:25,156 [Worker-545] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:45:25,158 [Worker-545] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:45:25,158 [Worker-545] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:45:25,158 [Worker-545] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BoxApp-Api
+2016-02-16 11:45:25,158 [Worker-545] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BoxApp-Api
+2016-02-16 11:45:25,161 [Worker-545] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:45:26,374 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:45:26,374 [Worker-543] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:45:26,375 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:45:26,376 [Worker-543] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:48:08,653 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:08,654 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:48:08,654 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:08,654 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:48:22,582 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:22,582 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:48:22,583 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:22,583 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:48:38,889 [Worker-552] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:38,889 [Worker-552] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:48:38,890 [Worker-552] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:38,891 [Worker-552] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:48:49,039 [Worker-552] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-02-16 11:48:49,195 [Worker-552] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: BoxApp-Api:BoxApp-Api:0.0.1-SNAPSHOT @ /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/pom.xml.
+2016-02-16 11:48:49,795 [Worker-552] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BoxApp-Api/src
+2016-02-16 11:48:49,796 [Worker-552] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /BoxApp-Api/src/test/java because it overlaps with /BoxApp-Api/src
+2016-02-16 11:48:50,047 [Worker-552] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for BoxApp-Api
+2016-02-16 11:48:50,050 [Worker-552] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2016-02-16 11:48:50,454 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:50,455 [Worker-543] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:48:50,456 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:48:50,456 [Worker-543] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:48:50,456 [Worker-543] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of BoxApp-Api
+2016-02-16 11:48:50,456 [Worker-543] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for BoxApp-Api
+2016-02-16 11:48:50,459 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:52:16,688 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:52:16,689 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:52:16,690 [Worker-549] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:52:16,690 [Worker-549] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:53:28,337 [Worker-548] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:53:28,338 [Worker-548] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:53:28,338 [Worker-548] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:53:28,339 [Worker-548] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:54:09,214 [Worker-551] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:54:09,215 [Worker-551] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:54:09,215 [Worker-551] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:54:09,216 [Worker-551] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 11:57:02,265 [Worker-554] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:57:02,266 [Worker-554] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 11:57:02,267 [Worker-554] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 11:57:02,267 [Worker-554] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 12:00:29,246 [Worker-551] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:00:29,247 [Worker-551] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 12:00:29,247 [Worker-551] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:00:29,248 [Worker-551] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 12:00:58,898 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:00:58,899 [Worker-543] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 12:00:58,900 [Worker-543] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:00:58,900 [Worker-543] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 12:02:56,184 [Worker-555] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:02:56,184 [Worker-555] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 12:02:56,185 [Worker-555] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:02:56,185 [Worker-555] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 12:06:28,664 [Worker-557] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:06:28,664 [Worker-557] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 12:06:28,665 [Worker-557] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:06:28,666 [Worker-557] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 12:08:13,502 [Worker-557] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:08:13,502 [Worker-557] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 12:08:13,503 [Worker-557] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 12:08:13,503 [Worker-557] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 15:44:51,599 [Worker-631] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 15:44:51,602 [Worker-631] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 15:44:51,602 [Worker-631] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 15:44:51,603 [Worker-631] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:00:11,098 [Worker-641] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:00:11,098 [Worker-641] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:00:11,099 [Worker-641] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:00:11,099 [Worker-641] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:01:20,272 [Worker-636] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:01:20,272 [Worker-636] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:01:20,273 [Worker-636] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:01:20,273 [Worker-636] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:01:31,338 [Worker-636] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:01:31,338 [Worker-636] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:01:31,338 [Worker-636] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:01:31,339 [Worker-636] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:01:42,847 [Worker-636] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:01:42,847 [Worker-636] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:01:42,848 [Worker-636] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:01:42,848 [Worker-636] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:02:18,209 [Worker-645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:02:18,209 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:02:18,210 [Worker-645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:02:18,210 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:02:43,175 [Worker-645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:02:43,175 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:02:43,176 [Worker-645] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:02:43,176 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:02:54,741 [Worker-646] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:02:54,741 [Worker-646] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:02:54,742 [Worker-646] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:02:54,742 [Worker-646] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:03:15,846 [Worker-643] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:03:15,846 [Worker-643] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:03:15,847 [Worker-643] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:03:15,848 [Worker-643] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:04:03,663 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:04:03,664 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:04:03,665 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:04:03,665 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:10:59,593 [Worker-643] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:10:59,593 [Worker-643] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:10:59,594 [Worker-643] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:10:59,594 [Worker-643] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:11:08,705 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:11:08,705 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:11:08,706 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:11:08,706 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:11:38,080 [Worker-641] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:11:38,080 [Worker-641] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:11:38,081 [Worker-641] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:11:38,081 [Worker-641] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:23:02,787 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:23:02,788 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:23:02,788 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:23:02,789 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:26:32,342 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:26:32,343 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:26:32,343 [Worker-647] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:26:32,344 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:28:17,057 [Worker-648] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:28:17,057 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:28:17,057 [Worker-648] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:28:17,058 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:41:34,871 [Worker-648] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:41:34,872 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:41:34,873 [Worker-648] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:41:34,873 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:42:01,006 [Worker-643] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:42:01,007 [Worker-643] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:42:01,007 [Worker-643] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:42:01,008 [Worker-643] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:45:58,077 [Worker-650] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:45:58,078 [Worker-650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:45:58,078 [Worker-650] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:45:58,079 [Worker-650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:56:53,464 [Worker-655] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:56:53,465 [Worker-655] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:56:53,466 [Worker-655] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:56:53,466 [Worker-655] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 16:58:29,932 [Worker-658] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:58:29,932 [Worker-658] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 16:58:29,933 [Worker-658] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 16:58:29,933 [Worker-658] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 17:01:45,784 [Worker-651] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 17:01:45,784 [Worker-651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 17:01:45,784 [Worker-651] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 17:01:45,784 [Worker-651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 17:03:55,435 [Worker-644] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 17:03:55,435 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 17:03:55,436 [Worker-644] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 17:03:55,436 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources
+2016-02-16 17:06:46,815 [Worker-644] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 17:06:46,816 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/main/resources
+2016-02-16 17:06:46,817 [Worker-644] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-02-16 17:06:46,817 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/src/test/resources

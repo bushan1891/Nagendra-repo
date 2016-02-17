@@ -7,9 +7,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -31,8 +34,10 @@ import com.box.sdk.BoxFolder;
 import org.glassfish.jersey.media.multipart.FormDataParam;*/
 
 import com.google.gson.Gson;
+import com.jcs.MailService.MailService;
 import com.jcs.box.BoxTest;
 import com.jcs.model.Claim;
+import com.jcs.model.Registration;
 import com.jcs.model.User;
 import com.jcs.model.Vehicle;
 import com.jcs.service.BoxService;
@@ -338,7 +343,19 @@ public class HomeController {
 			//uploadedInputStream.close();
 	}
 	
-	
+	@POST
+	@Path("/mail")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Registration mail(Registration reg) throws AddressException, MessagingException{
+		
+		MailService mail= new MailService();
+		mail.mail(reg);
+		
+        System.out.println(reg.getEmail());
+		
+		return reg;
+	}
 	
 	
 

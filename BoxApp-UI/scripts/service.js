@@ -26,6 +26,7 @@
         self.renameClaimFile=renameClaimFile;
         self.sendfile=sendfile;
         self.getVehicle=getVehicle;
+        self.Mailregister=Mailregister;
 
         function logged(loggedUser) {
 
@@ -323,6 +324,29 @@
 
             $http
                 .get(url)
+                .then(successFn, errorFn);
+
+            function successFn(response) {
+                defer.resolve(response.data);
+            }
+
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+
+
+        }
+
+
+        function Mailregister(reg){
+
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/mail";
+
+            $http
+                .post(url, reg)
                 .then(successFn, errorFn);
 
             function successFn(response) {

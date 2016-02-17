@@ -11,6 +11,12 @@
 	 function moduleConfig ($routeProvider) {
 	      
 	       $routeProvider
+			   .when('/register', {
+				   templateUrl: 'registration.html',
+				   controller: 'register',
+				   controllerAs: 'registervm'
+			   })
+
 	        .when('/login', {
 	          templateUrl: 'user.login.tmpl.html',
 	          controller: 'LoginController',
@@ -32,7 +38,7 @@
 	          controllerAs: 'adjustorvm'
 	        })
 	        .otherwise({
-	          redirectTo: '/login'
+	          redirectTo: '/register'
 	        });
 	    }
 	 
