@@ -39,6 +39,7 @@ import com.jcs.box.BoxTest;
 import com.jcs.model.Claim;
 import com.jcs.model.Registration;
 import com.jcs.model.User;
+import com.jcs.model.UserInfo;
 import com.jcs.model.Vehicle;
 import com.jcs.service.BoxService;
 import com.jcs.util.BoxUtil;
@@ -259,90 +260,48 @@ public class HomeController {
 		@QueryParam(value = "claimid") String claim) throws IOException {
 			
 		BoxService service = new BoxService();
+		System.out.println(claim);
 		
-		service.uploadClaimFile(uploadedInputStream,claim );
+     	service.uploadClaimFile(uploadedInputStream,claim );
 		
-		
-		return null;
-	}
-	
-	
-	@GET
-	@Path("/renamecalim")
-	@Produces(MediaType.APPLICATION_JSON)
-	public String renameClaimFile(
-		@QueryParam(value = "claim") String claim) {
-			
-		BoxService service = new BoxService();
-		System.out.println(claim); 
-	    try {
-			String result =	service.rename(claim);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		return null;
 	}
-	
-	
 	
 
+	
+	
+	
+// this is box test function used by postman to test 
 	@GET
 	@Path("/box")
 	@Produces(MediaType.APPLICATION_JSON)
-	public String box() {
+	public Response box() throws IOException {
 
 		BoxTest t = new BoxTest();
         BoxService service = new BoxService();
 		try {
 			System.out.println("you are in box test");
-			BoxUtil.getApi();
-			service.createBoxUserFolder();
+			//BoxUtil.getApi();
+			//service.createBoxUserFolder();
 			
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-		return "This is a box test";
+		MediaType APPLICATION_HTML = null;
+		return Response.status(404).entity("alert('testt')").type(APPLICATION_HTML).build();
 	}
 
-	// file handle function	
-	@POST
-	@Path("/upload")
-	@Consumes(MediaType.MULTIPART_FORM_DATA)
-	public Response uploadFile(
-		@FormDataParam("file") InputStream uploadedInputStream,
-		@FormDataParam("file") FormDataContentDisposition fileDetail) {
-
-		String uploadedFileLocation = "/Users/bushan/eclipse/" + fileDetail.getFileName();
-		
-		// save it
-		writeToFile(uploadedInputStream, uploadedFileLocation);
-
-		String output = "File uploaded to : " + uploadedFileLocation;
-
-		return null;
-
-	}
 	
 	
-	private void writeToFile(InputStream uploadedInputStream,
-			String uploadedFileLocation) {
-		
-		BoxAPIConnection api = new BoxAPIConnection("vlGnJZyAxPmIoYMkutqLNLzhsMAOogLa");
-		BoxFolder rootFolder = BoxFolder.getRootFolder(api);
-		
-		
-		rootFolder.uploadFile(uploadedInputStream, "My File.pdf");
+
+    
+
 	
-			//uploadedInputStream.close();
-	}
 	
+// this function used to send out the mail from the registration form 	
 	@POST
 	@Path("/mail")
 	@Produces(MediaType.APPLICATION_JSON)
@@ -358,7 +317,41 @@ public class HomeController {
 	}
 	
 	
-
+	// create user important 
+	@POST
+	@Path("/Createuser")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response createUser(User user) throws AddressException, MessagingException{
+		
+		
+		 BoxService service = new BoxService();
+		 User u=service.pushUser(user);
+		 MediaType APPLICATION_JSON=null;
+		 
+		 if(u==null){
+			 
+			 return Response.status(404).entity("{\"User\": \"null\"}").type(APPLICATION_JSON).build();
+		 }
+		
+		return Response.status(200).entity("{\"User\": \"True\"}").type(APPLICATION_JSON).build();
+	}
 	
+	
+
+	@POST
+	@Path("/Createuserinfo")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public UserInfo createUserinfo(UserInfo userinfo) throws AddressException, MessagingException{
+		
+		
+		 BoxService service = new BoxService();
+		 UserInfo u=service.pushUserInfo(userinfo);
+		
+		 
+		
+		return u;
+	}
 	
 }

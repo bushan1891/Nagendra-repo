@@ -37,6 +37,11 @@
 	          controller: 'AdjustorController',
 	          controllerAs: 'adjustorvm'
 	        })
+			   .when('/AppDetails', {
+				   templateUrl: 'AppDetails.html',
+				   controller: 'DetailsCntl',
+				   controllerAs: 'detailsvm'
+			   })
 	        .otherwise({
 	          redirectTo: '/register'
 	        });

@@ -15,6 +15,7 @@ public class Claim implements java.io.Serializable{
 
 	
 	private String claimID;
+	private int userID;
 	private String firstName;
 	private String lastName;
 	private String status;
@@ -25,6 +26,7 @@ public class Claim implements java.io.Serializable{
 	private String assignedAdjuster;	
 	private String Vehicle;
 	private String AdjustorStatus;
+	
 	public Claim() {};
 	
 	
@@ -120,6 +122,16 @@ public class Claim implements java.io.Serializable{
 
 	public void setAdjustorStatus(String adjustorStatus) {
 		AdjustorStatus = adjustorStatus;
+	}
+
+
+	public int getUserID() {
+		return userID;
+	}
+
+
+	public void setUserID(int userID) {
+		this.userID = userID;
 	}
 	
 }

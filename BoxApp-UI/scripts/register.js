@@ -11,7 +11,7 @@
 
     register.$inject = ['$location', 'Service','$timeout'];
 
-    function register($location, Service,timeout) {
+    function register($location, Service,timeout,dialog) {
 
         var registervm = this;
         registervm.reg;
@@ -25,6 +25,8 @@
             console.dir(registervm.reg);
 
             Service.Mailregister(registervm.reg);
+
+      alert("Email sent to " +  registervm.reg.email  + " regarding how to use the App");
 
 
             $location.path("/login");

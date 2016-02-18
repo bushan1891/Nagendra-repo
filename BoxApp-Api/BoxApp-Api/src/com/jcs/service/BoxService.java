@@ -131,8 +131,6 @@ public class BoxService {
 
 	public User fetchone(String email) throws Exception {
 
-		
-
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
@@ -173,7 +171,7 @@ public class BoxService {
 		// side
 
 		for (Claim c : claim) {
-			int x = Character.getNumericValue(c.getClaimID().charAt(0));
+			int x = c.getUserID();
 			if (x == usr.getUserID()) {
 				claimlist.add(c);
 			}
@@ -220,9 +218,10 @@ public class BoxService {
 		String str = claim.getClaimID();
 
 		claim.setClaimID(str); // custom claim no generator
-		claim.setAssignedAdjuster(""); // have to change this
+		claim.setAssignedAdjuster("Not-Assigned"); // have to change this
 		claim.setStatus("pending"); // setting the claim to pending initially
 		claim.setAdjustorStatus("Pending"); // check this once you are over
+		claim.setUserID(usr.getUserID()); // copies the user id to the claim //
 											// writing
 		// this in the front end to this should
 		// not be here
@@ -248,8 +247,7 @@ public class BoxService {
 
 		User usr = fetchone(email);
 
-	    // to check if the vehicle exist 
-		
+		// to check if the vehicle exist
 
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
@@ -258,17 +256,16 @@ public class BoxService {
 
 			String hql = "from Vehicle v where v.vin = :vin";
 			List<Vehicle> vehicles = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
-			
-			if(vehicles!=null){
+
+			if (vehicles != null) {
 				System.out.println("vehicle is present did not update vehicle " + vehicles.get(0).getVin());
 				return vehicle;
 			}
-			
-			
+
 			List<Claim> result = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
 
 			vehicle.setClaimNumber(result.get(0).getClaimID());
-            vehicle.setUserid(usr.getUserID());
+			vehicle.setUserid(usr.getUserID());
 			session.save(vehicle);
 			session.getTransaction().commit();
 			System.out.println(" request to push Vehicle has been pushed ");
@@ -279,17 +276,16 @@ public class BoxService {
 
 		return vehicle;
 	}
-	
-	
-	public List<Vehicle> fetchVehicle(int userid){
-		
+
+	public List<Vehicle> fetchVehicle(int userid) {
+
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
 		try {
 
 			String hql = "from Vehicle v where v.userid = :id";
-			List<Vehicle> result = session.createQuery(hql).setParameter("id",userid ).list();
+			List<Vehicle> result = session.createQuery(hql).setParameter("id", userid).list();
 			session.getTransaction().commit();
 			System.out.println(" request to pull the vehicle succecssful ");
 			session.close();
@@ -299,12 +295,11 @@ public class BoxService {
 		}
 
 		return null;
-		
+
 	}
-	
-	
-	public User fetchUser(int id){
-		
+
+	public User fetchUser(int id) {
+
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
@@ -318,9 +313,7 @@ public class BoxService {
 		}
 
 		return null;
-		
-		
-		
+
 	}
 
 	public Claim updateClaim(Claim claim) {
@@ -344,6 +337,111 @@ public class BoxService {
 		}
 
 		return null;
+	}
+
+	public User pushUser(User user) {
+
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction tx = null;
+		System.out.println("in user block" + user.getUserEmail());
+		boolean duplicate = false;
+		try {
+			tx = session.beginTransaction();
+			String hql = "from User u where u.UserEmail =:id";
+
+			List<User> result = session.createQuery(hql).setParameter("id", user.getUserEmail()).list();
+			tx.commit();
+			session.close();
+			
+			if (result.get(0).getUserEmail().equals(user.getUserEmail())) {
+				duplicate = true;
+				System.out.println("duplicate set to ture");
+			}
+
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		if (duplicate == true) {
+			System.out.println("did not create User");
+			return null;
+		} 
+		
+		else {
+
+			UserInfo myinfo = fetchuserInfo(user.getUserEmail());
+			System.out.println("user ifo " + myinfo.getEmail());
+
+			if (myinfo == null) {
+				System.out.println("can not find user info");
+				return null;
+
+			}
+
+			try {
+				user.setUserinfo(myinfo);
+				SessionFactory sessionFactory1 = HibernateUtil.getSessionFactory();
+				Session session1 = sessionFactory.openSession();
+				Transaction tx1 = null;
+				tx1 = session1.beginTransaction();
+				session1.save(user);
+				tx1.commit();
+				session1.close();
+				System.out.println("user created ");
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
+		}
+
+		return user;
+	}
+
+	private UserInfo fetchuserInfo(String userEmail) {
+
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction tx = null;
+		try {
+			tx = session.beginTransaction();
+
+			String hql = "from UserInfo ui where ui.email = :id";
+			List<UserInfo> result = session.createQuery(hql).setParameter("id", userEmail).list();
+			tx.commit();
+			session.close();
+           if(result!=null)
+			return result.get(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	public UserInfo pushUserInfo(UserInfo usrinfo) {
+
+		System.out.println(usrinfo.getEmail());
+		
+		
+
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		Transaction tx = null;
+		try {
+			tx = session.beginTransaction();
+			session.save(usrinfo);
+			tx.commit();
+			session.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+
+		return null;
+
 	}
 
 	public List<User> getAdjustors() {
@@ -419,43 +517,61 @@ public class BoxService {
 		long time = date.getTime();
 		Timestamp ts = new Timestamp(time);
 
+		Claim claim = fetchClaim(name);
+
 		System.out.println("Current Time Stamp: " + ts);
-		 int id = Character.getNumericValue(name.charAt(0));
+		int id = claim.getUserID();
 		name = name + ts + ".pdf";
 
 		BoxAPIConnection api = BoxUtil.getApi();
-		
-		
-		// to re-structure our code 
+
+		// to re-structure our code
 		try {
 			createBoxUserFolder();
 		} catch (Exception e) {
-			
+
 			e.printStackTrace();
 		}
-		
-	   // pushing to user folder 
-		
-	   	
-	      System.out.println(id);
-	      User user = fetchUser(id);
-		
-	      // setting our box root folder 
-	      
-	      BoxFolder userfolder = BoxUtil.getUserFolder();
-	    
-	      BoxItem.Info info = BoxUtil.getSearchResult(userfolder, user.getUserID()+"-"+user.getUserName()+"-"+user.getUserType() );
-	      System.out.println();
-	      
-	      BoxFolder upfolder =  new BoxFolder(api, info.getID());
-	      upfolder.uploadFile(uploadedInputStream, name);
-	      
-	      BoxFolder claimFolder = BoxUtil.getClaimFolder();
-		  claimFolder.uploadFile(uploadedInputStream, name);
-	      
+
+		// pushing to user folder
+
+		System.out.println(id);
+		User user = fetchUser(id);
+
+		// setting our box root folder
+
+		BoxFolder userfolder = BoxUtil.getUserFolder();
+
+		BoxItem.Info info = BoxUtil.getSearchResult(userfolder,
+				user.getUserID() + "-" + user.getUserName() + "-" + user.getUserType());
+		System.out.println();
+
+		BoxFolder upfolder = new BoxFolder(api, info.getID());
+		upfolder.uploadFile(uploadedInputStream, name);
+
+		BoxFolder claimFolder = BoxUtil.getClaimFolder();
+		claimFolder.uploadFile(uploadedInputStream, name);
+
 	}
 
-	public String rename(String claim) throws IOException{
+	public Claim fetchClaim(String id) {
+
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		try {
+			String hql = "from Claim c where c.claimID = :id";
+			List<Claim> result = session.createQuery(hql).setParameter("id", id).list();
+
+			return result.get(0);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
+	public String rename(String claim) throws IOException {
 
 		BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder rootFolder = BoxUtil.getClaimFolder();
@@ -479,26 +595,27 @@ public class BoxService {
 
 	public String createBoxUserFolder() throws Exception {
 
-		//BoxAPIConnection api = BoxUtil.getApi();
+		// BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder rootFolder = BoxUtil.getUserFolder();
 
 		List<User> users = fetchAll();
-		
-	     for(User usr : users ){
-	    	 BoxItem.Info info = BoxUtil.getSearchResult(rootFolder, usr.getUserID()+"-"+usr.getUserName()+"-"+usr.getUserType() );
-	    	 
-	    	 if( info==null ){
-	    		
-	    		 BoxFolder.Info childFolderInfo = rootFolder.createFolder(usr.getUserID()+"-"+usr.getUserName()+"-"+usr.getUserType() ); 
-	    	 }
-	    	 
-	    	 else{
-	    		 System.out.println("user folder valid");
-	    	 }
-	    	 
-	     }
-		
-		
+
+		for (User usr : users) {
+			BoxItem.Info info = BoxUtil.getSearchResult(rootFolder,
+					usr.getUserID() + "-" + usr.getUserName() + "-" + usr.getUserType());
+
+			if (info == null) {
+
+				BoxFolder.Info childFolderInfo = rootFolder
+						.createFolder(usr.getUserID() + "-" + usr.getUserName() + "-" + usr.getUserType());
+			}
+
+			else {
+				System.out.println("user folder valid");
+			}
+
+		}
+
 		return null;
 	}
 

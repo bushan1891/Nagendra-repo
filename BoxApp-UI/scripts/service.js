@@ -27,6 +27,7 @@
         self.sendfile=sendfile;
         self.getVehicle=getVehicle;
         self.Mailregister=Mailregister;
+        self.CreateUser=CreateUser;
 
         function logged(loggedUser) {
 
@@ -361,6 +362,56 @@
 
 
         }
+
+
+        function CreateUser(user,userinfo){
+
+            var defer = $q.defer();
+            var url = "http://localhost:8080/BoxApp-Api/api/claim/Createuserinfo";
+
+            $http
+                .post(url, userinfo)
+                .then(successFn, errorFn);
+
+            function successFn(response) {
+                defer.resolve(response.data);
+
+
+                console.log(response.status);
+                url = "http://localhost:8080/BoxApp-Api/api/claim/Createuser";
+
+
+                $http
+                    .post(url, user)
+                    .then(successFn1, errorFn1);
+                function successFn1(response) {
+
+
+                    defer.resolve(response.data);
+                    console.log(response.status);
+
+
+                }
+                function errorFn1(error) {
+                    console.log(error.status);
+                    if(error.status==404) {
+                        alert("User not created ! Email ID USED ")
+
+                    }
+                    defer.reject(error.statusText);
+                }
+
+            }
+
+            function errorFn(error) {
+                defer.reject(error.statusText);
+            }
+
+            return defer.promise;
+
+
+        }
+
 
 
 

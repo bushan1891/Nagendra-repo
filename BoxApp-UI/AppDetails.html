@@ -1,0 +1,147 @@
+<div class="hovercard card-container ">
+
+      <div class="jumbotron">
+         <h2>Welcome to BOX-APP</h2>
+         <div class="container">
+            <iframe src="https://app.box.com/embed/preview/v1gu2hm1pp6npq4y9teg9hntogrvm9ct?theme=dark" width="100%" height="600em" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+         </div>
+
+
+
+         <div>
+            <label>Create Custom User</label>
+
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create User</button>
+         </div>
+
+
+      </div>
+
+   <!-- Modal -->
+   <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+         <!-- Modal content-->
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Create User</h4>
+            </div>
+            <div class="modal-body">
+
+
+
+               <form name="adduser" ng-submit="detailsvm.CreateUser(adduser)">
+                  <fieldset class="form-group">
+                     <label for="formGroupInput"> User Name </label>
+                     <input type="text" class="form-control" id="formGroupInput"
+                            placeholder="First Name" ng-model="detailsvm.user.userName" required>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput"> Password</label>
+                     <input type="password" class="form-control" id="formGroupInput"
+                            placeholder="Password" ng-model="detailsvm.user.userKey" required>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput"> Email</label>
+                     <input type="email" class="form-control" id="formGroupInput"
+                            placeholder="Email" ng-model="detailsvm.user.userEmail" required>
+                  </fieldset>
+
+
+
+                  <div class="dropdown">
+                     <label>Select User-Type </label>
+                     <button class="btn btn-primary dropdown-toggle" type="button"
+                             data-toggle="dropdown">{{detailsvm.user.userType}}
+                        <span class="caret"></span></button>
+                     <div class="dropdown-menu">
+                        <ul ng-repeat="userType in detailsvm.Types.Types" class="list ">
+                           <li>
+                              <a ng-click="  detailsvm.user.userType = userType ;    ">{{userType}}</a>
+                           </li>
+                        </ul>
+                     </div>
+
+                  </div>
+
+
+
+
+
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput"> Adress </label>
+                     <input type="text" class="form-control" id="formGroupInput"
+                            placeholder="Adress" ng-model="detailsvm.userinfo.address" required>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput12">Date of Birth</label>
+                     <input type="date" class="form-control" id="formGroupInput12"
+                            placeholder="License Plate Expiration"
+                            ng-model="detailsvm.userinfo.dob" required >
+                  </fieldset>
+
+
+                  <div class="dropdown">
+                     <label>Select Gender</label>
+                     <button class="btn btn-primary dropdown-toggle" type="button"
+                             data-toggle="dropdown">{{detailsvm.userinfo.gender}}
+                        <span class="caret"></span></button>
+                     <div class="dropdown-menu">
+                        <ul ng-repeat="userType in detailsvm.gender.Types" class="list ">
+                           <li>
+                              <a ng-click="  detailsvm.userinfo.gender = userType ;  ">{{userType}}</a>
+                           </li>
+                        </ul>
+                     </div>
+
+                  </div>
+
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput12">Join Date</label>
+                     <input type="date" class="form-control" id="formGroupInput12"
+                            placeholder="joinDate"
+                            ng-model="detailsvm.userinfo.joinDate" required>
+                  </fieldset>
+
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput">Phone</label>
+                     <input type="phone" class="form-control" id="formGroupInput"
+                            placeholder="phone" ng-model="detailsvm.userinfo.phone" required>
+                  </fieldset>
+
+                  <fieldset class="form-group">
+                     <label for="formGroupInput"> Job Title </label>
+                     <input type="text" class="form-control" id="formGroupInput"
+                            placeholder="phone" ng-model="detailsvm.userinfo.title">
+                  </fieldset>
+
+
+                  <button type="submit" class="btn btn-primary"
+                          ng-click="">Create User
+                  </button>
+
+               </form>
+
+
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+
+
+</div>

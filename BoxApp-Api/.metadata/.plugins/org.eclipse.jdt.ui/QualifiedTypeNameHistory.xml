@@ -57,4 +57,7 @@
 <fullyQualifiedTypeName name="com.box.sdk.BoxCollaborator"/>
 <fullyQualifiedTypeName name="com.box.sdk.BoxFile"/>
 <fullyQualifiedTypeName name="com.box.sdk.BoxCollaboration"/>
+<fullyQualifiedTypeName name="com.jcs.MailService.MailService"/>
+<fullyQualifiedTypeName name="com.jcs.model.Registration"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

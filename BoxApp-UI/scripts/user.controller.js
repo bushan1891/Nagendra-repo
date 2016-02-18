@@ -13,6 +13,7 @@
 		console.log('I am here at the login controller ');
 
 		loginvm.login = login;
+		loginvm.route=route;
 		loginvm.collection = [];
 
 		function init() {
@@ -64,6 +65,11 @@
 						console.log(error);
 					});
 
+		}
+
+		function route(){
+			console.log("here");
+			$location.path("/AppDetails");
 		}
 
 	}

@@ -8,6 +8,9 @@
             <column name="CLAIMID" />
             <generator class="assigned" />
         </id>
+        <property name="userID" type="int">
+            <column name="USERID" />
+        </property>
         <property name="firstName" type="java.lang.String">
             <column name="FIRSTNAME" />
         </property>
