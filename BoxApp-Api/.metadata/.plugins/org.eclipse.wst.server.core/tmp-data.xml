@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <temp-directories>
+  <temp-directory age="0" key="BOX-ENVI at AWS Elastic Beanstalk - US West (Oregon)" path="tmp2" recycle="true"/>
+  <temp-directory age="0" key="Box-Envi at AWS Elastic Beanstalk - US West (Oregon)" path="tmp0" recycle="true"/>
   <temp-directory age="0" key="Tomcat v7.0 Server at localhost" path="tmp1" recycle="false"/>
 </temp-directories>

@@ -2,6 +2,7 @@ package com.jcs.service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URISyntaxException;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.text.DateFormat;
@@ -511,7 +512,7 @@ public class BoxService {
 		return null;
 	}
 
-	public void uploadClaimFile(InputStream uploadedInputStream, String name) throws IOException {
+	public void uploadClaimFile(InputStream uploadedInputStream, String name) throws IOException, URISyntaxException {
 
 		Date date = new Date();
 		long time = date.getTime();
@@ -571,7 +572,7 @@ public class BoxService {
 		return null;
 	}
 
-	public String rename(String claim) throws IOException {
+	public String rename(String claim) throws IOException, URISyntaxException {
 
 		BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder rootFolder = BoxUtil.getClaimFolder();

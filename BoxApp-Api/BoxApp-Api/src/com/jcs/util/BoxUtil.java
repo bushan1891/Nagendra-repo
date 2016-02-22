@@ -1,6 +1,12 @@
 package com.jcs.util;
 
+import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -28,7 +34,7 @@ public class BoxUtil {
     private static final String CLIENT_SECRET = "MdRmQ3HpOgejMrB9DA6qRZG5IaWgsinC";
     private static final String ENTERPRISE_ID = "837026";
     private static final String PUBLIC_KEY_ID = "e25go5uv";
-    private static final String PRIVATE_KEY_FILE = "/Users/bushan/Nagendra-repo/BoxApp-Api/BoxApp-Api/private_key.pem";
+    private static final String PRIVATE_KEY_FILE = "/BoxApp-Api/src/private_key.pem";    // not loading here 
     private static final String PRIVATE_KEY_PASSWORD = "bushanrock1";
     private static final String APP_USER_NAME = "Bushan";
     private static final int MAX_CACHE_ENTRIES = 100;
@@ -36,12 +42,29 @@ public class BoxUtil {
 	
     
     
-	public static BoxAPIConnection getApi() throws IOException{
+	public static BoxAPIConnection getApi() throws IOException, URISyntaxException{
 		// enter the developer token here 
 		
 		/*Logger.getLogger("com.box.sdk").setLevel(Level.OFF);*/
 		
-		String privateKey = new String(Files.readAllBytes(Paths.get(PRIVATE_KEY_FILE)));
+      
+		//String privateKey = new String(Files.readAllBytes(Paths.get(PRIVATE_KEY_FILE)));
+		
+		 URL oracle = new URL("http://jcsdemo.com.preview.services/private_key.pem");
+	        BufferedReader in = new BufferedReader(
+	        new InputStreamReader(oracle.openStream()));
+
+	        String inputLine;
+	        String data = null;
+	        while ((inputLine = in.readLine()) != null){
+	        	System.out.println(inputLine);
+	        	data = data +"\n"+ inputLine;
+	        }
+	            
+	        in.close();
+		
+		
+		
 		
 		
 		
@@ -50,7 +73,7 @@ public class BoxUtil {
 
         JWTEncryptionPreferences encryptionPref = new JWTEncryptionPreferences();
         encryptionPref.setPublicKeyID(PUBLIC_KEY_ID);
-        encryptionPref.setPrivateKey(privateKey);
+        encryptionPref.setPrivateKey(data);
         encryptionPref.setPrivateKeyPassword(PRIVATE_KEY_PASSWORD);
         encryptionPref.setEncryptionAlgorithm(EncryptionAlgorithm.RSA_SHA_256);
 
@@ -112,7 +135,7 @@ public class BoxUtil {
 	}
 	
 	
-	public static BoxFolder getClaimFolder()throws IOException {
+	public static BoxFolder getClaimFolder()throws IOException, URISyntaxException {
 
 		BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder Folder = new BoxFolder(api, "6479098641");  // this the claim folder 
@@ -120,8 +143,7 @@ public class BoxUtil {
 		return Folder;
 
 	}
-
-	public static BoxFolder getUserFolder()throws IOException {
+	public static BoxFolder getUserFolder()throws IOException, URISyntaxException {
 
 		BoxAPIConnection api = BoxUtil.getApi();
 		BoxFolder Folder = new BoxFolder(api, "6478959497");  // this is app users user folder id 

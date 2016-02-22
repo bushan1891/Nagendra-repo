@@ -2,122 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="580450c5-a10d-427f-bc53-c7576824442b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AppDetails.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/AppDetails.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/10/10d6cfdc5bcf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/20/10d91c9075cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/20/308395bb9dcb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/20/90fae0d859cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/24/409deabe7fcb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/2c/302c7179e9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/2c/d02f6aa8d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/2d/206930fbd3cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/2d/90f121ace0ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/2d/b0f77d8d59cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/33/9093bbbed8ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/38/604bf4eddece00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/3a/f012fcced6cd001510a2bbfb5ab28961" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/3c/a0d66fba97cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/3d/50e37906d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/3f/90f9ef99bdce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/48/80d7a3545dcf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/48/d011f249bdce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/49/d0bd7f3375cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/4a/50ff0b2d5ccf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/4b/e0b270da96cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/4d/b03e7d06d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/4e/f09f1c574dcc001510a2bbfb5ab28961" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/5/9026695fcbcd001510a2bbfb5ab28961" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/5/90e2c56d9ccb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/54/a0ed20c6d9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/56/809063e95ecf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/58/602a86cf5ecf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/5b/005d96ba5ecf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/5e/901e885a58cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/5e/b0bf9d5fbece00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/62/5097461be2ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/64/c083dd5c88cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/67/3054999f7bcb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/7/4084868fddce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/74/009e2fd6dcce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/76/d0a0ef49bdce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/77/707219a5bcce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/78/d0a391942fcc001510a2bbfb5ab28961" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/79/3095cb3e79cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/7a/407c2766bece00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/7d/3077d03e79cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/8/b0cd66fddfce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/8d/10b8cd3e79cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/90/80174ab17ecf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/93/60ac60df56cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/93/f0877606d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/98/003edc8976cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/98/10c292057ecb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/a5/401843d6d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/a9/007da2d7dece00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/af/f0982d715dcf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/b0/001d552a88cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/b1/f05d802c58cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/b3/b0d58b37e2ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/b4/a035d1dc5bcf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/b6/3080ff8bb8ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ba/305b1b4b7ecb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/c1/70fd7fb5d8ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/c3/708f724758cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/c9/a0d2f49f55cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ca/601bcbb7d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/cc/402dd77ebdce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/cc/8008b341dbce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ce/7093abf7d9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ce/c00c99be7dcb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/d2/80db7c2c58cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/d9/10161d17dbce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/df/f08c7516e5d400151b408c7fa026d225" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/e/00fd59cdd9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/e4/d00a568957cf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/e5/c040bfb996cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ea/5021f5aa72cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ea/60029059e9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/eb/90a50206d9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ee/700b90f25ecf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/f4/f0d9b4065acf00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/f5/109529b47ecb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/f8/307e6c8edcce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/f8/a08a0adfe9ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/f9/50d0cc6473cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/fa/80f4d446d7ce00151d14c2dd0629589d" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/fb/001fa7757fcb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/fb/a038e6ce73cb00151ca3c5d6c4e757aa" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/fc/103c5116e5d400151b408c7fa026d225" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/2/history.index" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.root/9.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/9.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments_b" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/2627f8acc78ba36bd180cc922c9ee0a1/segments_5" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2s.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2s_3.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2t.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2u.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2u_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2v.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2w.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2w_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2x.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2x_1.del" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2y.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_2z.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/_30.cfs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/segments_2s" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_7.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_8" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/logo.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/1b/6007db6ca2d500151a88e2e94812b412" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/1e/30ab471ba5d500151a88e2e94812b412" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.history/ed/60af451ba5d500151a88e2e94812b412" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.root/10.tree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/10.snap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.debug.core/.launches/_WEB-INF_web.xml.launch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments_b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments_c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/2627f8acc78ba36bd180cc922c9ee0a1/segments_6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/segments_2t" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_a.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_a_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_b.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_b_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_c.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_c_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_d.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_d_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_e.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_e_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_f.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_f_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_g.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_g_1.del" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/_h.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments_i" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.frq" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.nrm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.prx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.tii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_8.tis" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_9" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/22/history.index" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/22/history.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/29/history.index" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/29/history.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/9c/history.index" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.projects/BoxApp-Api/.indexes/e4/81/5a/9c/history.index" />
@@ -133,11 +59,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments.gen" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.epp.logging.aeri.ui/history/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/807303917.index" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/807303917.index" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" />
@@ -145,47 +70,68 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/05b0fe8524860bd73cbb07ef30fb34cc/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/2627f8acc78ba36bd180cc922c9ee0a1/segments.gen" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/2627f8acc78ba36bd180cc922c9ee0a1/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/segments.gen" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/4edc5089d0b8a0deea812c2cab7ad920/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/nexus/830bc118332e77292949ed1e6d2fabe0/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.jsdt.core/externalLibsTimeStamps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/publish/publish1.dat" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/publish/publish1.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/MailService/MailService.class" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/MailService/MailService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/controller/HomeController.class" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/Claim.class" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/Claim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/provider/CORSFilter.class" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/provider/CORSFilter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/service/BoxService.class" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/service/BoxService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/util/BoxUtil.class" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/util/BoxUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" afterPath="$PROJECT_DIR$/../BoxApp-Api/.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.log" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.recommenders.rcp.prefs" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.recommenders.rcp.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.core.prefs" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.core.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.ui.prefs" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.server.ui.prefs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/BoxApp-Api/2016/2/8/refactorings.history" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/BoxApp-Api/2016/2/8/refactorings.history" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/BoxApp-Api/2016/2/8/refactorings.index" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/BoxApp-Api/2016/2/8/refactorings.index" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.core/workspacestate.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/logs/localhost_access_log.2016-02-16.txt" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/logs/localhost_access_log.2016-02-16.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/publish.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/servers.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp-data.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/logs/localhost_access_log.2016-02-18.txt" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/logs/localhost_access_log.2016-02-18.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/META-INF/maven/BoxApp-Api/BoxApp-Api/pom.properties" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/META-INF/maven/BoxApp-Api/BoxApp-Api/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/META-INF/maven/BoxApp-Api/BoxApp-Api/pom.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/META-INF/maven/BoxApp-Api/BoxApp-Api/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/Claim.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/Claim.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/User.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/User.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/UserInfo.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/UserInfo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/Vehicle.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/com/jcs/model/Vehicle.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/.plugins/org.eclipse.wst.server.core/tmp1/wtpwebapps/BoxApp-Api/WEB-INF/classes/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/.metadata/version.ini" afterPath="$PROJECT_DIR$/../BoxApp-Api/.metadata/version.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/.jsdtscope" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/.jsdtscope" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/org.eclipse.wst.common.component" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/org.eclipse.wst.common.component" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/org.eclipse.wst.common.project.facet.core.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/.settings/org.eclipse.wst.common.project.facet.core.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/pom.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/MailService/MailService.java" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/MailService/MailService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/controller/HomeController.java" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/controller/HomeController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/Claim.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/Claim.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/Claim.java" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/Claim.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/User.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/User.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/UserInfo.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/UserInfo.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/Vehicle.hbm.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/model/Vehicle.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/provider/CORSFilter.java" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/provider/CORSFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/service/BoxService.java" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/service/BoxService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/util/BoxUtil.java" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/com/jcs/util/BoxUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/../BoxApp-Api/BoxApp-Api/src/hibernate.cfg.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppDetails.html" afterPath="$PROJECT_DIR$/AppDetails.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration.html" afterPath="$PROJECT_DIR$/registration.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/App.js" afterPath="$PROJECT_DIR$/scripts/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/register.js" afterPath="$PROJECT_DIR$/scripts/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/filecntl.js" afterPath="$PROJECT_DIR$/scripts/filecntl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/service.js" afterPath="$PROJECT_DIR$/scripts/service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/user.controller.js" afterPath="$PROJECT_DIR$/scripts/user.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.login.tmpl.html" afterPath="$PROJECT_DIR$/user.login.tmpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/user.tmpl.html" afterPath="$PROJECT_DIR$/user.tmpl.html" />
     </list>
     <ignored path="BoxApp-UI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -209,18 +155,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38081804">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directive.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/directive.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.10623229">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -230,7 +166,7 @@
         <entry file="file://$PROJECT_DIR$/AppDetails.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="87" selection-start-line="94" selection-start-column="87" selection-end-line="94" selection-end-column="87" />
+              <caret line="5" column="213" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="213" />
               <folding />
             </state>
           </provider>
@@ -252,17 +188,7 @@
         <entry file="file://$PROJECT_DIR$/scripts/service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="402" column="0" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/registration.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <caret line="369" column="23" selection-start-line="369" selection-start-column="23" selection-end-line="369" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -285,6 +211,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="191" column="39" selection-start-line="191" selection-start-column="39" selection-end-line="196" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filecntl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/filecntl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="91" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -332,7 +268,6 @@
         <option value="$PROJECT_DIR$/upload.html" />
         <option value="$PROJECT_DIR$/scripts/directive.js" />
         <option value="$PROJECT_DIR$/scripts/multipartform.js" />
-        <option value="$PROJECT_DIR$/scripts/filecntl.js" />
         <option value="$PROJECT_DIR$/scripts/adjustor.js" />
         <option value="$PROJECT_DIR$/adjustor.tmpl.html" />
         <option value="$PROJECT_DIR$/scripts/agent.js" />
@@ -350,10 +285,11 @@
         <option value="$PROJECT_DIR$/scripts/user.controller.js" />
         <option value="$PROJECT_DIR$/user.login.tmpl.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/scripts/service.js" />
         <option value="$PROJECT_DIR$/scripts/AppDetails.js" />
         <option value="$PROJECT_DIR$/AppDetails.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/scripts/service.js" />
+        <option value="$PROJECT_DIR$/scripts/filecntl.js" />
       </list>
     </option>
   </component>
@@ -365,7 +301,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="830" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -393,6 +329,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,13 +372,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoxApp-UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoxApp-UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,6 +403,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
       <recent name="F:\project\Nagendra-repo\BoxApp-UI" />
     </key>
@@ -522,26 +473,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="830" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="827" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18472221" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -567,14 +518,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/adjustor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -827,14 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/filecntl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/agent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -870,26 +805,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38081804">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/directive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AppDetails.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="87" selection-start-line="94" selection-start-column="87" selection-end-line="94" selection-end-column="87" />
+          <caret line="5" column="213" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="213" />
           <folding />
         </state>
       </provider>
@@ -901,22 +839,6 @@
           <folding>
             <element signature="e#0#40#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="402" column="0" selection-start-line="402" selection-start-column="0" selection-end-line="402" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -950,6 +872,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="66" column="68" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="369" column="23" selection-start-line="369" selection-start-column="23" selection-end-line="369" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/filecntl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="91" selection-start-line="19" selection-start-column="91" selection-end-line="19" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10623229">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
           <folding />
         </state>
       </provider>

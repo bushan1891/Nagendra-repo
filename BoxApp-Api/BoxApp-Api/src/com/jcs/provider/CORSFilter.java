@@ -15,7 +15,7 @@ public class CORSFilter implements ContainerResponseFilter {
 	@Override
 	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
 		
-		String [] originsAllowed = {"http://localhost:63342", "http://run.plnkr.co", "http://petstore.swagger.io","http://localhost:63342"};
+		String [] originsAllowed = {"http://localhost:63342", "http://run.plnkr.co", "http://petstore.swagger.io","http://localhost:63342","http://jcsdemo.com.preview.services","http://jcsdemo.com","*"};
 		String origin = requestContext.getHeaders().getFirst("Origin");
 		
 		if(Arrays.asList(originsAllowed).contains(origin)) {

@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -257,7 +258,7 @@ public class HomeController {
 	public Response uploadClaimFile(
 		@FormDataParam("file") InputStream uploadedInputStream,
 		@FormDataParam("file") FormDataContentDisposition fileDetail,
-		@QueryParam(value = "claimid") String claim) throws IOException {
+		@QueryParam(value = "claimid") String claim) throws IOException, URISyntaxException {
 			
 		BoxService service = new BoxService();
 		System.out.println(claim);

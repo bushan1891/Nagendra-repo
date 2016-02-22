@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <publish-info>
+  <server id="BOX-ENVI at AWS Elastic Beanstalk - US West (Oregon)" path="publish2.dat"/>
+  <server id="Box-Envi at AWS Elastic Beanstalk - US West (Oregon)" path="publish0.dat"/>
   <server id="Tomcat v7.0 Server at localhost" path="publish1.dat"/>
 </publish-info>

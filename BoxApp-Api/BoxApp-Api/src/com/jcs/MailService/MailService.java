@@ -45,7 +45,8 @@ public class MailService {
 		System.out.println("\n\n 2nd ===> get Mail Session..");
 		getMailSession = Session.getDefaultInstance(mailServerProperties, null);
 		generateMailMessage = new MimeMessage(getMailSession);
-		generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("nagendra.balachandra@jcsconsulting.com"));
+		generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("carlo.saggese@jcsconsulting.com"));
+		generateMailMessage.addRecipient(Message.RecipientType.CC, new InternetAddress("Johnny.SantoSpirito@jcsconsulting.com"));
 		generateMailMessage.addRecipient(Message.RecipientType.CC, new InternetAddress("nagendra.balachandra@jcsconsulting.com"));
 		generateMailMessage.setSubject("BOX APP Used");
 		

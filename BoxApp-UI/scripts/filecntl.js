@@ -17,7 +17,7 @@
 
                 console.log('file is ' );
                 console.dir(file);
-                var uploadUrl = "http://localhost:8080/BoxApp-Api/api/claim/uploadcalim?claimid="+id;
+                var uploadUrl = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/uploadcalim?claimid="+id;
                 fileUpload.uploadFileToUrl(file, uploadUrl);
             };
 
