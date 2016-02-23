@@ -50,7 +50,7 @@ public class BoxUtil {
       
 		//String privateKey = new String(Files.readAllBytes(Paths.get(PRIVATE_KEY_FILE)));
 		
-		 URL oracle = new URL("http://jcsdemo.com.preview.services/private_key.pem");
+		 URL oracle = new URL("http://www.jcsdemo.com/private_key.pem");
 	        BufferedReader in = new BufferedReader(
 	        new InputStreamReader(oracle.openStream()));
 

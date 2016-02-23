@@ -29,6 +29,10 @@
         self.Mailregister=Mailregister;
         self.CreateUser=CreateUser;
 
+
+          var rurl ="http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/";
+           // var rurl ="http://localhost:8080/BoxApp-Api/";
+
         function logged(loggedUser) {
 
             self.logd = loggedUser;
@@ -50,7 +54,7 @@
         function Auth(email, key) {
             //	self.logd=email;  // records the email of the person logged
             var defer = $q.defer();
-            var url = 'http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/Auth1?';
+            var url = rurl+'api/claim/Auth1?';
             var url2 = 'email=' + email;
             var comUrl = url.concat(url2);
 
@@ -82,7 +86,7 @@
             var defer = $q.defer();
 
             $http
-                .get('http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/Auth')
+                .get(rurl+'api/claim/Auth')
                 .then(successFn, errorFn);
 
             function successFn(response) {
@@ -100,7 +104,7 @@
         function createClaim(claim, vehicle ) {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/claim/create?email=" + self.logd.userEmail;
+            var url = rurl+"api/claim/claim/create?email=" + self.logd.userEmail;
 
 
 
@@ -128,7 +132,7 @@
         function createVehicle(vehicle) {
             console.log("inside create vehicle now")
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/claim/vehicle?email=" + self.logd.userEmail;
+            var url = rurl+"api/claim/claim/vehicle?email=" + self.logd.userEmail;
 
             $http
                 .post(url, vehicle)
@@ -151,7 +155,7 @@
         function getClaims(email) {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/claims?email=" + email;
+            var url = rurl+"api/claim/claims?email=" + email;
 
             $http
                 .get(url)
@@ -176,7 +180,7 @@
         function getClaimsAgent(status) {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/claims/agent?status=" + status;
+            var url = rurl+"api/claim/claims/agent?status=" + status;
 
             $http
                 .get(url)
@@ -199,7 +203,7 @@
 
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/claims/update";
+            var url = rurl+"api/claim/claims/update";
 
             $http
                 .put(url, calim)
@@ -221,7 +225,7 @@
         function getAjustor() {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/Adjustor";
+            var url = rurl+"api/claim/Adjustor";
 
             $http
                 .get(url)
@@ -244,7 +248,7 @@
         function getClaimsAdjustor(user) {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/AdjustorClaim?user=" + user;
+            var url = rurl+"api/claim/AdjustorClaim?user=" + user;
 
             $http
                 .get(url)
@@ -266,7 +270,7 @@
         function getAdjustorClaimApproved(status) {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/AdjustorClaimApproved?status=" + status;
+            var url = rurl+"api/claim/AdjustorClaimApproved?status=" + status;
 
             $http
                 .get(url)
@@ -289,7 +293,7 @@
         function renameClaimFile(name){
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/renamecalim?claim="+name;
+            var url = rurl+"api/claim/renamecalim?claim="+name;
 
             $http
                 .get(url)
@@ -321,7 +325,7 @@
         function getVehicle(userid) {
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/getVehicle?userid="+userid;
+            var url = rurl+"api/claim/getVehicle?userid="+userid;
 
             $http
                 .get(url)
@@ -344,7 +348,7 @@
         function Mailregister(reg){
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/mail";
+            var url = rurl+"api/claim/mail";
 
             $http
                 .post(url, reg)
@@ -367,7 +371,7 @@
         function CreateUser(user,userinfo){
 
             var defer = $q.defer();
-            var url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/Createuserinfo";
+            var url = rurl+"api/claim/Createuserinfo";
 
             $http
                 .post(url, userinfo)
@@ -378,7 +382,7 @@
 
 
                 console.log(response.status);
-                url = "http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/api/claim/Createuser";
+                url = rurl+"api/claim/Createuser";
 
 
                 $http

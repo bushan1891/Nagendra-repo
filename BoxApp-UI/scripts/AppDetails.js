@@ -13,6 +13,7 @@
 
        var detailsvm=this;
         detailsvm.CreateUser=CreateUser;
+        detailsvm.login=login;
 
         detailsvm.Types = {
             "Types": ["User","Agent","Adjustor"]
@@ -23,6 +24,14 @@
 
         detailsvm.userinfo;
         detailsvm.user;
+
+
+        function login(){
+
+            $location.path("/login");
+
+        }
+
 
 
         // used to cereater users here

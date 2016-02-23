@@ -50,9 +50,10 @@
 
 
 
-#logo {
+.logo {
     max-width: 45px;
-    margin-bottom: 2px;
+
+    padding-bottom: 5px;
 }
 
 /*
@@ -61,10 +62,11 @@
 /*
  * General styles
  */
-body, html {
+
+body,html {
 
     width: 100%;
-    height: 100%;
+    height: 900px;
 
     /* fallback */
     background-color: #006582;
@@ -75,16 +77,16 @@ body, html {
 
 
     /* Safari 5.1, Chrome 10+ */
-    background: -webkit-linear-gradient(top, #006582, #FFFFFF);
+    background: -webkit-linear-gradient(top, #006582, #006582);
 
     /* Firefox 3.6+ */
-    background: -moz-linear-gradient(top, #006582, #FFFFFF);
+    background: -moz-linear-gradient(top, #006582, #006582);
 
     /* IE 10 */
-    background: -ms-linear-gradient(top, #006582, #FFFFFF);
+    background: -ms-linear-gradient(top, #006582, #006582);
 
     /* Opera 11.10+ */
-    background: -o-linear-gradient(top,#006582, #FFFFFF);
+    background: -o-linear-gradient(top,#006582, #006582);
 
    /* background: url(http://aosgroup.ca/wp-content/uploads/2013/10/blurred-background-8.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -101,6 +103,16 @@ body, html {
 
 
 }
+.jcs-logo1{
+
+    height: 100%;
+    width: 100%;
+    padding: 0em;
+    padding-bottom: 5em;
+
+
+}
+
 
 
 
@@ -116,6 +128,11 @@ body, html {
     overflow: auto;
 }
 
+.card-container1.card {
+    max-width: 380px;
+    padding: 20px 20px;
+}
+
 .card-container.card {
     max-width: 350px;
     padding: 40px 40px;
@@ -129,6 +146,11 @@ body, html {
     user-select: none;
     cursor: default;
 }
+
+.main{
+    padding-top: 10em;
+}
+
 
 .pad {
 

@@ -249,28 +249,39 @@ public class BoxService {
 		User usr = fetchone(email);
 
 		// to check if the vehicle exist
-
+boolean duplicate =false;
 		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 		Session session = sessionFactory.openSession();
-		session.beginTransaction();
+        Transaction tx= session.beginTransaction();
 		try {
 
 			String hql = "from Vehicle v where v.vin = :vin";
 			List<Vehicle> vehicles = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
-
-			if (vehicles != null) {
-				System.out.println("vehicle is present did not update vehicle " + vehicles.get(0).getVin());
+            tx.commit();
+            session.close();
+			
+            if (vehicles.isEmpty()) {
+				
+				SessionFactory sessionFactory1 = HibernateUtil.getSessionFactory();
+				Session session1 = sessionFactory1.openSession();
+		        Transaction tx1= session1.beginTransaction();
+				
+				String hql1 = "from Claim c where c.Vehicle = :vin";
+				List<Claim> result = session1.createQuery(hql1).setParameter("vin", vehicle.getVin()).list();
+				
+				vehicle.setClaimNumber(result.get(0).getClaimID());
+				vehicle.setUserid(usr.getUserID());
+				session1.save(vehicle);
+				session1.getTransaction().commit();
+				System.out.println(" request to push Vehicle has been pushed ");
+				session1.close();
 				return vehicle;
 			}
-
-			List<Claim> result = session.createQuery(hql).setParameter("vin", vehicle.getVin()).list();
-
-			vehicle.setClaimNumber(result.get(0).getClaimID());
-			vehicle.setUserid(usr.getUserID());
-			session.save(vehicle);
-			session.getTransaction().commit();
-			System.out.println(" request to push Vehicle has been pushed ");
-			session.close();
+            
+            System.out.println("vehicle is present did not update vehicle ");
+			
+			
+            
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

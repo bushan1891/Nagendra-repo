@@ -56,12 +56,19 @@
 							}
 
 						}
+						else{
+							alert("user not found");
+						}
+
+
 						Service.logged(user);
 
 						loginvm.user = user;
 						console.dir(user);
 
 					}, function(error) {
+
+					alert("user not found");
 						console.log(error);
 					});
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html >
-<html ng-app="BoxApp" class="myoverflow">
+<html ng-app="BoxApp" >
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>BoxApp</title>
-
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/usertmpl.css" rel="stylesheet">
@@ -15,44 +15,50 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
+    <link rel="shortcut icon"  type="image/x-icon" href="https://www.jivesoftware.com/wp-content/uploads/2014/09/JCS_Color-300x240.png" />
 
 </head>
 
 <body>
 <!-- Nav bar -->
 
-
-
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-
-            <ul class="nav nav-pills">
-                <li><a class="navbar-brand " href="#"> <span
-                        class="glyphicon glyphicon-folder-close " aria-hidden="true">
-					</span>
-                </a></li>
-                <li><a class="navbar-brand logoclass" rel="home" href="#"
-                       title="BOX"> <img id="logo"
-                                                             src="images/logo.png"></a></li>  <!--http://logonoid.com/images/box-logo.png" -->
-
-                <ul class="nav navbar-nav navbar-right ">
-
-                    <li role="presentation"><a href="#/login">Login</a></li>
-                    <li role="presentation"><a href ="http://jcsconsulting.com/pages/connect">Connect</a></li>
-                </ul>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logoclass" rel="home" href="#/login"
+               title="BOX"> <img class="logo"
+                                 src="http://logonoid.com/images/box-logo.png"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#/AppDetails"><b>Help</b></a>
+                </li>
+                <li>
+                    <a href ="http://jcsconsulting.com/pages/connect" target="_blank"><b>Contact</b></a>
+                </li>
 
             </ul>
         </div>
+        <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
 </nav>
+
 
 <!-- ng-route goes here  -->
 
 
 <section >
-    <div class="container " ng-view>
+    <div class="container main" ng-view>
     </div>
 </section>
 

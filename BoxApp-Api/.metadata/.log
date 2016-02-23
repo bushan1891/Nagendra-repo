@@ -9215,3 +9215,288 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 07:51:25.664
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 07:53:53.264
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 2 0 2016-02-22 08:50:59.557
+!MESSAGE Unable to synchronize an environment
+!STACK 0
+com.amazonaws.AmazonClientException: Unable to execute HTTP request: elasticbeanstalk.us-west-2.amazonaws.com
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:500)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:310)
+	at com.amazonaws.services.elasticbeanstalk.AWSElasticBeanstalkClient.invoke(AWSElasticBeanstalkClient.java:1928)
+	at com.amazonaws.services.elasticbeanstalk.AWSElasticBeanstalkClient.describeEnvironments(AWSElasticBeanstalkClient.java:1171)
+	at com.amazonaws.eclipse.elasticbeanstalk.util.ElasticBeanstalkClientExtensions.getEnvironmentDescription(ElasticBeanstalkClientExtensions.java:63)
+	at com.amazonaws.eclipse.elasticbeanstalk.jobs.SyncEnvironmentsJob.syncEnvironment(SyncEnvironmentsJob.java:117)
+	at com.amazonaws.eclipse.elasticbeanstalk.jobs.SyncEnvironmentsJob.run(SyncEnvironmentsJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.UnknownHostException: elasticbeanstalk.us-west-2.amazonaws.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:728)
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:489)
+	... 7 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 09:47:24.887
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 09:47:24.889
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2016-02-22 09:48:42.963
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-02-22 09:49:22.018
+!MESSAGE Server Box-Envi at AWS Elastic Beanstalk - US West (Oregon) failed to stop.
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 09:49:27.770
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 09:50:40.060
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 09:50:40.061
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 09:50:51.521
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 09:50:51.522
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 09:51:46.179
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 2 0 2016-02-22 10:30:28.960
+!MESSAGE Unable to synchronize an environment
+!STACK 0
+com.amazonaws.AmazonClientException: Unable to execute HTTP request: elasticbeanstalk.us-west-2.amazonaws.com
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:500)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:310)
+	at com.amazonaws.services.elasticbeanstalk.AWSElasticBeanstalkClient.invoke(AWSElasticBeanstalkClient.java:1928)
+	at com.amazonaws.services.elasticbeanstalk.AWSElasticBeanstalkClient.describeEnvironments(AWSElasticBeanstalkClient.java:1171)
+	at com.amazonaws.eclipse.elasticbeanstalk.util.ElasticBeanstalkClientExtensions.getEnvironmentDescription(ElasticBeanstalkClientExtensions.java:63)
+	at com.amazonaws.eclipse.elasticbeanstalk.jobs.SyncEnvironmentsJob.syncEnvironment(SyncEnvironmentsJob.java:117)
+	at com.amazonaws.eclipse.elasticbeanstalk.jobs.SyncEnvironmentsJob.run(SyncEnvironmentsJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.UnknownHostException: elasticbeanstalk.us-west-2.amazonaws.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:728)
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:489)
+	... 7 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:37:10.895
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:37:10.896
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2016-02-22 10:38:41.526
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2016-02-22 10:38:45.945
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 10:39:17.652
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:40:24.502
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:40:24.503
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 10:41:17.920
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:43:13.968
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:43:13.970
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2016-02-22 10:43:31.702
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2016-02-22 10:43:40.890
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 10:44:05.942
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:46:08.077
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 10:46:08.078
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 10:48:23.406
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:01:23.631
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:01:23.631
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 11:02:45.799
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:03:58.051
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:03:58.052
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 11:05:08.224
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:05:15.321
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:05:15.322
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 11:06:18.557
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:07:22.036
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:07:22.038
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 11:08:26.149
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:21:09.277
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:21:09.278
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 11:22:00.562
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:38:00.182
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 11:38:00.183
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 11:38:53.123
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:20:34.016
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:20:34.017
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:30:03.273
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:30:03.274
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:33:20.932
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:33:20.933
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:37:44.241
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:37:44.242
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:39:04.884
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:39:04.885
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:40:41.019
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-22 12:40:41.019
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 1 0 2016-02-22 13:01:13.990
+!MESSAGE Deployed application 'BOX-APP' to environment 'BOX-ENVI' 
+Application available at: BOX-ENVI.fz2ptpitzf.us-west-2.elasticbeanstalk.com
+
+!ENTRY com.amazonaws.eclipse.elasticbeanstalk 2 0 2016-02-22 17:07:53.033
+!MESSAGE Unable to synchronize an environment
+!STACK 0
+com.amazonaws.AmazonClientException: Unable to execute HTTP request: elasticbeanstalk.us-west-2.amazonaws.com
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:500)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:310)
+	at com.amazonaws.services.elasticbeanstalk.AWSElasticBeanstalkClient.invoke(AWSElasticBeanstalkClient.java:1928)
+	at com.amazonaws.services.elasticbeanstalk.AWSElasticBeanstalkClient.describeEnvironments(AWSElasticBeanstalkClient.java:1171)
+	at com.amazonaws.eclipse.elasticbeanstalk.util.ElasticBeanstalkClientExtensions.getEnvironmentDescription(ElasticBeanstalkClientExtensions.java:63)
+	at com.amazonaws.eclipse.elasticbeanstalk.jobs.SyncEnvironmentsJob.syncEnvironment(SyncEnvironmentsJob.java:117)
+	at com.amazonaws.eclipse.elasticbeanstalk.jobs.SyncEnvironmentsJob.run(SyncEnvironmentsJob.java:82)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.UnknownHostException: elasticbeanstalk.us-west-2.amazonaws.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:728)
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:489)
+	... 7 more
