@@ -34,15 +34,36 @@
 
 
 
+
+        detailsvm.tabs = [{
+            title: 'User-Manual',
+            url: 'one.tpl.html'
+        }, {
+            title: 'Architecture',
+            url: 'two.tpl.html'
+        }];
+
+        detailsvm.currentTab = 'one.tpl.html';
+
+        detailsvm.onClickTab = function (tab) {
+            detailsvm.currentTab = tab.url;
+        }
+
+        detailsvm.isActiveTab = function(tabUrl) {
+            return tabUrl == detailsvm.currentTab;
+        }
+
+
+
         // used to cereater users here
 
        function CreateUser(form){
 
-           if(detailsvm.userinfo.gender == "Female"){
-               detailsvm.userinfo.imgurl="http://d1ty0e8cxefhfl.cloudfront.net/images/profiles/profile-unknown-female-2.jpeg";
-           }
-           else
-               detailsvm.userinfo.imgurl="http://www.polymtl.ca/lmp/img/noprofile_000.png";
+          // if(detailsvm.userinfo.gender == "Female"){
+            //   detailsvm.userinfo.imgurl="http://d1ty0e8cxefhfl.cloudfront.net/images/profiles/profile-unknown-female-2.jpeg";
+           //}
+         //  else
+               detailsvm.userinfo.imgurl="https://savoirs.rfi.fr/sites/all/themes/rfi/images/public/default-profile.png";
 
 
            detailsvm.userinfo.email=detailsvm.user.userEmail;
@@ -50,6 +71,8 @@
 
            Service.CreateUser(detailsvm.user,detailsvm.userinfo);
 
+
+           detailsvm.user=null;
 
        }
 

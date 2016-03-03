@@ -31,7 +31,7 @@
 
 
           var rurl ="http://box-envi.fz2ptpitzf.us-west-2.elasticbeanstalk.com/";
-           // var rurl ="http://localhost:8080/BoxApp-Api/";
+          // var rurl ="http://localhost:8080/BoxApp-Api/";
 
         function logged(loggedUser) {
 
@@ -390,7 +390,7 @@
                     .then(successFn1, errorFn1);
                 function successFn1(response) {
 
-
+                    alert("User Created! ")
                     defer.resolve(response.data);
                     console.log(response.status);
 

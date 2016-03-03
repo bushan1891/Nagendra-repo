@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_y0eywcF7EeWtROJLnWW7Qw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_y0fZ0MF7EeWtROJLnWW7Qw" bindingContexts="_y0fZ0sF7EeWtROJLnWW7Qw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxService.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/service/BoxService.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/service/BoxService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HomeController.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxUtil.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CORSFilter.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/provider/CORSFilter.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/provider/CORSFilter.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;RESTAppconfig.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/rest/RESTAppconfig.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/rest/RESTAppconfig.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;private_key.txt&quot; tooltip=&quot;BoxApp-Api/src/private_key.txt&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/private_key.txt&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.wst.server.ui.editor.input.factory&quot; id=&quot;org.eclipse.wst.server.ui.editor&quot; name=&quot;Box-Envi at AWS Elastic Beanstalk - US West (Oregon)&quot; tooltip=&quot;Box-Envi at AWS Elastic Beanstalk - US West (Oregon)&quot;>&#xA;&lt;persistable server-id=&quot;Box-Envi at AWS Elastic Beanstalk - US West (Oregon)&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MailService.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/MailService/MailService.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/MailService/MailService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;hibernate.cfg.xml&quot; tooltip=&quot;BoxApp-Api/src/hibernate.cfg.xml&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/hibernate.cfg.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HibernateUtil.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/util/HibernateUtil.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/util/HibernateUtil.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;web.xml&quot; tooltip=&quot;BoxApp-Api/WebContent/WEB-INF/web.xml&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/WebContent/WEB-INF/web.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HomeController.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxUtil.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxService.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/service/BoxService.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/service/BoxService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;CORSFilter.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/provider/CORSFilter.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/provider/CORSFilter.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;RESTAppconfig.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/rest/RESTAppconfig.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/rest/RESTAppconfig.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;private_key.txt&quot; tooltip=&quot;BoxApp-Api/src/private_key.txt&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/private_key.txt&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.wst.server.ui.editor.input.factory&quot; id=&quot;org.eclipse.wst.server.ui.editor&quot; name=&quot;Box-Envi at AWS Elastic Beanstalk - US West (Oregon)&quot; tooltip=&quot;Box-Envi at AWS Elastic Beanstalk - US West (Oregon)&quot;>&#xA;&lt;persistable server-id=&quot;Box-Envi at AWS Elastic Beanstalk - US West (Oregon)&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;MailService.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/MailService/MailService.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/MailService/MailService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;hibernate.cfg.xml&quot; tooltip=&quot;BoxApp-Api/src/hibernate.cfg.xml&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/hibernate.cfg.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HibernateUtil.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/util/HibernateUtil.java&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/src/com/jcs/util/HibernateUtil.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;web.xml&quot; tooltip=&quot;BoxApp-Api/WebContent/WEB-INF/web.xml&quot;>&#xA;&lt;persistable path=&quot;/BoxApp-Api/WebContent/WEB-INF/web.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_y0fZ0MF7EeWtROJLnWW7Qw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_0BzhgsF7EeWtROJLnWW7Qw" label="%trimmedwindow.label.eclipseSDK" x="0" y="23" width="1440" height="827">
@@ -88,8 +88,8 @@
             <children xsi:type="basic:PartSashContainer" xmi:id="_1qJ_Z8F7EeWtROJLnWW7Qw" containerData="8252" selectedElement="_HxN8EMIkEeWtROJLnWW7Qw" horizontal="true">
               <children xsi:type="basic:PartSashContainer" xmi:id="_HxN8EMIkEeWtROJLnWW7Qw" containerData="8665" selectedElement="_4fpWsNmhEeWfA9qQCoX0-g">
                 <children xsi:type="basic:PartSashContainer" xmi:id="_4fpWsNmhEeWfA9qQCoX0-g" containerData="6700" selectedElement="_1qJ_bMF7EeWtROJLnWW7Qw">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_1qJ_aMF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_1ii7gMF7EeWtROJLnWW7Qw"/>
-                  <children xsi:type="basic:PartStack" xmi:id="_1qJ_bMF7EeWtROJLnWW7Qw" elementId="bottomRight" containerData="5000" selectedElement="_1qJ_dMF7EeWtROJLnWW7Qw">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_1qJ_aMF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.editorss" containerData="4059" ref="_1ii7gMF7EeWtROJLnWW7Qw"/>
+                  <children xsi:type="basic:PartStack" xmi:id="_1qJ_bMF7EeWtROJLnWW7Qw" elementId="bottomRight" containerData="5941" selectedElement="_1qJ_b8F7EeWtROJLnWW7Qw">
                     <tags>active</tags>
                     <children xsi:type="advanced:Placeholder" xmi:id="_1qJ_bcF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.views.AllMarkersView" ref="_1pwWwMF7EeWtROJLnWW7Qw"/>
                     <children xsi:type="advanced:Placeholder" xmi:id="_1qJ_b8F7EeWtROJLnWW7Qw" elementId="org.eclipse.wst.server.ui.ServersView" ref="_1pyL8MF7EeWtROJLnWW7Qw"/>
@@ -146,7 +146,7 @@
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="basic:Part" xmi:id="_gxwoYMIkEeWtROJLnWW7Qw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BoxService.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxService.java&quot; partName=&quot;BoxService.java&quot; title=&quot;BoxService.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/service/BoxService.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BoxApp-Api/src/com/jcs/service/BoxService.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;7236&quot; selectionTopPixel=&quot;3505&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxService.java&quot; partName=&quot;BoxService.java&quot; title=&quot;BoxService.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/service/BoxService.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BoxApp-Api/src/com/jcs/service/BoxService.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;9&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;13626&quot; selectionTopPixel=&quot;7497&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -176,7 +176,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_ZF9uoNhPEeWnnL90JKbRBQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BoxUtil.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxUtil.java&quot; partName=&quot;BoxUtil.java&quot; title=&quot;BoxUtil.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2206&quot; selectionTopPixel=&quot;651&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BoxUtil.java&quot; partName=&quot;BoxUtil.java&quot; title=&quot;BoxUtil.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BoxApp-Api/src/com/jcs/util/BoxUtil.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2206&quot; selectionTopPixel=&quot;1814&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -194,7 +194,7 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_1fyPkNkuEeWfA9qQCoX0-g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HomeController.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HomeController.java&quot; partName=&quot;HomeController.java&quot; title=&quot;HomeController.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;18&quot; selectionOffset=&quot;5919&quot; selectionTopPixel=&quot;1473&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HomeController.java&quot; partName=&quot;HomeController.java&quot; title=&quot;HomeController.java&quot; tooltip=&quot;BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/BoxApp-Api/src/com/jcs/controller/HomeController.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;15&quot; selectionOffset=&quot;6073&quot; selectionTopPixel=&quot;3105&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -259,11 +259,13 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot;/>"/>
       <tags>View</tags>
       <tags>categoryTag:Server</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_7Ys2kMF7EeWtROJLnWW7Qw" elementId="org.eclipse.wst.server.ui.ServersView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_7Ys2kcF7EeWtROJLnWW7Qw" elementId="org.eclipse.wst.server.ui.ServersView" visible="false"/>
+      <toolbar xmi:id="_7Ys2kcF7EeWtROJLnWW7Qw" elementId="org.eclipse.wst.server.ui.ServersView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1pyzAMF7EeWtROJLnWW7Qw" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Data Source Explorer" iconURI="platform:/plugin/org.eclipse.datatools.connectivity.ui.dse/icons/full/cview16/enterprise_explorer.gif" tooltip="" closeable="true">
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; showCategories=&quot;true&quot;/>"/>
@@ -297,13 +299,11 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_epqNUMF9EeWtROJLnWW7Qw" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_epqNUcF9EeWtROJLnWW7Qw" elementId="org.eclipse.ui.console.ConsoleView"/>
+      <toolbar xmi:id="_epqNUcF9EeWtROJLnWW7Qw" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_1p1PQsF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" tooltip="" closeable="true">
       <tags>View</tags>
@@ -360,7 +360,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0v-PEMF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_KJ7DsNksEeWfA9qQCoX0-g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_y2KN4MF7EeWtROJLnWW7Qw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_UXbmsNszEeWkD9jcWfgJMg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_y2KN4MF7EeWtROJLnWW7Qw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0v-PEcF7EeWtROJLnWW7Qw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -393,7 +393,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0v-2IMF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_KJ844NksEeWfA9qQCoX0-g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_y2I_08F7EeWtROJLnWW7Qw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_UXeC8NszEeWkD9jcWfgJMg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_y2I_08F7EeWtROJLnWW7Qw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_0v-2IcF7EeWtROJLnWW7Qw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -905,7 +905,7 @@
       <tags>platform:cocoa</tags>
     </bindings>
     <bindings xmi:id="_YTs2ENagEeWc0_oMcbJL_g" keySequence="CTRL+R" command="_YTA5ldagEeWc0_oMcbJL_g"/>
-    <bindings xmi:id="_Je2GYdksEeWfA9qQCoX0-g" keySequence="COMMAND+CTRL+F" command="_VxN7BMS0EeWKf60yJvdGYA"/>
+    <bindings xmi:id="_TmAJwdszEeWkD9jcWfgJMg" keySequence="COMMAND+CTRL+F" command="_VxN7BMS0EeWKf60yJvdGYA"/>
   </bindingTables>
   <bindingTables xmi:id="_y7CGtsF7EeWtROJLnWW7Qw" elementId="org.eclipse.datatools.sqltools.SQLEditorScope" bindingContext="_y2ZeXMF7EeWtROJLnWW7Qw">
     <bindings xmi:id="_y7FxE8F7EeWtROJLnWW7Qw" keySequence="ALT+C" command="_y2DgPcF7EeWtROJLnWW7Qw"/>
@@ -1256,7 +1256,7 @@
   <bindingTables xmi:id="_1i12dMF7EeWtROJLnWW7Qw" bindingContext="_1i12c8F7EeWtROJLnWW7Qw"/>
   <bindingTables xmi:id="_1i12dsF7EeWtROJLnWW7Qw" bindingContext="_1i12dcF7EeWtROJLnWW7Qw"/>
   <bindingTables xmi:id="_VxOiFsS0EeWKf60yJvdGYA" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_y0fZ1cF7EeWtROJLnWW7Qw">
-    <bindings xmi:id="_Je2tcNksEeWfA9qQCoX0-g" keySequence="M1+W" command="_VxOiFMS0EeWKf60yJvdGYA"/>
+    <bindings xmi:id="_TmAw0NszEeWkD9jcWfgJMg" keySequence="M1+W" command="_VxOiFMS0EeWKf60yJvdGYA"/>
   </bindingTables>
   <rootContext xmi:id="_y0fZ0sF7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/org.eclipse.platform" name="In Dialogs and Windows" description="Either a dialog or a window is open">
     <children xmi:id="_y0fZ08F7EeWtROJLnWW7Qw" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/org.eclipse.platform" name="In Windows" description="A window is open">

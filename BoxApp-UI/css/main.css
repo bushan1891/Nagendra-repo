@@ -94,7 +94,14 @@ body,html {
     -o-background-size: cover;
     background-size: cover;*/
 }
+.banner{
+    text-align: center;
+    border-bottom: groove;
+    margin-bottom: 4%;
+font-size: inherit;
 
+
+}
 .jcs-logo{
 
     height: 50%;
@@ -106,13 +113,16 @@ body,html {
 .jcs-logo1{
 
     height: 100%;
-    width: 100%;
+    width: 85%;
     padding: 0em;
     padding-bottom: 5em;
+    padding-left: 3em;
 
 
 }
-
+.botpad{
+    padding-bottom: 5em;
+}
 
 
 

@@ -2,6 +2,10 @@
 
     <div class=" jumbotron card">
         <!--this is the header  -->
+        <div  class="banner">
+            <h3><b>Jeetu & Harper Auto Insurance </b></h3>
+        </div>
+
         <div class="row">
             <div class="col-xs-4">
                 <div class=".profile-img-card">
@@ -12,7 +16,7 @@
                 </div>
             </div>
             <div class="col-xs-6">
-                <h3><b>Hello, {{agentvm.user.userName | uppercase}}</b></h3>
+                <h4><b>Hello, {{agentvm.user.userName | uppercase}}</b></h4>
 
                 <table class="table table-user-information">
                     <tbody>
@@ -24,16 +28,10 @@
                         <td><b>Join date:</b></td>
                         <td>{{agentvm.user.userinfo.joinDate}}</td>
                     </tr>
-                    <tr>
-                        <td><b>Date of Birth</b></td>
-                        <td>{{agentvm.user.userinfo.dob}}</td>
-                    </tr>
 
-                    <tr>
-                    <tr>
-                        <td><b>Gender</b></td>
-                        <td>{{agentvm.user.userinfo.gender}}</td>
-                    </tr>
+
+
+
                     <tr>
                         <td><b>Home Address</b></td>
                         <td>{{agentvm.user.userinfo.address}}</td>
@@ -64,8 +62,49 @@
             <div>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h4>Claims Pending</h4>
+                    <div class="panel-heading botpad"><h4>Claims Pending <button type="button" class="btn btn-info  pull-right  " data-toggle="modal"
+                                                                                data-target="#viewbox">View-BOX
+                    </button></h4>
+                        <!-- Modal button create a new Claim -->
+
                     </div>
+
+
+                    <!-- Modal -->
+                    <div id="viewbox" class="modal fade" role="dialog">
+                        <div class="modal-dialog modal-lg">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Box Directory</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe src="https://app.box.com/embed_widget/s/er2wd4qad1ygf3o2qlucilo9m0d8o8ya?view=list&sort=name&direction=ASC&theme=gray" width="100%" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen> </iframe>
+                            </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <div class="panel-body mytable">
 
                         <label>Search: <input ng-model="searchText"></label>

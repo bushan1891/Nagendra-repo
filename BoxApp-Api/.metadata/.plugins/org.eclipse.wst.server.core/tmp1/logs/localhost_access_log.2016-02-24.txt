@@ -1,0 +1,10 @@
+127.0.0.1 - - [24/Feb/2016:12:57:59 -0800] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [24/Feb/2016:13:13:18 -0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:13:38 -0800] "GET /BoxApp-Api/api/claim/Auth1?email=wes@jcs.com HTTP/1.1" 200 428
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:13:39 -0800] "GET /BoxApp-Api/api/claim/getVehicle?userid=2 HTTP/1.1" 200 259
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:13:39 -0800] "GET /BoxApp-Api/api/claim/claims?email=wes@jcs.com HTTP/1.1" 200 600
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:14:00 -0800] "GET /BoxApp-Api/api/claim/Auth1?email=carlo@jcs.com HTTP/1.1" 200 434
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:14:00 -0800] "GET /BoxApp-Api/api/claim/claims/agent?status=pending HTTP/1.1" 200 265
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:14:00 -0800] "GET /BoxApp-Api/api/claim/claims/agent?status=approved HTTP/1.1" 200 550
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:14:00 -0800] "GET /BoxApp-Api/api/claim/Adjustor HTTP/1.1" 200 1106
+0:0:0:0:0:0:0:1 - - [24/Feb/2016:13:14:14 -0800] "POST /BoxApp-Api/api/claim/uploadcalim?claimid=2claim232&fname=IMAG0214.jpg HTTP/1.1" 204 -

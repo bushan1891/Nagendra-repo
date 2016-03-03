@@ -1,8 +1,11 @@
 
-<div class="transperant container content myoverflow transperant">
+<div class="container content myoverflow">
 
     <div class=" jumbotron card ">
-        <!--this is the header  -->
+<div  class="banner">
+    <h3><b>Jeetu & Harper Auto Insurance </b></h3>
+</div>
+
         <div class="row ">
             <div class="col-xs-4">
                 <div class=".profile-img-card1">
@@ -13,7 +16,7 @@
                 </div>
             </div>
             <div class="col-xs-6 jh">
-                <h3><b>Hello, {{uservm.user.userName | uppercase}}</b></h3>
+                <h4><b>Hello, {{uservm.user.userName | uppercase}}</b></h4>
 
                 <table class="table table-user-information">
                     <tbody>
@@ -25,16 +28,9 @@
                         <td><b>Join date:</b></td>
                         <td>{{uservm.user.userinfo.joinDate}}</td>
                     </tr>
-                    <tr>
-                        <td><b>Date of Birth</b></td>
-                        <td>{{uservm.user.userinfo.dob}}</td>
-                    </tr>
 
-                    <tr>
-                    <tr>
-                        <td><b>Gender</b></td>
-                        <td>{{uservm.user.userinfo.gender}}</td>
-                    </tr>
+
+
                     <tr>
                         <td><b>Home Address</b></td>
                         <td>{{uservm.user.userinfo.address}}</td>

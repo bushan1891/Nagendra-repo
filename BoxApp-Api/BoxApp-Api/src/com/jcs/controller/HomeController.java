@@ -258,12 +258,12 @@ public class HomeController {
 	public Response uploadClaimFile(
 		@FormDataParam("file") InputStream uploadedInputStream,
 		@FormDataParam("file") FormDataContentDisposition fileDetail,
-		@QueryParam(value = "claimid") String claim) throws IOException, URISyntaxException {
+		@QueryParam(value = "claimid") String claim,@QueryParam(value = "fname") String fname) throws IOException, URISyntaxException {
 			
 		BoxService service = new BoxService();
 		System.out.println(claim);
 		
-     	service.uploadClaimFile(uploadedInputStream,claim );
+     	service.uploadClaimFile(uploadedInputStream,claim,fname );
 		
 		
 		return null;

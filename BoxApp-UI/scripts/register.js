@@ -24,7 +24,7 @@
            // form.$setPristine();
             console.dir(registervm.reg);
 
-            Service.Mailregister(registervm.reg);
+            //Service.Mailregister(registervm.reg);
 
       alert("Email sent to " +  registervm.reg.email  + " regarding how to use the App");
 

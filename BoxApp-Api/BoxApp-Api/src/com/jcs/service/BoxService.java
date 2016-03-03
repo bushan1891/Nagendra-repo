@@ -523,7 +523,7 @@ boolean duplicate =false;
 		return null;
 	}
 
-	public void uploadClaimFile(InputStream uploadedInputStream, String name) throws IOException, URISyntaxException {
+	public void uploadClaimFile(InputStream uploadedInputStream, String name, String fname) throws IOException, URISyntaxException {
 
 		Date date = new Date();
 		long time = date.getTime();
@@ -533,7 +533,7 @@ boolean duplicate =false;
 
 		System.out.println("Current Time Stamp: " + ts);
 		int id = claim.getUserID();
-		name = name + ts + ".pdf";
+		name = name + ts +"_"+fname ; //+ ".pdf"
 
 		BoxAPIConnection api = BoxUtil.getApi();
 

@@ -7,7 +7,7 @@
         <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
         <img  src="https://www.jivesoftware.com/wp-content/uploads/2014/09/JCS_Color-300x240.png" class="jcs-logo img-responsive fade-in one" alt="" />
         <p id="profile-name" class="profile-name-card"></p>
-        <form class="form-signin fade-in one" ng-submit="registervm.login()" >
+        <!--<form class="form-signin fade-in one" ng-submit="registervm.login()" >
             <span id="reauth-email" class="reauth-email "></span>
             <input type="text" class="form-control " placeholder="FirstName" ng-model="registervm.reg.firstname" required autofocus>
             <input type="text"  class="form-control " placeholder="LastName" required ng-model="registervm.reg.lastname">
@@ -17,7 +17,28 @@
             <input type="text" class="form-control" placeholder="Job Title" requried ng-model="registervm.reg.jobtitle">
 
             <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit"  >GO-BOX</button>
-        </form><!-- /form -->
+        </form>&lt;!&ndash; /form &ndash;&gt;-->
+
+
+        <form class="form-signin fade-in one" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" ng-submit="registervm.login()">
+
+            <input type=hidden name="oid" value="00D70000000Mkhv">
+            <input type=hidden name="retURL" value="http://jcsdemo.com/#/login">
+
+
+            <input id="first_name" class="form-control" maxlength="40" name="first_name" size="20" type="text" placeholder="FirstName" required/><br>
+            <input id="last_name" class="form-control" maxlength="80" name="last_name" size="20" type="text" placeholder="LastName" required/><br>
+            <input id="title" maxlength="40" class="form-control" name="title" size="20" type="text" placeholder="Title" required/><br>
+            <input id="mobile" maxlength="40" name="mobile" class="form-control" size="20" type="text" placeholder="Mobile" required/><br>
+            <input id="email" maxlength="80" name="email" class="form-control" size="20" type="email"  placeholder="Email" required/><br>
+            <textarea id="00N70000003v9AV" name="00N70000003v9AV" type="text" class="form-control" wrap="soft" placeholder="Target Customer" required></textarea><br>
+
+            <input type="submit" class="btn btn-lg btn-primary btn-block btn-signin" name="submit"  >
+
+        </form>
+
+
+
 
     </div><!-- /card-container -->
 </div><!-- /container -->
