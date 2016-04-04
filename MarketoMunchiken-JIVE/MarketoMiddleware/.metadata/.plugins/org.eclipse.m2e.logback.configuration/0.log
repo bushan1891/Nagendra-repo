@@ -1,0 +1,817 @@
+2016-03-22 14:21:14,590 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-22 14:21:16,413 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:21:16,416 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:21:16,418 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:21:16,418 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:21:16,440 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MarketoMiddleWare/src
+2016-03-22 14:21:16,441 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /MarketoMiddleWare/src/test/java because it overlaps with /MarketoMiddleWare/src
+2016-03-22 14:21:16,754 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-22 14:21:16,956 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-22 14:21:17,410 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MarketoMiddleWare/src
+2016-03-22 14:21:17,410 [Worker-8] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /MarketoMiddleWare/src/test/java because it overlaps with /MarketoMiddleWare/src
+2016-03-22 14:21:17,592 [Worker-8] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for MarketoMiddleWare
+2016-03-22 14:21:17,599 [Worker-8] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-22 14:21:17,733 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:21:17,734 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:21:17,735 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:21:17,736 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:21:17,736 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-22 14:21:17,737 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-22 14:21:17,766 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:22:07,871 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-22 14:22:09,203 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-jaxrs/1.5.3/swagger-jaxrs-1.5.3.pom
+2016-03-22 14:22:09,421 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-jaxrs/1.5.3/swagger-jaxrs-1.5.3.pom
+2016-03-22 14:22:09,624 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-project/1.5.3/swagger-project-1.5.3.pom
+2016-03-22 14:22:09,877 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-project/1.5.3/swagger-project-1.5.3.pom
+2016-03-22 14:22:10,089 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.4.5/jackson-dataformat-yaml-2.4.5.pom
+2016-03-22 14:22:10,324 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.4.5/jackson-dataformat-yaml-2.4.5.pom
+2016-03-22 14:22:10,568 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/core/jackson-core/2.4.5/jackson-core-2.4.5.pom
+2016-03-22 14:22:10,781 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/core/jackson-core/2.4.5/jackson-core-2.4.5.pom
+2016-03-22 14:22:10,991 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/yaml/snakeyaml/1.12/snakeyaml-1.12.pom
+2016-03-22 14:22:11,222 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/yaml/snakeyaml/1.12/snakeyaml-1.12.pom
+2016-03-22 14:22:11,433 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.4.5/jackson-dataformat-xml-2.4.5.pom
+2016-03-22 14:22:11,650 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.4.5/jackson-dataformat-xml-2.4.5.pom
+2016-03-22 14:22:11,846 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/core/jackson-databind/2.4.5/jackson-databind-2.4.5.pom
+2016-03-22 14:22:12,055 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/core/jackson-databind/2.4.5/jackson-databind-2.4.5.pom
+2016-03-22 14:22:12,244 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.4.5/jackson-module-jaxb-annotations-2.4.5.pom
+2016-03-22 14:22:12,465 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.4.5/jackson-module-jaxb-annotations-2.4.5.pom
+2016-03-22 14:22:12,680 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-core/1.5.3/swagger-core-1.5.3.pom
+2016-03-22 14:22:12,891 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-core/1.5.3/swagger-core-1.5.3.pom
+2016-03-22 14:22:13,096 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.pom
+2016-03-22 14:22:13,337 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.pom
+2016-03-22 14:22:13,570 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.pom
+2016-03-22 14:22:13,764 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.pom
+2016-03-22 14:22:13,956 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/slf4j/slf4j-parent/1.6.3/slf4j-parent-1.6.3.pom
+2016-03-22 14:22:14,180 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/slf4j/slf4j-parent/1.6.3/slf4j-parent-1.6.3.pom
+2016-03-22 14:22:14,370 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/core/jackson-annotations/2.4.5/jackson-annotations-2.4.5.pom
+2016-03-22 14:22:14,564 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/core/jackson-annotations/2.4.5/jackson-annotations-2.4.5.pom
+2016-03-22 14:22:14,758 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.4.5/jackson-datatype-joda-2.4.5.pom
+2016-03-22 14:22:14,960 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.4.5/jackson-datatype-joda-2.4.5.pom
+2016-03-22 14:22:15,168 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-models/1.5.3/swagger-models-1.5.3.pom
+2016-03-22 14:22:15,360 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-models/1.5.3/swagger-models-1.5.3.pom
+2016-03-22 14:22:15,554 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.pom
+2016-03-22 14:22:15,747 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.pom
+2016-03-22 14:22:15,961 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.pom
+2016-03-22 14:22:16,164 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.pom
+2016-03-22 14:22:16,368 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/reflections/reflections/0.9.9/reflections-0.9.9.pom
+2016-03-22 14:22:16,597 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/reflections/reflections/0.9.9/reflections-0.9.9.pom
+2016-03-22 14:22:16,836 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.pom
+2016-03-22 14:22:17,040 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.pom
+2016-03-22 14:22:17,244 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.4.5/jackson-jaxrs-json-provider-2.4.5.pom
+2016-03-22 14:22:17,446 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/jaxrs/jackson-jaxrs-json-provider/2.4.5/jackson-jaxrs-json-provider-2.4.5.pom
+2016-03-22 14:22:17,644 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/jaxrs/jackson-jaxrs-providers/2.4.5/jackson-jaxrs-providers-2.4.5.pom
+2016-03-22 14:22:17,840 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/jaxrs/jackson-jaxrs-providers/2.4.5/jackson-jaxrs-providers-2.4.5.pom
+2016-03-22 14:22:18,048 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.4.5/jackson-jaxrs-base-2.4.5.pom
+2016-03-22 14:22:18,241 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/jaxrs/jackson-jaxrs-base/2.4.5/jackson-jaxrs-base-2.4.5.pom
+2016-03-22 14:22:18,472 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-jaxrs/1.5.3/swagger-jaxrs-1.5.3.jar
+2016-03-22 14:22:18,737 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-jaxrs/1.5.3/swagger-jaxrs-1.5.3.jar
+2016-03-22 14:22:18,942 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.4.5/jackson-dataformat-yaml-2.4.5.jar
+2016-03-22 14:22:19,444 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.4.5/jackson-dataformat-yaml-2.4.5.jar
+2016-03-22 14:22:19,695 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar
+2016-03-22 14:22:20,179 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar
+2016-03-22 14:22:20,388 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.4.5/jackson-dataformat-xml-2.4.5.jar
+2016-03-22 14:22:20,676 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.4.5/jackson-dataformat-xml-2.4.5.jar
+2016-03-22 14:22:20,882 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-core/1.5.3/swagger-core-1.5.3.jar
+2016-03-22 14:22:21,167 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-core/1.5.3/swagger-core-1.5.3.jar
+2016-03-22 14:22:21,364 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.jar
+2016-03-22 14:22:21,804 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/commons/commons-lang3/3.2.1/commons-lang3-3.2.1.jar
+2016-03-22 14:22:22,069 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.jar
+2016-03-22 14:22:22,320 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/slf4j/slf4j-api/1.6.3/slf4j-api-1.6.3.jar
+2016-03-22 14:22:22,526 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.4.5/jackson-datatype-joda-2.4.5.jar
+2016-03-22 14:22:22,786 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.4.5/jackson-datatype-joda-2.4.5.jar
+2016-03-22 14:22:22,987 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-models/1.5.3/swagger-models-1.5.3.jar
+2016-03-22 14:22:23,301 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-models/1.5.3/swagger-models-1.5.3.jar
+2016-03-22 14:22:23,496 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.jar
+2016-03-22 14:22:23,737 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/io/swagger/swagger-annotations/1.5.3/swagger-annotations-1.5.3.jar
+2016-03-22 14:22:23,923 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+2016-03-22 14:22:24,146 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+2016-03-22 14:22:24,347 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/reflections/reflections/0.9.9/reflections-0.9.9.jar
+2016-03-22 14:22:24,635 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/reflections/reflections/0.9.9/reflections-0.9.9.jar
+2016-03-22 14:22:24,839 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar
+2016-03-22 14:22:25,075 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar
+2016-03-22 14:22:25,275 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/google/guava/guava/18.0/guava-18.0.jar
+2016-03-22 14:22:27,178 [Worker-18] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/google/guava/guava/18.0/guava-18.0.jar
+2016-03-22 14:22:29,004 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:22:29,005 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:22:29,006 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:22:29,007 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:22:29,007 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-22 14:22:29,007 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-22 14:22:29,010 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:22:30,216 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:22:30,216 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:22:30,217 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:22:30,218 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:23:09,857 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:23:09,857 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:23:09,858 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:23:09,859 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:24:25,232 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:24:25,234 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:24:25,235 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:24:25,236 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:24:33,204 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:24:33,204 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:24:33,205 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:24:33,206 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:24:37,915 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:24:37,916 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:24:37,917 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:24:37,918 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:26:09,444 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:26:09,445 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:26:09,445 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:26:09,445 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:27:58,740 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:27:58,740 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:27:58,741 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:27:58,741 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:31:26,237 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:31:26,238 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:31:26,238 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:31:26,239 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:34:16,507 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:34:16,508 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:34:16,509 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:34:16,509 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:35:21,394 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:35:21,394 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:35:21,395 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:35:21,395 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:35:58,949 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:35:58,949 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:35:58,950 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:35:58,950 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:35:59,962 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:35:59,963 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:35:59,963 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:35:59,964 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:36:53,539 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:36:53,539 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:36:53,540 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:36:53,541 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:42:19,688 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-22 14:42:20,570 [Worker-29] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/json/json/20160212/json-20160212.pom
+2016-03-22 14:42:20,772 [Worker-29] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/json/json/20160212/json-20160212.pom
+2016-03-22 14:42:21,050 [Worker-29] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/json/json/20160212/json-20160212.jar
+2016-03-22 14:42:21,302 [Worker-29] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/json/json/20160212/json-20160212.jar
+2016-03-22 14:42:21,867 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:42:21,867 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:42:21,868 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:42:21,869 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:42:21,869 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-22 14:42:21,869 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-22 14:42:21,872 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:42:23,088 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:42:23,089 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:42:23,090 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:42:23,091 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:46:12,908 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:46:12,909 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:46:12,909 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:46:12,910 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:46:54,595 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:46:54,596 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:46:54,596 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:46:54,597 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:47:21,108 [Worker-32] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-22 14:47:21,700 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:47:21,701 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:47:21,702 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:47:21,702 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-22 14:47:21,702 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-22 14:47:21,702 [Worker-32] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-22 14:47:21,704 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:47:22,968 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:47:22,969 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-22 14:47:22,970 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-22 14:47:22,970 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-23 12:18:39,251 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-23 12:18:39,258 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-23 12:18:39,259 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-23 12:18:39,260 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-24 21:52:31,888 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 21:52:31,891 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-24 21:52:31,893 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 21:52:31,893 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-24 21:53:10,788 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 21:53:10,789 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-24 21:53:10,790 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 21:53:10,790 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-24 22:07:35,502 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:07:35,502 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-24 22:07:35,503 [Worker-24] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:07:35,503 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-24 22:10:03,477 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:10:03,478 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-24 22:10:03,479 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:10:03,479 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-24 22:10:35,851 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Test:Test:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/Test/pom.xml.
+2016-03-24 22:10:36,038 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Test/src
+2016-03-24 22:10:36,038 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Test/src overlaps with sources folder /Test/src
+2016-03-24 22:10:36,041 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Test/src/test/java because it overlaps with /Test/src
+2016-03-24 22:10:36,231 [Worker-25] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-03-24 22:10:36,405 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Test:Test:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/Test/pom.xml.
+2016-03-24 22:10:36,506 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Test/src
+2016-03-24 22:10:36,506 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Test/src overlaps with sources folder /Test/src
+2016-03-24 22:10:36,509 [Worker-25] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Test/src/test/java because it overlaps with /Test/src
+2016-03-24 22:10:36,678 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Test
+2016-03-24 22:10:36,686 [Worker-25] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2016-03-24 22:10:36,811 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:10:36,816 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-03-24 22:10:36,822 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:10:36,822 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/Test/src/test/resources
+2016-03-24 22:10:36,823 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Test
+2016-03-24 22:10:36,823 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Test
+2016-03-24 22:10:36,854 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:12:11,234 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Test:Test:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/Test/pom.xml.
+2016-03-24 22:12:27,385 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:12:27,387 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-03-24 22:12:27,388 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:12:27,388 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/Test/src/test/resources
+2016-03-24 22:12:27,389 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Test
+2016-03-24 22:12:27,389 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Test
+2016-03-24 22:12:27,391 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:12:28,835 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:12:28,838 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-03-24 22:12:28,842 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-24 22:12:28,842 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/Test/src/test/resources
+2016-03-28 15:33:32,372 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-28 15:33:32,378 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-28 15:33:32,380 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-28 15:33:32,380 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-28 15:33:34,876 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-28 15:33:34,882 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-03-28 15:33:34,889 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-28 15:33:34,889 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/Test/src/test/resources
+2016-03-31 12:51:18,435 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 12:51:18,438 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 12:51:18,440 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 12:51:18,440 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 12:51:21,983 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 12:51:21,991 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-03-31 12:51:21,999 [Worker-11] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 12:51:22,000 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/Test/src/test/resources
+2016-03-31 13:05:38,779 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:05:38,781 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:05:38,782 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:05:38,783 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:06:57,534 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:06:57,535 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:06:57,536 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:06:57,536 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:18:16,392 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:18:16,392 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:18:16,393 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:18:16,394 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:31:00,574 [Worker-38] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-31 13:31:02,243 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/junit/junit/4.3.1/junit-4.3.1.jar
+2016-03-31 13:31:02,553 [Worker-38] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/junit/junit/4.3.1/junit-4.3.1.jar
+2016-03-31 13:31:04,649 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:31:04,651 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:31:04,652 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:31:04,652 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:31:04,653 [Worker-38] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-31 13:31:04,654 [Worker-38] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-31 13:31:04,692 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:31:06,039 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:31:06,039 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:31:06,041 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:31:06,041 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:32:06,726 [Worker-41] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-31 13:32:07,298 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:07,298 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:32:07,299 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:07,299 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:32:07,300 [Worker-41] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-31 13:32:07,300 [Worker-41] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-31 13:32:07,303 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:23,377 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-31 13:32:23,716 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:23,717 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:32:23,718 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:23,718 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:32:23,718 [Worker-39] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-31 13:32:23,719 [Worker-39] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-31 13:32:23,722 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:25,001 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:25,001 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:32:25,002 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:32:25,002 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:41:39,285 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:41:39,286 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:41:39,288 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:41:39,289 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:42:01,843 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:42:01,844 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:42:01,844 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:42:01,845 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:43:19,853 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:43:19,854 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:43:19,854 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:43:19,855 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:44:54,277 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:44:54,278 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:44:54,279 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:44:54,279 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:46:31,463 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:46:31,464 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:46:31,465 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:46:31,466 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:49:43,388 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:49:43,389 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:49:43,390 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:49:43,391 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:51:12,590 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:51:12,591 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:51:12,592 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:51:12,592 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:51:22,315 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:51:22,315 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:51:22,316 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:51:22,316 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 13:51:34,865 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:51:34,866 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 13:51:34,867 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 13:51:34,867 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:03:51,504 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-03-31 14:03:52,653 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:03:52,654 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:03:52,655 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:03:52,655 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:03:52,655 [Worker-45] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-03-31 14:03:52,655 [Worker-45] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-03-31 14:03:52,661 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:03:54,086 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:03:54,087 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:03:54,088 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:03:54,088 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:26:25,386 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:26:25,387 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:26:25,388 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:26:25,388 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:27:15,071 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:27:15,071 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:27:15,072 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:27:15,072 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:28:00,269 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:28:00,269 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:28:00,270 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:28:00,270 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:28:37,245 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:28:37,246 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:28:37,246 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:28:37,246 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:29:21,834 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:29:21,835 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:29:21,835 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:29:21,836 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:33:04,595 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:33:04,596 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:33:04,596 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:33:04,597 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 14:53:47,954 [Worker-85] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:53:47,957 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 14:53:47,958 [Worker-85] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 14:53:47,959 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 15:00:04,782 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 15:00:04,783 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 15:00:04,783 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 15:00:04,783 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 15:34:50,472 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 15:34:50,480 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 15:34:50,481 [Worker-106] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 15:34:50,481 [Worker-106] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 16:05:22,824 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 16:05:22,825 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 16:05:22,825 [Worker-117] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 16:05:22,825 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 16:22:42,078 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 16:22:42,079 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 16:22:42,080 [Worker-131] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 16:22:42,080 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-03-31 18:17:13,856 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 18:17:13,862 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-03-31 18:17:13,863 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-03-31 18:17:13,864 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 09:05:35,909 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 09:05:35,915 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 09:05:35,917 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 09:05:35,918 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 09:05:38,679 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 09:05:38,686 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-04-01 09:05:38,691 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 09:05:38,692 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/Test/src/test/resources
+2016-04-01 09:51:02,741 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 09:51:02,743 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 09:51:02,743 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 09:51:02,744 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 10:00:01,655 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 10:00:01,721 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 10:00:01,722 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 10:00:01,758 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 10:52:06,549 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 10:52:06,550 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 10:52:06,551 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 10:52:06,552 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 10:53:49,157 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 10:53:49,158 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 10:53:49,158 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 10:53:49,159 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:11:55,355 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:11:55,356 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:11:55,358 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:11:55,358 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:14:40,173 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:14:40,175 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:14:40,176 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:14:40,176 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:16:05,590 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:16:05,591 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:16:05,592 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:16:05,592 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:19:42,093 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:19:42,094 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:19:42,095 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:19:42,095 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:20:04,700 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:04,701 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:20:04,701 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:04,702 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:20:07,992 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:07,992 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:20:07,993 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:07,993 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:20:15,689 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:15,689 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:20:15,690 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:15,690 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:20:42,188 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:42,189 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:20:42,190 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:20:42,191 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:22:26,109 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:22:26,110 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:22:26,110 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:22:26,110 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:25:41,447 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:25:41,448 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:25:41,449 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:25:41,449 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:27:41,848 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:27:41,849 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:27:41,850 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:27:41,850 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:29:28,172 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:29:28,173 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:29:28,174 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:29:28,174 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:33:54,379 [Worker-109] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-04-01 12:33:55,368 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+2016-04-01 12:33:55,583 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.pom
+2016-04-01 12:33:55,795 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+2016-04-01 12:33:56,043 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcomponents-client/4.5.2/httpcomponents-client-4.5.2.pom
+2016-04-01 12:33:56,275 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+2016-04-01 12:33:56,490 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.pom
+2016-04-01 12:33:56,675 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+2016-04-01 12:33:56,909 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcomponents-core/4.4.4/httpcomponents-core-4.4.4.pom
+2016-04-01 12:33:57,575 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+2016-04-01 12:33:58,321 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar
+2016-04-01 12:33:58,562 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+2016-04-01 12:33:58,975 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar
+2016-04-01 12:33:59,184 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+2016-04-01 12:33:59,448 [Worker-109] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/commons-logging/commons-logging/1.2/commons-logging-1.2.jar
+2016-04-01 12:34:00,127 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:34:00,127 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:34:00,128 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:34:00,128 [Worker-109] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:34:00,129 [Worker-109] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-04-01 12:34:00,129 [Worker-109] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-04-01 12:34:00,201 [Worker-109] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:34:01,549 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:34:01,549 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:34:01,550 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:34:01,551 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:37:38,042 [Worker-111] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:37:38,043 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:37:38,043 [Worker-111] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:37:38,044 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:37:41,305 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:37:41,305 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:37:41,306 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:37:41,306 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:40:13,444 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:40:13,444 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:40:13,445 [Worker-102] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:40:13,445 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:43:21,207 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:43:21,208 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:43:21,209 [Worker-115] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:43:21,209 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:55:16,508 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:55:16,509 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:55:16,510 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:55:16,510 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:55:27,108 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:55:27,109 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:55:27,109 [Worker-104] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:55:27,110 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:56:45,383 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:56:45,384 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:56:45,384 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:56:45,385 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:56:59,659 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:56:59,660 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:56:59,660 [Worker-119] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:56:59,660 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 12:59:59,092 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:59:59,093 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 12:59:59,094 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 12:59:59,094 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:00:47,388 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:00:47,388 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:00:47,389 [Worker-124] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:00:47,389 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:07:31,871 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:07:31,872 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:07:31,874 [Worker-122] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:07:31,874 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:10:23,272 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:10:23,273 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:10:23,273 [Worker-123] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:10:23,273 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:11:49,865 [Worker-119] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/eclipsesource/minimal-json/minimal-json/0.9.1/minimal-json-0.9.1-sources.jar
+2016-04-01 13:11:50,114 [Worker-119] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://maven-secure.jivesoftware.com/archiva/repository/jive.internal/com/eclipsesource/minimal-json/minimal-json/0.9.1/minimal-json-0.9.1-sources.jar
+2016-04-01 13:11:50,154 [Worker-119] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.eclipsesource.minimal-json:minimal-json:0.9.1
+2016-04-01 13:11:50,357 [Worker-125] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:11:50,358 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:11:50,359 [Worker-125] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:11:50,359 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:13:50,290 [Worker-121] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:13:50,290 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:13:50,291 [Worker-121] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:13:50,291 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:28:16,372 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:28:16,373 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:28:16,374 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:28:16,374 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:29:13,277 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:29:13,278 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:29:13,278 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:29:13,278 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:31:51,366 [Worker-125] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:31:51,366 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:31:51,366 [Worker-125] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:31:51,366 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:32:22,387 [Worker-133] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:32:22,387 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:32:22,387 [Worker-133] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:32:22,387 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:45:46,141 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:45:46,141 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:45:46,142 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:45:46,142 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 13:47:52,212 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:47:52,212 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 13:47:52,213 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 13:47:52,213 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:00:03,299 [Worker-140] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: MarketoMiddleWare:MarketoMiddleWare:0.0.1-SNAPSHOT @ /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/pom.xml.
+2016-04-01 14:00:03,868 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:00:03,868 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:00:03,869 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:00:03,869 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:00:03,869 [Worker-140] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MarketoMiddleWare
+2016-04-01 14:00:03,869 [Worker-140] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for MarketoMiddleWare
+2016-04-01 14:00:03,872 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:00:05,132 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:00:05,132 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:00:05,133 [Worker-152] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:00:05,134 [Worker-152] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:09:23,516 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:09:23,517 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:09:23,518 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:09:23,518 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:09:34,168 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:09:34,169 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:09:34,169 [Worker-154] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:09:34,170 [Worker-154] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:11:58,529 [Worker-155] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:11:58,530 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:11:58,531 [Worker-155] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:11:58,531 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:14:44,906 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:14:44,907 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:14:44,907 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:14:44,907 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:21:57,565 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:21:57,566 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:21:57,566 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:21:57,566 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:22:48,479 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:22:48,480 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:22:48,480 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:22:48,480 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:24:10,263 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:24:10,263 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:24:10,264 [Worker-157] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:24:10,264 [Worker-157] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:29:36,204 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:29:36,205 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:29:36,205 [Worker-140] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:29:36,206 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:30:53,453 [Worker-162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:30:53,454 [Worker-162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:30:53,455 [Worker-162] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:30:53,455 [Worker-162] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:34:33,104 [Worker-163] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:34:33,105 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:34:33,106 [Worker-163] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:34:33,106 [Worker-163] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:42:11,566 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:42:11,567 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:42:11,567 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:42:11,567 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:44:09,975 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:44:09,975 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:44:09,975 [Worker-147] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:44:09,976 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:46:17,754 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:46:17,755 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:46:17,755 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:46:17,755 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:49:48,745 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:49:48,746 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:49:48,746 [Worker-165] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:49:48,747 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:51:58,070 [Worker-167] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:51:58,071 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:51:58,071 [Worker-167] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:51:58,071 [Worker-167] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 14:54:07,843 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:54:07,844 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 14:54:07,844 [Worker-164] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 14:54:07,845 [Worker-164] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 15:13:32,720 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 15:13:32,720 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 15:13:32,721 [Worker-175] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 15:13:32,721 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-01 15:14:24,031 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 15:14:24,031 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-01 15:14:24,032 [Worker-180] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-01 15:14:24,032 [Worker-180] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 19:53:05,410 [Worker-210] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 19:53:05,411 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 19:53:05,411 [Worker-210] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 19:53:05,412 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 19:54:37,714 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 19:54:37,715 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 19:54:37,716 [Worker-219] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 19:54:37,716 [Worker-219] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 20:02:28,618 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:02:28,619 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 20:02:28,620 [Worker-218] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:02:28,620 [Worker-218] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 20:07:40,887 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:07:40,888 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 20:07:40,888 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:07:40,888 [Worker-222] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 20:08:07,667 [Worker-210] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:08:07,668 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 20:08:07,668 [Worker-210] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:08:07,669 [Worker-210] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 20:10:17,926 [Worker-223] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:10:17,927 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 20:10:17,927 [Worker-223] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 20:10:17,927 [Worker-223] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 21:59:01,681 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 21:59:01,682 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 21:59:01,683 [Worker-258] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 21:59:01,684 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 22:12:36,276 [Worker-274] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:12:36,277 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 22:12:36,278 [Worker-274] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:12:36,278 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 22:14:21,658 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:14:21,659 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 22:14:21,660 [Worker-278] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:14:21,660 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 22:16:43,604 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:16:43,605 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 22:16:43,606 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:16:43,606 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 22:18:43,436 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:18:43,436 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 22:18:43,436 [Worker-277] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:18:43,436 [Worker-277] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 22:19:20,277 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:19:20,277 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 22:19:20,277 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:19:20,278 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-02 22:19:53,687 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:19:53,688 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-02 22:19:53,688 [Worker-276] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-02 22:19:53,688 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 09:45:16,281 [Worker-301] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 09:45:16,283 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 09:45:16,283 [Worker-301] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 09:45:16,284 [Worker-301] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 09:58:20,863 [Worker-308] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 09:58:20,863 [Worker-308] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 09:58:20,864 [Worker-308] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 09:58:20,864 [Worker-308] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 10:34:05,587 [Worker-325] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:34:05,588 [Worker-325] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 10:34:05,589 [Worker-325] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:34:05,589 [Worker-325] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 10:34:59,301 [Worker-309] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:34:59,302 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 10:34:59,303 [Worker-309] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:34:59,303 [Worker-309] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 10:42:46,347 [Worker-331] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:42:46,348 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 10:42:46,348 [Worker-331] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:42:46,349 [Worker-331] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 10:43:47,714 [Worker-334] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:43:47,715 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 10:43:47,715 [Worker-334] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:43:47,715 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 10:54:28,654 [Worker-340] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:54:28,655 [Worker-340] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 10:54:28,655 [Worker-340] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:54:28,655 [Worker-340] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 10:58:47,398 [Worker-340] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:58:47,399 [Worker-340] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 10:58:47,401 [Worker-340] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 10:58:47,401 [Worker-340] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 11:41:10,867 [Worker-365] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:41:10,869 [Worker-365] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 11:41:10,869 [Worker-365] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:41:10,869 [Worker-365] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 11:44:17,784 [Worker-358] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:44:17,785 [Worker-358] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 11:44:17,786 [Worker-358] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:44:17,786 [Worker-358] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 11:46:49,655 [Worker-363] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:46:49,655 [Worker-363] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 11:46:49,656 [Worker-363] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:46:49,657 [Worker-363] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 11:47:40,443 [Worker-365] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:47:40,444 [Worker-365] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 11:47:40,444 [Worker-365] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:47:40,444 [Worker-365] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 11:49:18,846 [Worker-367] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:49:18,846 [Worker-367] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 11:49:18,846 [Worker-367] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 11:49:18,847 [Worker-367] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 12:02:36,555 [Worker-371] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:02:36,556 [Worker-371] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 12:02:36,556 [Worker-371] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:02:36,556 [Worker-371] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 12:05:15,758 [Worker-372] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:05:15,759 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 12:05:15,760 [Worker-372] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:05:15,760 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 12:07:08,598 [Worker-373] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:07:08,599 [Worker-373] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 12:07:08,600 [Worker-373] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:07:08,600 [Worker-373] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 12:08:02,793 [Worker-370] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:08:02,793 [Worker-370] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 12:08:02,793 [Worker-370] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:08:02,794 [Worker-370] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 12:21:45,953 [Worker-378] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:21:45,954 [Worker-378] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 12:21:45,955 [Worker-378] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:21:45,955 [Worker-378] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 12:22:42,662 [Worker-375] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:22:42,663 [Worker-375] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 12:22:42,663 [Worker-375] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 12:22:42,663 [Worker-375] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 13:54:33,267 [Worker-381] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:54:33,267 [Worker-381] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 13:54:33,268 [Worker-381] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:54:33,268 [Worker-381] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 13:54:35,698 [Worker-384] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:54:35,698 [Worker-384] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 13:54:35,699 [Worker-384] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:54:35,699 [Worker-384] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 13:55:30,271 [Worker-377] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:55:30,272 [Worker-377] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 13:55:30,272 [Worker-377] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:55:30,273 [Worker-377] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 13:55:34,095 [Worker-381] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:55:34,096 [Worker-381] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 13:55:34,096 [Worker-381] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:55:34,096 [Worker-381] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 13:56:33,545 [Worker-382] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:56:33,545 [Worker-382] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 13:56:33,547 [Worker-382] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 13:56:33,548 [Worker-382] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 14:17:06,517 [Worker-390] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 14:17:06,518 [Worker-390] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 14:17:06,519 [Worker-390] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 14:17:06,519 [Worker-390] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources
+2016-04-03 14:18:27,450 [Worker-392] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 14:18:27,450 [Worker-392] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/main/resources
+2016-04-03 14:18:27,451 [Worker-392] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-04-03 14:18:27,451 [Worker-392] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/bushan/eclipse/MarketoMiddleware/MarketoMiddleWare/src/test/resources

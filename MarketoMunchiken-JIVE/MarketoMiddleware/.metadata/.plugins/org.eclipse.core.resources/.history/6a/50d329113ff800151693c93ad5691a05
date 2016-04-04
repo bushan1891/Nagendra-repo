@@ -1,0 +1,88 @@
+package com.jcs.controllers;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+import java.util.List;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import com.jcs.modal.jiveObject;
+
+import dev.marketo.samples.Leads.MultipleLeads;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponses;
+
+@Path("/jive")
+public class WebAppController {
+	
+	@GET
+	@Path("/accountcreated")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String findRes(String jsonRequest) {
+	   
+		System.out.println(jsonRequest);
+		
+		
+		return "called";
+	}
+	
+	@POST
+	@Path("/account-created")
+	@Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String postHook(String request) {
+	   
+	/*	JSONArray jsonarray = new JSONArray(jsonStr);
+		for (int i = 0; i < jsonarray.length(); i++) {
+		    JSONObject jsonobject = jsonarray.getJSONObject(i);
+		    String name = jsonobject.getString("name");
+		    String url = jsonobject.getString("url");
+		}*/
+		
+		
+		//System.out.println(jiveobject.getActivity().getJive().getObjectID());
+		JSONArray jsonarray = new JSONArray(request);
+		
+		for(int i =0 ; i<jsonarray.length();i++){
+			JSONObject jsonobject = jsonarray.getJSONObject(i);
+			JSONObject activity = jsonobject.getJSONObject("activity");
+			String verb = activity.getString("verb");
+			
+			if( verb.equals("jive:user_account_created")){
+				System.out.println("New Account created on jive");
+				
+				
+			}
+
+			System.out.println(verb);
+			String name = jsonobject.getString("webhook");
+			System.out.println(name);
+		}
+		
+		MultipleLeads.test();
+		
+		return "called";
+	}
+	
+	
+	
+	
+
+}

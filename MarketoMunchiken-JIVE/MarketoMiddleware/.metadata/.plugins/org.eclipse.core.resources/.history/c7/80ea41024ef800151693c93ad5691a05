@@ -1,0 +1,78 @@
+package com.jcs.service;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import org.apache.http.HttpConnection;
+import org.apache.http.client.HttpClient;
+import org.json.JSONArray;
+
+import com.eclipsesource.json.JsonObject;
+import com.jcs.exception.AppException;
+
+import java.net.Proxy;
+import java.net.InetSocketAddress;
+import java.net.MalformedURLException;
+import java.io.OutputStreamWriter;
+import java.io.Reader;
+public class JiveService {
+
+	public static String getUserInfo(String id) throws AppException, IOException{
+		
+	     
+		
+		    try {
+		    	String idEndpoint = "https://jivedemo-slicesoftware.jiveon.com/api/core/v3/people/"+id;
+		    	URL url = new URL(null, idEndpoint, new sun.net.www.protocol.https.Handler());
+				HttpsURLConnection urlConn = (HttpsURLConnection) url.openConnection();
+				urlConn.setRequestMethod("GET");
+	            urlConn.setRequestProperty("accept", "application/json");
+	            String userpass = "adminuser" + ":" + "jive123";
+			    String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+			    urlConn.setRequestProperty ("Authorization", basicAuth);
+	            int responseCode = urlConn.getResponseCode();
+	            if (responseCode == 200) {
+	                InputStream inStream = urlConn.getInputStream();
+	                Reader reader = new InputStreamReader(inStream);
+	                try {
+	                    // read the first five chars
+	                    for (int i = 0; i < 43; i++) {
+	                       char c = (char) reader.read();
+	                       System.out.print("" + c);
+	                    }
+
+	                    // change line
+	                    System.out.println();
+
+	                    // close the stream
+	                 
+
+	                 } catch (IOException ex) {
+	                    ex.printStackTrace();
+	                 }
+	                JSONArray jsonarray = new JSONArray(reader);
+	                System.out.println(jsonarray.length());
+	            }else {
+	                throw new IOException("Status: " + responseCode);
+	            }
+			} catch (MalformedURLException e) {
+				e.printStackTrace();
+			}catch (IOException e) {
+	            e.printStackTrace();
+	        }
+		    
+
+		
+		 
+		
+		
+		return "";
+	}
+	
+	
+}

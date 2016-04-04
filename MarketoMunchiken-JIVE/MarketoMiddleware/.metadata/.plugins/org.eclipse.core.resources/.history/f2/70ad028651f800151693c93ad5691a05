@@ -1,0 +1,71 @@
+package com.jcs.service;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
+import javax.net.ssl.HttpsURLConnection;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.http.HttpConnection;
+import org.apache.http.client.HttpClient;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.json.JSONArray;
+
+import com.eclipsesource.json.JsonObject;
+import com.jcs.exception.AppException;
+
+import java.net.Proxy;
+import java.net.InetSocketAddress;
+import java.net.MalformedURLException;
+import java.io.OutputStreamWriter;
+import java.io.Reader;
+import java.io.StringWriter;
+public class JiveService {
+
+	public static String getUserInfo(String id) throws AppException, IOException{
+		String token="";
+	     
+		
+		    try {
+		    	String idEndpoint = "https://jivedemo-slicesoftware.jiveon.com/api/core/v3/people/"+id;
+		    	URL url = new URL(null, idEndpoint, new sun.net.www.protocol.https.Handler());
+				HttpsURLConnection urlConn = (HttpsURLConnection) url.openConnection();
+				urlConn.setRequestMethod("GET");
+	            urlConn.setRequestProperty("accept", "application/json");
+	            String userpass = "adminuser" + ":" + "jive123";
+			    String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+			    urlConn.setRequestProperty ("Authorization", basicAuth);
+	            int responseCode = urlConn.getResponseCode();
+	          
+	            if (responseCode == 200) {
+	                InputStream inStream = urlConn.getInputStream();
+	                
+	                Reader reader = new InputStreamReader(inStream);
+	               
+	                String inputStreamString = new Scanner(inStream,"UTF-8").useDelimiter("\\A").next();
+	                    
+
+	                    // change line
+	                  
+	                    String modifiedResponse = StringUtils.replace(inputStreamString, "throw 'allowIllegalResourceCall is false.';", "");
+                        System.out.println(modifiedResponse);
+	                    // close the stream
+                        JsonObject jsonObject = JsonObject.readFrom(reader);
+                      token = jsonObject.get("emails").asString();
+
+	                 } 
+	            }catch (IOException ex) {
+	                    ex.printStackTrace();
+	                 }		
+		
+		return token;
+	
+		    }
+
+}
+	
+

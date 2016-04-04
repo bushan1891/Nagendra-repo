@@ -1,0 +1,81 @@
+package com.jcs.service;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import org.apache.http.HttpConnection;
+import org.apache.http.client.HttpClient;
+
+import com.jcs.exception.AppException;
+
+import java.net.Proxy;
+import java.net.InetSocketAddress;
+import java.net.MalformedURLException;
+import java.io.OutputStreamWriter;
+public class JiveService {
+
+	public static String getUserInfo(String id) throws AppException, IOException{
+	/*	try{
+		 String url = "http://jivedemo-slicesoftware.jiveon.com//api/core/v3/people/"+id;
+
+		    URL obj = new URL(url);
+		    HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
+
+		    conn.setRequestProperty("Content-Type", "application/json");
+		    conn.setDoOutput(true);
+		    conn.setRequestMethod("GET");
+		    String userpass = "adminuser" + ":" + "jive123";
+		    String basicAuth = "Basic " + javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+		    conn.setRequestProperty ("Authorization", basicAuth);
+
+		    String data =  "{\"format\":\"json\",\"pattern\":\"#\"}";
+		    
+		    OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream());
+		    out.write(data);
+		    out.close();
+		    conn.connect();
+		    InputStream temp=conn.getInputStream();
+		    System.out.println(conn.getResponseCode());
+
+		    InputStreamReader in =new InputStreamReader(conn.getInputStream());  
+		    System.out.println(temp);
+		    
+		    String tmp;
+		   
+		System.out.println(in.toString());
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}*/
+		String url = "http://jivedemo-slicesoftware.jiveon.com/api/core/v3/people/"+id;
+		 URL obj = new URL(url);
+		HttpURLConnection conn = (HttpURLConnection) obj.openConnection();
+
+		  conn.setDoInput(true);
+		  conn.setDoOutput(false);
+		  conn.setUseCaches(false);
+		  conn.setRequestMethod("GET");
+		  //conn.setRequestProperty("Content-Type", "application/json");
+		  conn.setRequestProperty("Accept", "application/vnd.twitchtv.v3+json");
+
+		  System.out.println(conn.getResponseCode());
+		  System.out.println(conn.getResponseMessage());
+
+		  // open the stream and put it into BufferedReader
+		  BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		  StringBuilder stb = new StringBuilder();
+
+		  String line;
+		  while ((line = br.readLine()) != null) {
+		    stb.append(line);
+		  }
+		
+		
+		return "";
+	}
+	
+	
+}
