@@ -13,6 +13,7 @@ import io.swagger.annotations.ApiResponses;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
@@ -58,7 +59,7 @@ public class WebAppController {
 		JiveService jiveService = new JiveService();
 		
 		// gets the user id from the pay-load
-		Integer userID = jiveService.getUserID(request);
+	/*	Integer userID = jiveService.getUserID(request);
 		
 		if(userID!=-1){
 			
@@ -70,7 +71,7 @@ public class WebAppController {
 		 UpsertLeads.createLead(email);
         }
         
-		}
+		}*/
         // check if the lead exist else create a new lead 
         
         
@@ -87,8 +88,16 @@ public class WebAppController {
 
 		// function to create leads in marketo
 
+		//List<String> emails= jiveService.getUserEmail("2135");
 		
+		Map<String,String> details = jiveService.getUserDetail("2125");
 
+		
+		for (Map.Entry<String,String> detail : details.entrySet()) {
+		    System.out.println("Key = " + detail.getKey() + ", Value = " + detail.getValue());
+		}
+		jiveService.getActivities(details.get("activity"));
+		
 		return "called";
 	}
 
