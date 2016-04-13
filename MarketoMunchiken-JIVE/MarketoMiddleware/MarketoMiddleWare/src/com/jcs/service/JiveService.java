@@ -1,10 +1,9 @@
 package com.jcs.service;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
+import java.io.Reader;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,23 +14,15 @@ import java.util.Scanner;
 import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.commons.lang.StringUtils;
-import org.apache.http.HttpConnection;
-import org.apache.http.client.HttpClient;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import com.eclipsesource.json.JsonArray;
 import com.eclipsesource.json.JsonObject;
-import com.eclipsesource.json.JsonValue;
-import com.jcs.exception.AppException;
+import com.jcs.modal.ActivityMap;
 
-import java.net.Proxy;
-import java.net.InetSocketAddress;
-import java.net.MalformedURLException;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.StringWriter;
+import dev.marketo.samples.Leads.AssociateLead;
+import dev.marketo.samples.Leads.MultipleLeads;
+import dev.marketo.samples.Leads.UpsertLeads;
 
 public class JiveService implements JiveServiceInterface {
 
@@ -66,16 +57,18 @@ public class JiveService implements JiveServiceInterface {
 				// close the stream
 				JsonObject jsonObject = JsonObject.readFrom(modifiedResponse);
 				JSONObject responseObject = new JSONObject(modifiedResponse);
-
-				// pull the value email here
-				JSONArray array = responseObject.getJSONArray("emails");
-				// getting all the emails associated to the account
-				for (int i = 0; i < array.length(); i++) {
-					JSONObject result = new JSONObject(array.get(i).toString());
-					System.out.println(result.get("value"));
-					emails.add((String) result.get("value"));
+				try {
+					// pull the value email here
+					JSONArray array = responseObject.getJSONArray("emails");
+					// getting all the emails associated to the account
+					for (int i = 0; i < array.length(); i++) {
+						JSONObject result = new JSONObject(array.get(i).toString());
+						System.out.println(result.get("value"));
+						emails.add((String) result.get("value"));
+					}
+				} catch (Exception e) {
+					System.out.println("no emails found");
 				}
-
 			}
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -105,8 +98,8 @@ public class JiveService implements JiveServiceInterface {
 			System.out.println("jive string is " + jiveString.toString());
 			userID = jiveString.getInt("objectID");
 
-			if (verb.equals("jive:user_account_created")) {
-				System.out.println("New Account created on jive");
+			if (verb.equals("jive:user_account_created") || verb.equals("jive:user_session_logout")) {
+				System.out.println("New Account created on jive" + "OR" + "Session logout");
 				return userID;
 			}
 
@@ -255,6 +248,21 @@ public class JiveService implements JiveServiceInterface {
 						"throw 'allowIllegalResourceCall is false.';", "");
 
 				System.out.println(modifiedResponse);
+
+				JSONObject activity = new JSONObject(modifiedResponse);
+
+				JSONArray activityList = activity.getJSONArray("list");
+
+				for (int i = 0; i < activityList.length(); i++) {
+
+					JSONObject activityInfo = (JSONObject) activityList.get(i);
+
+					System.out.println("this is a lead info" + i);
+					// handle data here
+					System.out.println(activityInfo.toString());
+
+				}
+
 			}
 		} catch (IOException ex) {
 			ex.printStackTrace();
@@ -263,4 +271,154 @@ public class JiveService implements JiveServiceInterface {
 		return null;
 	}
 
+	@Override
+	public String getJson(String urlEndpoint) {
+
+		try {
+			String idEndpoint = urlEndpoint;
+			URL url = new URL(null, idEndpoint, new sun.net.www.protocol.https.Handler());
+			HttpsURLConnection urlConn = (HttpsURLConnection) url.openConnection();
+			urlConn.setRequestMethod("GET");
+			urlConn.setRequestProperty("accept", "application/json");
+			String userpass = "adminuser" + ":" + "jive123";
+			String basicAuth = "Basic "
+					+ javax.xml.bind.DatatypeConverter.printBase64Binary(userpass.getBytes("UTF-8"));
+			urlConn.setRequestProperty("Authorization", basicAuth);
+			int responseCode = urlConn.getResponseCode();
+			if (responseCode == 200) {
+				InputStream inStream = urlConn.getInputStream();
+
+				Reader reader = new InputStreamReader(inStream);
+
+				String inputStreamString = new Scanner(inStream, "UTF-8").useDelimiter("\\A").next();
+
+				// Removing the unwanted jive data from the JSON
+
+				String modifiedResponse = StringUtils.replace(inputStreamString,
+						"throw 'allowIllegalResourceCall is false.';", "");
+
+				// close the stream
+				// JsonObject jsonObject =
+				// JsonObject.readFrom(modifiedResponse);
+				JSONObject responseObject = new JSONObject(modifiedResponse);
+				return modifiedResponse;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+
+	}
+
+	/*
+	 * { "cookie": { "cookieId": "id of the cookie here ", "jiveUserId":
+	 * "user ID" } }
+	 */
+
+	public String getJsonValue(String JSON, String Value) {
+		// TODO Auto-generated method stub
+
+		JSONObject responseObject = new JSONObject(JSON);
+		String cookieID = new String();
+		System.out.println(responseObject.toString());
+		try {
+			JSONObject cookie = responseObject.getJSONObject("cookie");
+			cookieID = cookie.getString("cookieId");
+			String JiveID = cookie.getString("jiveUserId");
+
+			System.out.println(cookieID + "" + JiveID);
+			if (Value.equals("jiveID")) {
+				return JiveID;
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return cookieID;
+	}
+
+	// associate call is done here
+	public String associateJive(String cookieID, String jiveID) {
+		String response = new String();
+		try {
+			List<String> emails = getUserEmail(jiveID);
+			List<String> id = new ArrayList();
+			UpsertLeads.createLead(emails.get(0));
+			String temp = MultipleLeads.getLeads("email", emails.get(0));
+			JSONObject object = new JSONObject(temp);
+			JSONArray result = object.getJSONArray("result");
+			JSONObject obj = result.getJSONObject(0);
+			System.out.println(obj.toString());
+			Integer leadid = obj.getInt("id");
+
+			response = AssociateLead.associateLead(cookieID, leadid.toString());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		// creates a lead for each email if user has multiple email use this
+		/*
+		 * for (String email : emails) { UpsertLeads.createLead(email); String
+		 * temp = MultipleLeads.getLeads("eamil",email); JSONObject object = new
+		 * JSONObject(temp); JSONArray result = object.getJSONArray("result");
+		 * for(int i=0;i<result.length();i++){ JSONObject obj =
+		 * result.getJSONObject(i); System.out.println(obj.toString()); String
+		 * leadid = obj.getString("id"); id.add(leadid);
+		 * AssociateLead.associateLead(cookieID,leadid ); } }
+		 */
+
+		// get lead id based on email
+
+		return response;
+	}
+
+	public List<ActivityMap> parseActivityJSON(String jsonRequest) {
+
+		List<ActivityMap> list = new ArrayList<ActivityMap>();
+
+		JSONObject activity = new JSONObject(jsonRequest);
+
+		// load the activity array
+
+		JSONArray activities = activity.getJSONArray("list");
+		ActivityMap dataStore;
+
+		for (int i = 0; i < activities.length(); i++) {
+			System.out.println(i + "" + activities.length());
+			try {
+				JSONObject info = activities.getJSONObject(i);
+
+				dataStore = new ActivityMap();
+				list.add(dataStore);
+				dataStore.map.put("Action", info.getString("verb")); // verb ->
+																		// action
+				dataStore.map.put("Title", info.getString("title"));
+				dataStore.map.put("Updated Date", info.getString("updated"));
+				dataStore.map.put("url", info.getString("url"));
+
+				// inside object
+				JSONObject object = info.getJSONObject("object");
+
+				dataStore.map.put("Summary", object.getString("summary"));
+				dataStore.map.put("Date", object.getString("published"));
+				dataStore.map.put("Object Type", object.getString("objectType"));
+
+				JSONObject jive = info.getJSONObject("jive");
+
+				String objectViewed = String.valueOf(jive.getBoolean("objectViewed"));
+				dataStore.map.put("Object Viewed", objectViewed);
+
+				String liked = String.valueOf(jive.getBoolean("liked"));
+				dataStore.map.put("liked", liked);
+
+			} catch (Exception e) {
+				System.out.println("no liked field");
+			}
+
+		}
+
+		return list;
+
+	}
 }

@@ -11,4 +11,5 @@ public interface JiveServiceInterface {
 	public  int getUserID(String requestPayload);
 	public Map<String,String> getUserDetail(String id);
 	public Map<String,String> getActivities(String endpointUrl);
+	public String getJson(String url);
 }

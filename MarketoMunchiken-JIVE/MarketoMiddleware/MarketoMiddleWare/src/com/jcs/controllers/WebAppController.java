@@ -1,15 +1,5 @@
 package com.jcs.controllers;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,35 +7,73 @@ import java.util.Map;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.OPTIONS;
 import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import com.jcs.exception.AppException;
-import com.jcs.modal.jiveObject;
+import com.jcs.modal.ActivityMap;
 import com.jcs.service.JiveService;
 
+import dev.marketo.samples.Leads.CustomActivities;
 import dev.marketo.samples.Leads.MultipleLeads;
 import dev.marketo.samples.Leads.UpsertLeads;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponses;
 
 @Path("/jive")
 public class WebAppController {
 
-	@GET
+	@POST
+	@Path("/cookie")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response postCookie(String cookieValue) {
+
+		System.out.println("**********coookieeeee***********");
+		System.out.println(cookieValue);
+		
+		JiveService jiveService = new JiveService();
+		// reads the cookie value and the jiveID
+		String cookieID = jiveService.getJsonValue(cookieValue, "cookieId");
+		String jiveID = jiveService.getJsonValue(cookieValue, "jiveID");
+
+		String status = jiveService.associateJive(cookieID, jiveID); 
+		JSONObject responseObject = new JSONObject(cookieValue);
+
+		if (cookieID != null) {
+			responseObject.append("Status", "success");
+
+			return Response.ok().header("Allow-Control-Allow-Methods", "POST,GET,OPTIONS").build();
+		}
+
+		responseObject.append("Status", "error");
+		// String status = jiveService.associateJive(cookieID,jiveID);
+
+		return Response.ok().header("Allow-Control-Allow-Methods", "POST,GET,OPTIONS").build();
+	}
+
+	@POST
 	@Path("/accountcreated")
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)
 	public String findRes(String jsonRequest) {
 
+		// activity details parsed and pulled here
 		System.out.println(jsonRequest);
+		JiveService jiveService = new JiveService();
+
+		List<ActivityMap> activities = jiveService.parseActivityJSON(jsonRequest);
+
+		for (ActivityMap activity : activities) {
+			System.out.println("This is activity \n ");
+			for (Map.Entry<String, String> entry : activity.map.entrySet()) {
+				System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+			}
+		}
 
 		return "called";
 	}
@@ -57,47 +85,46 @@ public class WebAppController {
 	public String postHook(String request) throws IOException, AppException {
 
 		JiveService jiveService = new JiveService();
-		
+
 		// gets the user id from the pay-load
-	/*	Integer userID = jiveService.getUserID(request);
-		
-		if(userID!=-1){
-			
-        List<String> emails =  jiveService.getUserEmail(userID.toString());
-        List<String> leads = new ArrayList<String>();
-        
-        for(String email : emails){
-		leads.add(MultipleLeads.getLeads("email",email));
-		 UpsertLeads.createLead(email);
-        }
-        
-		}*/
-        // check if the lead exist else create a new lead 
-        
-        
-        
-        
-		// function to get the info form jive
+		Integer userID = jiveService.getUserID(request);
 
-		/*
-		 * try { List<String> emails= JiveService.getUserEmail("2135");
-		 * for(String email : emails) System.out.println(email); } catch
-		 * (AppException e) { // TODO Auto-generated catch block
-		 * e.printStackTrace(); }
-		 */
+		if (userID != -1) {
+			Map<String, String> details = jiveService.getUserDetail(userID.toString());
 
-		// function to create leads in marketo
+			// get user email
+			List<String> emails = jiveService.getUserEmail(userID.toString());
+			List<String> leads = new ArrayList<String>();
+			String activities = jiveService.getJson(details.get("activity"));
 
-		//List<String> emails= jiveService.getUserEmail("2135");
-		
-		Map<String,String> details = jiveService.getUserDetail("2125");
+			// lead id pushes to the first
+			String leadJSON = MultipleLeads.getLeads("email", emails.get(0));
 
-		
-		for (Map.Entry<String,String> detail : details.entrySet()) {
-		    System.out.println("Key = " + detail.getKey() + ", Value = " + detail.getValue());
+			// creates or updates lead
+			for (String email : emails) {
+				UpsertLeads.createLead(email, details, activities);
+			}
+
+			// loads activity map
+			List<ActivityMap> activitiesMap = jiveService.parseActivityJSON(activities);
+
+			// pushes the activity log
+			System.out.println("*******************Activity log Push**********************");
+			System.out.println("Leadid" + leadJSON + emails.get(0));
+               
+			// replace this by get leadID function 
+			try {
+				JSONObject object = new JSONObject(leadJSON);
+				JSONArray result = object.getJSONArray("result");
+				JSONObject obj = result.getJSONObject(0);
+				Integer leadid = obj.getInt("id");
+				CustomActivities.pushActivityLog(leadid.toString(), activitiesMap, emails.get(0));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+
 		}
-		jiveService.getActivities(details.get("activity"));
-		
+
 		return "called";
 	}
 

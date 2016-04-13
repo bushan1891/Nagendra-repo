@@ -4,8 +4,6 @@ import javax.ws.rs.ApplicationPath;
 
 import org.glassfish.jersey.server.ResourceConfig;
 
-import io.swagger.jaxrs.config.BeanConfig;
-
 @ApplicationPath("/api")
 public class middleware extends ResourceConfig {
 

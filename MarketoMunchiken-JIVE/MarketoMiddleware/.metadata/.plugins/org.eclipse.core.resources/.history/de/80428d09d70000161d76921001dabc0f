@@ -1,0 +1,54 @@
+package dev.marketo.samples.Leads;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collections;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
+import java.util.Set;
+import java.util.TimeZone;
+
+public class testmain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TimeZone tz = TimeZone.getTimeZone("UTC");
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss z");
+		//System.out.println(tz.getOffset(new Date().getTime()));
+
+		String dateAsISO = df.format(new Date());
+
+		//System.out.println(dateAsISO);
+
+		Set<String> allZones = ZoneId.getAvailableZoneIds();
+		LocalDateTime dt = LocalDateTime.now();
+
+		// Create a List using the set of zones and sort it.
+		List<String> zoneList = new ArrayList<String>(allZones);
+		Collections.sort(zoneList);
+
+		for (String s : zoneList) {
+		    ZoneId zone = ZoneId.of(s);
+		    ZonedDateTime zdt = dt.atZone(zone);
+		    ZoneOffset offset = zdt.getOffset();
+		    int secondsOfHour = offset.getTotalSeconds() % (60 * 60);
+		    String out = String.format("%35s %10s%n", zone, offset);
+
+		    // Write only time zones that do not have a whole hour offset
+		    // to standard out.
+		    if (secondsOfHour != 0) {
+		        System.out.printf(out);
+		    }
+		   
+		}
+	}
+
+}
